@@ -1,9 +1,61 @@
+/* assets/css/input.css أو output.css */
+@font-face {
+  font-family: "Urbanist";
+  src: url("../Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Urbanist";
+  src: url("../Urbanist/Urbanist-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+ body {
+    font-family: "Urbanist", sans-serif;
+  }
+
+
 @import "tailwindcss";
 
 @theme {
+  /* Primary */
+  --color-primary-100: #703bf7;
+  --color-primary-200: #8254f8;
+  --color-primary-300: #946cf9;
+  --color-primary-400: #a685fa;
+
+  /* Secondary */
+  --color-secondary-100: #dbcefd;
+  --color-secondary-200: #ede7fe;
+  --color-secondary-300: #f4f0fe;
+  --color-secondary-400: #fbfaff;
+
+  /* Dark */
+  --color-dark-100: #141414;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #262626;
+  --color-dark-400: #333333;
+
+  /* Gray */
+  --color-gray-100: #4d4d4d;
+  --color-gray-200: #666666;
+  --color-gray-300: #808080;
+  --color-gray-400: #999999;
+
+  /* Extra */
   --color-light: #f9f9f9;
-  --color-dark: rgb(25, 25, 25);
+  --color-dark: #191919;
+  --color-dark-50: #0a0a0a;
+
+
+  --bg-hero-container: url("assets/imges/hero-imge/Container.png");
+
 }
+
+
 
 @layer base {
   .active {

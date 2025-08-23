@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome CSS -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <title>Estatein-website</title>
+    <link
+      rel="icon"
+      href="assets/imges/logo/logo-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-dark text-light transition-colors duration-500">
+    <!-- ====== Header Section ====== -->
+    <header id="topHeader" class="relative transition-all duration-500">
+      <img
+        src="assets/imges/heder-icon/backe-ground.png"
+        class="w-full h-[60px] object-cover"
+        alt=""
+      />
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-xs md:text-sm lg:text-lg font-bold text-center">
+          ✨ Discover Your Dream Property with Estatein
+          <a href="#" class="underline ml-2">Learn More</a>
+        </h3>
+        <span
+          id="closeHeader"
+          class="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 cursor-pointer flex items-center justify-center w-7 h-7 md:w-8 md:h-8 lg:w-8 lg:h-8 bg-[rgba(48,48,48)] rounded-full hover:bg-black/70 transition"
+        >
+          <i
+            class="fa-solid fa-xmark text-xs md:text-sm lg:text-md leading-none"
+          ></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- ====== Navbar Section ====== -->
+    <nav
+      class="w-full sticky top-0 z-50 flex items-center justify-between bg-dark py-4 px-6 md:px-[162px] border-t border-b border-[rgb(38,38,38)]"
+    >
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+       <a href="index.html"> <img
+          src="assets/imges/logo/Logo.png"
+          alt="logo"
+          class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[130px] lg:h-[50px] object-contain"
+        /></a>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul id="navLinks" class="hidden md:flex space-x-2.5 text-sm font-medium">
+        <li>
+          <a href="index.html" class="px-6 py-3 rounded-lg hover:bg-black/50 "
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50 active"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50"
+            >Properties</a
+          >
+        </li>
+        <li>
+          <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50"
+            >Services</a
+          >
+        </li>
+      </ul>
+
+      <!-- Contact Us (Desktop) -->
+      <a
+        href="#contact"
+        class="hidden md:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg"
+        >Contact Us</a
+      >
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menuBtn" class="md:hidden text-xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)]"
+    >
+      <a href="index.html" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
+      <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded">About Us</a>
+      <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded"
+        >Properties</a
+      >
+      <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded">Services</a>
+      <a href="#contact" class="block bg-black/50 px-4 py-2 rounded"
+        >Contact Us</a
+      >
+    </div>
+
+    <main>
+      <!-- Our Journey -->
+      <section></section>
+
+      <!-- Our Values -->
+      <section></section>
+
+      <!-- Our Achievements -->
+      <section></section>
+
+      <!-- How it Works -->
+      <section></section>
+
+      <!-- Our Team -->
+      <section></section>
+
+      <!-- Our Clients -->
+      <section></section>
+
+      <!-- CTA -->
+      <section
+        class="relative bg-cover bg-center py-20 px-8 text-white"
+        style="
+          background-image:
+            url(&quot;assets/imges/cat/back-cat-2.png&quot;),
+            url(&quot;assets/imges/cat/back-cat-1.png&quot;);
+          background-position:
+            left center,
+            right center,
+            center;
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-size:
+            auto 100%,
+            auto 100%,
+            cover;
+        "
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div class="md:w-2/3">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Start Your Real Estate Journey Today
+            </h2>
+            <p class="text-gray-200 max-w-xl">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+
+          <div class="md:w-auto">
+            <a
+              href="#"
+              class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-medium transition"
+            >
+              Explore Properties
+            </a>
+          </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 -z-10"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark py-12 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-gray-800 pb-10"
+      >
+        <!-- Logo + Email -->
+        <div class="col-span-2">
+          <div class="flex items-center space-x-2">
+           <a href="index.html"> <img
+              src="assets/imges/logo/Logo.png"
+              alt="logo"
+              class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[110px] lg:h-[50px] object-contain"
+            /></a>
+          </div>
+
+          <!-- <div class="flex items-center bg-dark50 rounded-lg overflow-hidden">
+
+            <div class="flex items-center px-1 pl-2">
+              <img
+                src="assets/imges/form-icons/Icon (10).png"
+                alt="Email Icon"
+                class="w-[24px] h-[24px] opacity-70"
+              />
+            </div>
+
+
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="bg-dark50 ml-2 pr-2 py-2 text-sm text-gray-300 focus:outline-none w-[150px]"
+            />
+
+
+            <button class="px-4 py-2 bg-dark50 ">
+              <img
+                src="assets/imges/form-icons/Icon (5).png"
+                alt="Send Icon"
+                class="w-[24px] h-[24px]"
+              />
+            </button>
+          </div> -->
+
+          <div
+            class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-[250px] h-[50px]"
+          >
+            <div class="flex items-center px-2">
+              <img
+                src="assets/imges/form-icons/Icon (10).png"
+                alt="Email Icon"
+                class="w-[22px] h-[22px] opacity-70 mx-2"
+              />
+            </div>
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter Your Email"
+              class="py-2 text-sm pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+            />
+            <button type="submit" class="pr-4 py-2 transition duration-300">
+              <img
+                src="assets/imges/form-icons/Icon (5).png"
+                alt="Send Icon"
+                class="w-[22px] h-[22px]"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h3 class="font-semibold mb-4">Home</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#">Hero Section</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Properties</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ’s</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">About Us</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Our Clients</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">Properties</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">Services</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#">Valuation Mastery</a></li>
+            <li><a href="#">Strategic Marketing</a></li>
+            <li><a href="#">Negotiation Wizardry</a></li>
+            <li><a href="#">Closing Success</a></li>
+            <li><a href="#">Property Management</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold mb-4">Contact Us</h3>
+          <ul class="space-y-2 text-gray-400 text-sm">
+            <li><a href="#">Contact Form</a></li>
+            <li><a href="#">Our Offices</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Footer -->
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-6 text-gray-500 text-sm"
+      >
+        <div class="flex items-center gap-6">
+          <p>©2023 Estatein. All Rights Reserved.</p>
+          <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
+        </div>
+
+        <div class="flex gap-2 mt-4 md:mt-0">
+          <a
+            href="#"
+            class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
+            ><i class="fa-brands fa-facebook-f text-white"></i
+          ></a>
+          <a
+            href="#"
+            class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
+            ><i class="fa-brands fa-linkedin-in text-white"></i
+          ></a>
+          <a
+            href="#"
+            class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
+            ><i class="fa-brands fa-twitter text-white"></i
+          ></a>
+          <a
+            href="#"
+            class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
+            ><i class="fa-brands fa-youtube text-white"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Fontawesome Js -->
+    <script src="assets/js/all.min.js"></script>
+    <script>
+      //  Active Class
+      document.querySelectorAll("#navLinks a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          // e.preventDefault();
+          document
+            .querySelector("#navLinks .active")
+            ?.classList.remove("active");
+          link.classList.add("active");
+        });
+      });
+
+      // Mobile Menu
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      document.getElementById("closeHeader").addEventListener("click", () => {
+        document.getElementById("topHeader").classList.add("hidden");
+      });
+    </script>
+    
+  </body>
+</html>
