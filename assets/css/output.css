@@ -1299,6 +1299,10 @@ body {
     --tw-duration: 500ms;
     transition-duration: 500ms;
   }
+  .duration-2000 {
+    --tw-duration: 2000ms;
+    transition-duration: 2000ms;
+  }
   .after\:\!text-xl {
     &::after {
       content: var(--tw-content);
