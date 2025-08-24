@@ -1,0 +1,547 @@
+  <!-- Cards 2 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Efficient and Reliable
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    Estatein provided us with top-notch service. They helped us
+                    sell our property quickly and at a great price. We couldn't
+                    be happier with the results.
+                  </p>
+
+                  <div class="flex items-center mt-8 w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">Emelie Thomson</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, Florida</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 3 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Trusted Advisors
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    The Estatein team guided us through the entire buying
+                    process. Their knowledge and commitment to our needs were
+                    impressive. Thank you for your support!
+                  </p>
+
+                  <div class="flex items-center w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile (2).png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">John Mans</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, Nevada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 4 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Exceptional Service!
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    Our experience with Estatein was outstanding. Their team's
+                    dedication and professionalism made finding our dream home a
+                    breeze. Highly recommended!
+                  </p>
+
+                  <!-- Price + Button -->
+                  <div class="flex items-center w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile (1).png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">Wade Warren</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 5 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Efficient and Reliable
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    Estatein provided us with top-notch service. They helped us
+                    sell our property quickly and at a great price. We couldn't
+                    be happier with the results.
+                  </p>
+
+                  <div class="flex items-center mt-8 w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">Emelie Thomson</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, Florida</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 6 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Trusted Advisors
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    The Estatein team guided us through the entire buying
+                    process. Their knowledge and commitment to our needs were
+                    impressive. Thank you for your support!
+                  </p>
+
+                  <div class="flex items-center w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile (2).png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">John Mans</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, Nevada</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 7 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Exceptional Service!
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    Our experience with Estatein was outstanding. Their team's
+                    dedication and professionalism made finding our dream home a
+                    breeze. Highly recommended!
+                  </p>
+
+                  <!-- Price + Button -->
+                  <div class="flex items-center w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile (1).png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">Wade Warren</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards 8 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-[#141414] border border-gray-800 w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+              >
+                <div class="text-left">
+                  <div class="flex flex-row items-start">
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                    <div
+                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
+                    >
+                      <img
+                        src="assets/imges/clients-reviews/Shape.png"
+                        alt="Seaside Serenity Villa"
+                        class="w-4 h-4 object-contain"
+                      />
+                    </div>
+                  </div>
+
+                  <h3 class="text-lg font-semibold mb-2 text-left">
+                    Efficient and Reliable
+                  </h3>
+
+                  <p class="text-gray-400 text-sm mb-4 w-sm max-w-xs">
+                    Estatein provided us with top-notch service. They helped us
+                    sell our property quickly and at a great price. We couldn't
+                    be happier with the results.
+                  </p>
+
+                  <div class="flex items-center mt-8 w-sm">
+                    <img
+                      src="assets/imges/clients-reviews/Profile.png"
+                      alt=""
+                    />
+                    <div>
+                      <p class="font-bold text-sm ml-2">Emelie Thomson</p>
+                      <p class="text-gray-400 text-sm ml-2">USA, Florida</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
