@@ -30,15 +30,15 @@
     <header id="topHeader" class="relative transition-all duration-500">
       <img
         src="assets/imges/heder-icon/backe-ground.png"
-        class="w-full h-[60px] object-cover"
+        class="w-full h-[78px] md:h-[49px] lg:h-[55px] 2xl:h-[63px] object-cover"
         alt=""
       />
       <div
         class="absolute inset-0 left-[-20px] md:left-0 flex items-center justify-center"
       >
-        <h3 class="text-xs md:text-sm lg:text-lg font-bold text-center">
+        <h3 class="min-text text-center">
           ✨ Discover Your Dream Property with Estatein
-          <a href="#" class="underline ml-2">Learn More</a>
+          <a href="#" class="min-text font-medium underline ml-2">Learn More</a>
         </h3>
         <span
           id="closeHeader"
@@ -55,18 +55,33 @@
     <nav
       class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
     >
-      <!-- Logo -->
       <div class="flex items-center space-x-2">
-        <a href="#"
-          ><img
-            src="assets/imges/logo/Logo.png"
-            alt="logo"
-            class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[130px] lg:h-[50px] object-contain"
-        /></a>
+        <a href="#">
+          <picture>
+            <!-- big -->
+            <source
+              srcset="assets/imges/logo/logo-Desktop.png"
+              media="(min-width: 1024px)"
+              class="object-contain"
+            />
+            <!-- meduim -->
+            <source
+              srcset="assets/imges/logo/logo-Laptop.png"
+              media="(min-width: 768px)"
+              class="object-contain"
+            />
+            <!-- small defult -->
+            <img
+              src="assets/imges/logo/logo-Mobile.png"
+              alt="logo"
+              class="object-contain"
+            />
+          </picture>
+        </a>
       </div>
 
       <!-- Navigation Links (Desktop) -->
-      <ul id="navLinks" class="hidden md:flex space-x-2.5 text-sm font-medium">
+      <ul id="navLinks" class="hidden lg:flex space-x-2.5 min-text">
         <li>
           <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50 active"
             >Home</a
@@ -78,12 +93,14 @@
           >
         </li>
         <li>
-          <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="properties.html"
+            class="px-6 py-3 rounded-lg hover:bg-black/50"
             >Properties</a
           >
         </li>
         <li>
-          <a href="#" class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a href="services.html" class="px-6 py-3 rounded-lg hover:bg-black/50"
             >Services</a
           >
         </li>
@@ -91,21 +108,22 @@
 
       <!-- Contact Us (Desktop) -->
       <a
-        href="#contact"
-        class="hidden md:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg"
+        href="contact.html"
+        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
         >Contact Us</a
       >
 
       <!-- Hamburger Menu (Mobile) -->
-      <button id="menuBtn" class="md:hidden text-xl">
-        <i class="fa-solid fa-bars"></i>
+      <button id="menuBtn" class="lg:hidden text-3xl">
+        <img src="assets/imges/Icon.png" alt="" srcset="" />
+        <!-- <i class="fa-solid fa-bars "></i> -->
       </button>
     </nav>
 
     <!-- Mobile Menu -->
     <div
       id="mobileMenu"
-      class="hidden md:hidden  flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)]"
+      class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)]"
     >
       <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
       <a href="about-us.html" class="block hover:bg-black/50 px-4 py-2 rounded"
@@ -125,13 +143,6 @@
       <section
         class="relative w-full pl-0 md:pl-[50px] bg-[#0f0f0f] md:h-[700px]"
       >
-        <!-- <img
-          src="assets/imges/hero-imge/Sub Container.png"
-          alt=""
-          class="absolute w-[110px] md:w-[130px] lg:w-[150px] z-30 md:top-[20%]  translate-y-[-25%]
-          md:left-1/2 md:-translate-x- md:-translate-y-[20px] top-[90%] left-0 "
-        /> -->
-
         <div class="flex flex-col md:flex-row items-center md:items-start">
           <div class="order-2 md:order-1 flex-1 text-left space-y-4">
             <div
@@ -166,38 +177,59 @@
                 </button>
               </div>
 
-              <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 md:flex md:space-x-8 justify-center md:justify-start mt-6">
-
-
-
-
-                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px]">
-                  <h1 class="text-2xl md:text-3xl font-semibold text-center md:text-left"> 200+</h1>
-                  <p  class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left">  Happy Customers</p>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-2 gap-4 md:flex md:space-x-8 justify-center md:justify-start mt-6"
+              >
+                <div
+                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px]"
+                >
+                  <h1
+                    class="text-2xl md:text-3xl font-semibold text-center md:text-left"
+                  >
+                    200+
+                  </h1>
+                  <p
+                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left"
+                  >
+                    Happy Customers
+                  </p>
                 </div>
 
-
-
-                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px]">
-                  <h1  class="text-2xl md:text-3xl font-semibold text-center md:text-left"> 10k+</h1>
-                  <p  class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left">  Properties For Clients</p>
+                <div
+                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px]"
+                >
+                  <h1
+                    class="text-2xl md:text-3xl font-semibold text-center md:text-left"
+                  >
+                    10k+
+                  </h1>
+                  <p
+                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left"
+                  >
+                    Properties For Clients
+                  </p>
                 </div>
 
-
-
-                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px] col-span-2 md:col-span-1 ">
-                  <h1 class="text-2xl md:text-3xl font-semibold text-center md:text-left">16+</h1>
-                  <p class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left">Years of Experience</p>
+                <div
+                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-lg w-full sm:w-[200px] col-span-2 md:col-span-1"
+                >
+                  <h1
+                    class="text-2xl md:text-3xl font-semibold text-center md:text-left"
+                  >
+                    16+
+                  </h1>
+                  <p
+                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center md:text-left"
+                  >
+                    Years of Experience
+                  </p>
                 </div>
-
-
-
-
               </div>
             </div>
           </div>
+
           <div
-            class="relative order-1 md:order-2 z-30 flex-1 bg-dark bg-hero-container bg-no-repeat bg-cover bg-center"
+            class="relative order-1 md:order-2 z-30 flex-1 bg-hero-container bg-no-repeat bg-cover bg-center"
           >
             <img
               src="assets/imges/hero-imge/Container.png"
@@ -212,6 +244,7 @@
             />
           </div>
         </div>
+
         <img
           src="assets/imges/hero-imge/Sub Container.png"
           alt=""
@@ -220,54 +253,82 @@
       </section>
 
       <!-- Services Section  -->
-      <section class=" bg-[#0f0f0f]  p-1 md:p-5   ">
-        
-        <div class=" bg-dark  rounded-xl p-1 md:p-3 md:m-2 md:mx-3 m-1 mx-5" >
-      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-[#0f0f0f] rounded-xl p-3 md:p-5 m-1 mx-1">
+      <section class="bg-[#0f0f0f] p-1 md:p-5">
+        <div class="bg-dark rounded-xl p-1 md:p-3 md:m-2 md:mx-3 m-1 mx-5">
+          <div
+            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-[#0f0f0f] rounded-xl p-3 md:p-5 m-1 mx-1"
+          >
+            <!-- Card 1 -->
+            <div class="bg-dark rounded-xl p-6 relative h-44">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="assets/imges/services-icons/Icon Container.png"
+                  alt="Find Home"
+                  class="w-16 h-16"
+                />
+              </div>
+              <h3 class="text-white text-center text-sm md:text-lg font-medium">
+                Find Your Dream Home
+              </h3>
+              <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"
+                ><img src="assets/imges/services-icons/Icon.png" alt=""
+              /></span>
+            </div>
 
-
-          <!-- Card 1 -->
-          <div class="bg-dark rounded-xl p-6 relative h-44">
-            <div class="flex justify-center mb-4">
-              <img src="assets/imges/services-icons/Icon Container.png"alt="Find Home" class="w-16 h-16"></div>
-            <h3 class="text-white text-center text-sm md:text-lg font-medium">Find Your Dream Home</h3>
-            <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"><img src="assets/imges/services-icons/Icon.png" alt=""/></span>
+            <!-- Card 2 -->
+            <div class="bg-dark rounded-xl p-6 relative h-44">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="assets/imges/services-icons/Icon Container (1).png"
+                  alt="Unlock Property Value"
+                  class="w-16 h-16"
+                />
+              </div>
+              <h3 class="text-white text-center text-sm md:text-lg font-medium">
+                Unlock Property Value
+              </h3>
+              <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"
+                ><img src="assets/imges/services-icons/Icon.png" alt=""
+              /></span>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-dark rounded-xl p-6 relative h-44">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="assets/imges/services-icons/Icon Container (2).png"
+                  alt="Effortless Property Management"
+                  class="w-16 h-16"
+                />
+              </div>
+              <h3 class="text-white text-center text-sm md:text-lg font-medium">
+                Effortless Property Management
+              </h3>
+              <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"
+                ><img src="assets/imges/services-icons/Icon.png" alt=""
+              /></span>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-dark rounded-xl p-6 relative h-44">
+              <div class="flex justify-center mb-4">
+                <img
+                  src="assets/imges/services-icons/Icon Container (3).png"
+                  alt="Smart Investments"
+                  class="w-16 h-16"
+                />
+              </div>
+              <h3 class="text-white text-center text-sm md:text-lg font-medium">
+                Smart Investments, Informed Decisions
+              </h3>
+              <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"
+                ><img src="assets/imges/services-icons/Icon.png" alt=""
+              /></span>
+            </div>
           </div>
-
-          <!-- Card 2 -->
-          <div class="bg-dark rounded-xl p-6 relative h-44">
-            <div class="flex justify-center mb-4">
-              <img src="assets/imges/services-icons/Icon Container (1).png"alt="Unlock Property Value"class="w-16 h-16"/></div>
-            <h3 class="text-white text-center text-sm md:text-lg font-medium">Unlock Property Value</h3>
-            <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"><img src="assets/imges/services-icons/Icon.png" alt=""/></span>
-          </div>
-          <!-- Card 3 -->
-          <div class="bg-dark rounded-xl p-6 relative h-44">
-            <div class="flex justify-center mb-4">
-              <img src="assets/imges/services-icons/Icon Container (2).png" alt="Effortless Property Management" class="w-16 h-16"/></div>
-            <h3 class="text-white text-center text-sm md:text-lg font-medium">Effortless Property Management</h3>
-            <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"><img src="assets/imges/services-icons/Icon.png" alt=""/></span>
-          </div>
-          <!-- Card 4 -->
-          <div class="bg-dark rounded-xl p-6 relative h-44">
-            <div class="flex justify-center mb-4">
-              <img  src="assets/imges/services-icons/Icon Container (3).png"  alt="Smart Investments"  class="w-16 h-16"/></div>
-            <h3 class="text-white text-center text-sm md:text-lg font-medium">Smart Investments, Informed Decisions</h3>
-            <span class="absolute h-7 w-7 top-4 right-4 text-gray-500"><img src="assets/imges/services-icons/Icon.png" alt=""/></span>
-          </div>
-
-</div>
-      </div>
-
-
-
-
+        </div>
       </section>
 
       <!-- Properties -->
-      <section
-        class="bg-[#0f0f0f] text-white py-16 px-3 md:px-6 lg:px-20 relative"
-      >
+      <section class="bg-[#0f0f0f] text-white py-16 px-3 md:px-6 relative">
         <!-- <img
           src="assets/imges/featured-cards/Abstract Design.png"
           alt="Abstract Design"
@@ -277,7 +338,9 @@
         <div
           class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10"
         >
-          <div class="pl-4.5 md:pl-15">
+          <div
+            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+          >
             <h2 class="text-3xl font-bold mb-2">Featured Properties</h2>
             <p class="text-gray-400 max-w-xl">
               Explore our handpicked selection of featured properties. Each
@@ -286,25 +349,20 @@
               information.
             </p>
           </div>
-          <!-- <button
-            class="bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
-          >
-            View All Properties
-          </button> -->
           <button
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
+            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
           >
             View All Properties
           </button>
         </div>
 
         <!-- Cards -->
-        <div class="swiper mySwiper">
+        <div class="swiper swiper-properties">
           <div class="swiper-wrapper">
             <!-- Card  1 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/hamburg.jpg"
@@ -312,10 +370,10 @@
                   class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] object-cover mx-auto"
                 />
 
-                <h3 class="text-lg font-semibold mb-2">
+                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
                   Rustic Retreat Cottage
                 </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs">
+                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
                   An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
                   <a href="#" class="text-white/90 underline">Read More</a>
@@ -344,7 +402,7 @@
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
-                  <div>
+                  <div class="ms-[11px]">
                     <p class="text-gray-400 text-sm">Price</p>
                     <p class="text-lg">$550,000</p>
                   </div>
@@ -360,7 +418,7 @@
             <!-- Card 2 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/architecturere.jpg"
@@ -416,7 +474,7 @@
             <!-- Card 3 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/test.jpg"
@@ -449,14 +507,7 @@
                   >
                     <i class="fa-solid fa-house"></i> Villa
                   </span>
-
-                  <!-- <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-building"></i> 1-Villa
-                  </span> -->
                 </div>
-
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div>
@@ -475,7 +526,7 @@
             <!-- Card 4 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/building.jpg"
@@ -531,7 +582,7 @@
             <!-- Card 5 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/praha.jpg"
@@ -585,7 +636,7 @@
             <!-- Card 6 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/xian.jpg"
@@ -641,7 +692,7 @@
             <!-- Card 7 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/architecture.jpg"
@@ -695,7 +746,7 @@
             <!-- Card 8 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
+                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
               >
                 <img
                   src="assets/imges/featured-cards/abuilding.jpg"
@@ -753,15 +804,20 @@
           <div
             class="hidden md:flex justify-between items-center mt-10 text-gray-400"
           >
-            <p id="counter-desktop"></p>
-            <div class="flex gap-2">
+            <p
+              id="counter-properties-desktop"
+              class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+            ></p>
+            <div
+              class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
+            >
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -770,7 +826,7 @@
 
           <!-- Pagination mobile -->
           <div
-            class="flex justify-between items-center  border-t border-t-[rgb(38,38,38)]  text-gray-400 md:hidden"
+            class="flex justify-between items-center border-t border-t-[rgb(38,38,38)] text-gray-400 md:hidden"
           >
             <button
               class="bg-transparent border border-gray-600 px-5 py-2 mt-4 rounded-lg hover:bg-gray-800 transition"
@@ -779,13 +835,13 @@
             </button>
             <div class="flex items-center gap-4 ml-auto mt-4">
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
-              <p id="counter-mobile" class="text-sm"></p>
+              <p id="counter-properties-mobile" class="text-sm"></p>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -795,7 +851,7 @@
       </section>
 
       <!--  Testimonials -->
-      <section class="bg-[#0f0f0f] text-white py-16 px-6 lg:px-20 relative">
+      <section class="bg-[#0f0f0f] text-white py-16 px-3 lg:px-6 relative">
         <!-- <img
           src="assets/imges/featured-cards/Abstract Design.png"
           alt="Abstract Design"
@@ -804,7 +860,9 @@
         <div
           class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10"
         >
-          <div class="pl-4.5 md:pl-15">
+          <div
+            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+          >
             <h2 class="text-3xl font-bold mb-2">What Our Clients Say</h2>
             <p class="text-gray-400 max-w-xl">
               Read the success stories and heartfelt testimonials from our
@@ -813,21 +871,21 @@
             </p>
           </div>
           <button
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
+            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
           >
             View All Testimonials
           </button>
         </div>
 
         <!-- Cards -->
-        <div class="swiper mySwiper">
+        <div class="swiper swiper-testimonials">
           <div class="swiper-wrapper">
             <!-- Card 1 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -906,9 +964,9 @@
             <!-- Card 2 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -987,9 +1045,9 @@
             <!-- Card 3 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1068,9 +1126,9 @@
             <!-- Card 4 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1149,9 +1207,9 @@
             <!-- Card 5 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1230,9 +1288,9 @@
             <!-- Card 6 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1311,9 +1369,9 @@
             <!-- Card 7 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1392,9 +1450,9 @@
             <!-- Card 8 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1473,9 +1531,9 @@
             <!-- Card 9 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1554,9 +1612,9 @@
             <!-- Card 10 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1635,9 +1693,9 @@
             <!-- Card 11 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
               >
-                <div class="text-left">
+                <div class="text-left ml-8">
                   <div class="flex flex-row items-start">
                     <div
                       class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
@@ -1717,15 +1775,20 @@
           <div
             class="hidden md:flex justify-between items-center mt-10 text-gray-400"
           >
-            <p id="counter-testimonials-desktop"></p>
-            <div class="flex gap-2">
+            <p
+              id="counter-testimonials-desktop"
+              class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+            ></p>
+            <div
+              class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
+            >
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -1743,13 +1806,13 @@
             </button>
             <div class="flex items-center gap-4 ml-auto mt-4">
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <p id="counter-testimonials-mobile" class="text-sm"></p>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -1759,7 +1822,7 @@
       </section>
 
       <!--  FAQ’s -->
-      <section class="bg-[#0f0f0f] text-white py-16 px-6 lg:px-20 relative">
+      <section class="bg-[#0f0f0f] text-white py-16 px-3 lg:px-6 relative">
         <!-- <img
           src="assets/imges/featured-cards/Abstract Design.png"
           alt="Abstract Design"
@@ -1768,39 +1831,42 @@
         <div
           class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10"
         >
-          <div class="pl-4.5 md:pl-15">
+          <div
+            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+          >
             <h2 class="text-3xl font-bold mb-2">Frequently Asked Questions</h2>
             <p class="text-gray-400 max-w-xl">
-             Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.
+              Find answers to common questions about Estatein's services,
+              property listings, and the real estate process. We're here to
+              provide clarity and assist you every step of the way.
             </p>
           </div>
           <button
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
+            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
           >
             View All Testimonials
           </button>
         </div>
 
         <!-- Cards -->
-        <div class="swiper mySwiper">
+        <div class="swiper swiper-faqs">
           <div class="swiper-wrapper">
-
-
             <!-- Card 1 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1808,21 +1874,22 @@
               </div>
             </div>
 
-               <!-- Card 2 -->
+            <!-- Card 2 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1830,21 +1897,22 @@
               </div>
             </div>
 
-               <!-- Card 3 -->
+            <!-- Card 3 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1852,21 +1920,22 @@
               </div>
             </div>
 
-               <!-- Card 4 -->
+            <!-- Card 4 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1874,21 +1943,22 @@
               </div>
             </div>
 
-               <!-- Card 5 -->
+            <!-- Card 5 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1896,21 +1966,22 @@
               </div>
             </div>
 
-               <!-- Card 6 -->
+            <!-- Card 6 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1918,21 +1989,22 @@
               </div>
             </div>
 
-               <!-- Card 7 -->
+            <!-- Card 7 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1940,21 +2012,22 @@
               </div>
             </div>
 
-               <!-- Card 8 -->
+            <!-- Card 8 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1962,45 +2035,48 @@
               </div>
             </div>
 
-               <!-- Card 9 -->
+            <!-- Card 9 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-md h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
+                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
               >
                 <h3 class="text-lg font-semibold mb-4 text-left">
                   How do I search for properties on Estatein?
                 </h3>
                 <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find properties that match your criteria.
+                  Learn how to use our user-friendly search tools to find
+                  properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
                 </div>
               </div>
             </div>
-
-
-
           </div>
 
-      <!-- Pagination taplet,desktop -->
+          <!-- Pagination taplet,desktop -->
           <div
             class="hidden md:flex justify-between items-center mt-10 text-gray-400"
           >
-            <p id="counter-FAQ’s-desktop"></p>
-            <div class="flex gap-2">
+            <p
+              id="counter-FAQ’s-desktop"
+              class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+            ></p>
+            <div
+              class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
+            >
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -2018,233 +2094,20 @@
             </button>
             <div class="flex items-center gap-4 ml-auto mt-4">
               <button
-                class="prev w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <p id="counter-FAQ’s-mobile" class="text-sm"></p>
               <button
-                class="next w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
           </div>
-
-
         </div>
       </section>
-
-      <!-- <section class="py-16 px-6 lg:px-20 relative">
-        <img
-          src="assets/imges/featured-cards/Abstract Design.png"
-          alt="Abstract Design"
-          class="absolute top-8 left-0 w-20 md:w-28 ml-12 mb-5"
-        />
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10"
-        >
-          <div>
-            <h2 class="text-3xl font-bold mb-2">Featured Properties</h2>
-            <p class="text-gray-400 max-w-xl">
-              Explore our handpicked selection of featured properties. Each
-              listing offers a glimpse into exceptional homes and investments
-              available through Estatein. Click "View Details" for more
-              information.
-            </p>
-          </div>
-          <button
-            class="bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
-          >
-            View All Properties
-          </button>
-        </div>
-
-        <div class="swiper featured-properties-swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div
-                class="bg-dark-800 border border-gray-700 rounded-2xl overflow-hidden p-5 h-full"
-              >
-                <img
-                  src="assets/imges/featured-cards/Image.png"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full h-52 object-cover"
-                />
-                <h3 class="text-lg font-semibold mb-2">
-                  Seaside Serenity Villa
-                </h3>
-                <p class="text-gray-400 text-sm mb-4">
-                  A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
-                  neighborhood...
-                  <a href="#" class="text-gray-300 underline">Read More</a>
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
-                </div>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="font-bold text-lg">$550,000</p>
-                  </div>
-                  <button
-                    class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-dark-800 border border-gray-700 rounded-2xl overflow-hidden p-5 h-full"
-              >
-                <img
-                  src="assets/imges/featured-cards/Image (1).png"
-                  alt="Metropolitan Haven"
-                  class="rounded-xl mb-4 w-full h-52 object-cover"
-                />
-                <h3 class="text-lg font-semibold mb-2">Metropolitan Haven</h3>
-                <p class="text-gray-400 text-sm mb-4">
-                  A chic and fully-furnished 2-bedroom apartment with panoramic
-                  city views...
-                  <a href="#" class="text-gray-300 underline">Read More</a>
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 2-Bedroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 2-Bathroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-building"></i> Apartment
-                  </span>
-                </div>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="font-bold text-lg">$550,000</p>
-                  </div>
-                  <button
-                    class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div
-                class="bg-dark-800 border border-gray-700 rounded-2xl overflow-hidden p-5 h-full"
-              >
-                <img
-                  src="assets/imges/featured-cards/Image (2).png"
-                  alt="Rustic Retreat Cottage"
-                  class="rounded-xl mb-4 w-full h-52 object-cover"
-                />
-                <h3 class="text-lg font-semibold mb-2">
-                  Rustic Retreat Cottage
-                </h3>
-                <p class="text-gray-400 text-sm mb-4">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
-                  community...
-                  <a href="#" class="text-gray-300 underline">Read More</a>
-                </p>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 3-Bedroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
-                  <span
-                    class="flex items-center gap-2 bg-dark-700 text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Cottage
-                  </span>
-                </div>
-                <div class="flex justify-between items-center">
-                  <div>
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="font-bold text-lg">$550,000</p>
-                  </div>
-                  <button
-                    class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next !text-white after:!text-xl"></div>
-          <div class="swiper-button-prev !text-white after:!text-xl"></div>
-          <div class="swiper-pagination !relative !mt-8"></div>
-        </div>
-      </section> -->
-      <!-- Explore Properties Section -->
-      <!-- <section
-        class="relative bg-cover bg-center py-20 px-8 text-white"
-        style="
-          background-image: url(&quot;assets/imges/featured-cards/Image (2).png&quot;);
-        "
-      >
-     
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-        >
-          <div class="md:w-2/3">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">
-              Start Your Real Estate Journey Today
-            </h2>
-            <p class="text-gray-200 max-w-xl">
-              Your dream property is just a click away. Whether you're looking
-              for a new home, a strategic investment, or expert real estate
-              advice, Estatein is here to assist you every step of the way. Take
-              the first step towards your real estate goals and explore our
-              available properties or get in touch with our team for
-              personalized assistance.
-            </p>
-          </div>
-
-          <div class="md:w-auto">
-            <a
-              href="#"
-              class="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg text-white font-medium transition"
-            >
-              Explore Properties
-            </a>
-          </div>
-        </div>
-
-       
-        <div class="absolute inset-0 bg-black/50 -z-10"></div>
-      </section> -->
 
       <!-- CTA -->
       <section
@@ -2258,14 +2121,17 @@
             right center,
             center;
           background-repeat: no-repeat, no-repeat, no-repeat;
-          background-size: auto 100%, auto 100%, cover;
+          background-size:
+            auto 100%,
+            auto 100%,
+            cover;
         "
       >
         <div
           class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
         >
           <div class="md:w-2/3">
-            <h2 class="text-3xl md:text-4xl font-semibold md:font-bold  mb-4">
+            <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
               Start Your Real Estate Journey Today
             </h2>
             <p class="text-[rgb(153,153,153)] max-w-xl">
@@ -2278,20 +2144,14 @@
             </p>
           </div>
 
-
-           <!--  Button -->
-                <div class=" w-full md:w-auto">
-                  <button
-                    class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto  text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
-                    Explore Properties
-                  </button>
-                </div>
-
-        
-
-
-
+          <!--  Button -->
+          <div class="w-full md:w-auto">
+            <button
+              class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+            >
+              Explore Properties
+            </button>
+          </div>
         </div>
 
         <!-- Overlay -->
@@ -2307,39 +2167,36 @@
         <!-- Logo + Email -->
         <div class="col-span-2">
           <div class="flex items-center space-x-2">
+            <a href="#">
+              <picture>
+                <!-- big -->
+                <source
+                  srcset="assets/imges/logo/logo-Desktop.png"
+                  media="(min-width: 1024px)"
+                  class="object-contain"
+                />
+                <!-- meduim -->
+                <source
+                  srcset="assets/imges/logo/logo-Laptop.png"
+                  media="(min-width: 768px)"
+                  class="object-contain"
+                />
+                <!-- small defult -->
+                <img
+                  src="assets/imges/logo/logo-Mobile.png"
+                  alt="logo"
+                  class="object-contain"
+                />
+              </picture>
+            </a>
+          </div>
+          <!-- <div class="flex items-center space-x-2">
             <a href="#"
               ><img
                 src="assets/imges/logo/Logo.png"
                 alt="logo"
                 class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[110px] lg:h-[50px] object-contain"
             /></a>
-          </div>
-
-          <!-- <div class="flex items-center bg-dark50 rounded-lg overflow-hidden">
-
-            <div class="flex items-center px-1 pl-2">
-              <img
-                src="assets/imges/form-icons/Icon (10).png"
-                alt="Email Icon"
-                class="w-[24px] h-[24px] opacity-70"
-              />
-            </div>
-
-
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              class="bg-dark50 ml-2 pr-2 py-2 text-sm text-gray-300 focus:outline-none w-[150px]"
-            />
-
-
-            <button class="px-4 py-2 bg-dark50 ">
-              <img
-                src="assets/imges/form-icons/Icon (5).png"
-                alt="Send Icon"
-                class="w-[24px] h-[24px]"
-              />
-            </button>
           </div> -->
 
           <div
@@ -2357,7 +2214,7 @@
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              class="py-2 text-base md:text-sm  md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
             />
             <button type="submit" class="pr-4 py-2 transition duration-300">
               <img
@@ -2372,7 +2229,7 @@
         <!-- Links -->
         <div>
           <div class="border-e-2 border-e-[#303030] md:border-none">
-            <h3 class="font-semibold mb-4 text-gray-400  md:text-white ">Home</h3>
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
             <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
               <li><a href="#">Hero Section</a></li>
               <li><a href="#">Features</a></li>
@@ -2384,8 +2241,12 @@
         </div>
 
         <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
-          <h3 class="font-semibold mb-4 text-gray-400  md:text-white">About Us</h3>
-          <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0">
+          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+            About Us
+          </h3>
+          <ul
+            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
+          >
             <li><a href="#">Our Story</a></li>
             <li><a href="#">Our Works</a></li>
             <li><a href="#">How It Works</a></li>
@@ -2398,7 +2259,11 @@
           <div class="mr-5 border-t-2 border-t-[#303030] md:border-none">
             <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
               <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
-              <h3 class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400  md:text-white">Properties</h3>
+              <h3
+                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+              >
+                Properties
+              </h3>
               <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Categories</a></li>
@@ -2410,8 +2275,12 @@
 
         <div>
           <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
-            <h3 class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400  md:text-white">Services</h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm ">
+            <h3
+              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+            >
+              Services
+            </h3>
+            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
               <li><a href="#">Valuation Mastery</a></li>
               <li><a href="#">Strategic Marketing</a></li>
               <li><a href="#">Negotiation Wizardry</a></li>
@@ -2426,7 +2295,9 @@
             class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
           >
             <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
-            <h3 class="font-semibold mb-4 text-gray-400  md:text-white">Contact Us</h3>
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+              Contact Us
+            </h3>
             <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
               <li><a href="#">Contact Form</a></li>
               <li><a href="#">Our Offices</a></li>
@@ -2436,6 +2307,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Bottom Footer -->
     <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
       <div
@@ -2475,133 +2347,6 @@
       </div>
     </div>
 
-    <!-- <footer class="bg-dark py-12 px-6">
-  <div
-    class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-gray-800 pb-10"
-  >
-    <div class="col-span-2">
-      <div class="flex items-center space-x-2">
-        <a href="#">
-          <img
-            src="assets/imges/logo/Logo.png"
-            alt="logo"
-            class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[110px] lg:h-[50px] object-contain"
-          />
-        </a>
-      </div>
-
-      <div
-        class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-full md:w-[250px] h-[50px] mt-6"
-      >
-        <div class="flex items-center px-2">
-          <img
-            src="assets/imges/form-icons/Icon (10).png"
-            alt="Email Icon"
-            class="w-[28px] h-[24px] md:w-[22px] md:h-[22px] opacity-70 mx-1 md:mx-2"
-          />
-        </div>
-        <label for="email" class="sr-only">Email</label>
-        <input
-          id="email"
-          type="email"
-          placeholder="Enter Your Email"
-          class="py-2 text-base md:text-sm pl-0.5 md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
-        />
-        <button type="submit" class="pr-4 py-2 transition duration-300">
-          <img
-            src="assets/imges/form-icons/Icon (5).png"
-            alt="Send Icon"
-            class="w-[32px] ml-[80px] md:ml-ml-0 md:w-[22px] h-[22px]"
-          />
-        </button>
-      </div>
-    </div>
-    <div class="border-r border-[#303030] md:border-none pr-4">
-      <h3 class="font-semibold mb-4">Home</h3>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li><a href="#">Hero Section</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Properties</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">FAQ’s</a></li>
-      </ul>
-    </div>
-
-    <div class="border-b border-[#303030] md:border-none pb-4">
-      <h3 class="font-semibold mb-4">About Us</h3>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Our Works</a></li>
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Our Clients</a></li>
-      </ul>
-    </div>
-
-    <div class="border-t border-[#303030] md:border-none pt-4">
-      <h3 class="font-semibold mb-4">Properties</h3>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
-    </div>
-
-  <div class="border-l border-[#303030] md:border-none pl-4 md:pl-0">
-  <div class="border-b border-[#303030] md:border-none pb-5 md:pb-0">
-    <h3 class="font-semibold mb-4">Services</h3>
-    <ul class="space-y-2 text-gray-400 text-sm">
-      <li><a href="#">Valuation Mastery</a></li>
-      <li><a href="#">Strategic Marketing</a></li>
-      <li><a href="#">Negotiation Wizardry</a></li>
-      <li><a href="#">Closing Success</a></li>
-      <li><a href="#">Property Management</a></li>
-    </ul>
-  </div>
-</div>
-
-
-    <div class="border-t border-[#303030] md:border-none pt-5">
-      <h3 class="font-semibold mb-4">Contact Us</h3>
-      <ul class="space-y-2 text-gray-400 text-sm">
-        <li><a href="#">Contact Form</a></li>
-        <li><a href="#">Our Offices</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div
-    class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between mt-6 text-gray-500 text-sm"
-  >
-    <div class="flex items-center gap-6">
-      <p>©2023 Estatein. All Rights Reserved.</p>
-      <a href="#" class="hover:text-gray-300">Terms & Conditions</a>
-    </div>
-
-    <div class="flex gap-2 mt-4 md:mt-0">
-      <a
-        href="#"
-        class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
-        ><i class="fa-brands fa-facebook-f text-white"></i
-      ></a>
-      <a
-        href="#"
-        class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
-        ><i class="fa-brands fa-linkedin-in text-white"></i
-      ></a>
-      <a
-        href="#"
-        class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
-        ><i class="fa-brands fa-twitter text-white"></i
-      ></a>
-      <a
-        href="#"
-        class="bg-[rgb(50,50,50)] w-8 h-8 flex items-center justify-center rounded-full transition hover:bg-gray-600"
-        ><i class="fa-brands fa-youtube text-white"></i
-      ></a>
-    </div>
-  </div>
-</footer> -->
-
     <!-- Fontawesome Js -->
     <script src="assets/js/all.min.js"></script>
     <script>
@@ -2631,67 +2376,6 @@
     <!-- <script>
       const swiper = new Swiper(".swiper", {
         loop: true,
-        // pagination: {
-        //   el: ".swiper-pagination",
-        //   clickable: true,
-        // },
-        navigation: { nextEl: ".next", prevEl: ".prev" },
-        slidesPerGroup: 3,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-            slidesPerGroup: 1,
-            slidesOffsetBefore: 12,
-            slidesOffsetAfter: 12,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            slidesPerGroup: 2,
-            slidesOffsetBefore: 20,
-            slidesOffsetAfter: 20,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: -25,
-            slidesPerGroup: 3,
-            slidesOffsetBefore: 60,
-            slidesOffsetAfter: 20,
-          },
-        },
-        on: {
-          init: function () {
-            updateCounter(this);
-          },
-          slideChange: function () {
-            updateCounter(this);
-          },
-        },
-      });
-
-      function updateCounter(swiper) {
-        const slidesPerView =
-          typeof swiper.params.slidesPerView === "number"
-            ? swiper.params.slidesPerView
-            : swiper.currentBreakpoint === "1024"
-              ? 3
-              : swiper.currentBreakpoint === "768"
-                ? 2
-                : 1;
-
-        const totalPages = Math.ceil(swiper.slides.length / slidesPerView);
-        const currentPage = Math.floor(swiper.realIndex / slidesPerView) + 1;
-
-        document.getElementById("counter").textContent = `${currentPage
-          .toString()
-          .padStart(2, "0")} of ${totalPages}`;
-      }
-    </script> -->
-
-    <!-- <script>
-      const swiper = new Swiper(".swiper", {
-        loop: true,
         navigation: { nextEl: ".next", prevEl: ".prev" },
         slidesPerGroup: 3,
         breakpoints: {
@@ -2704,17 +2388,52 @@
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 200,
+            slidesPerGroup: 1,
+            slidesOffsetBefore: 10,
+            slidesOffsetAfter: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 300,
             slidesPerGroup: 2,
             slidesOffsetBefore: 20,
             slidesOffsetAfter: 20,
           },
-          1024: {
+          1366: {
             slidesPerView: 3,
-            spaceBetween: -25,
+            spaceBetween: 5,
             slidesPerGroup: 3,
-            slidesOffsetBefore: 60,
+            slidesOffsetBefore: 10,
             slidesOffsetAfter: 20,
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 5,
+            slidesPerGroup: 3,
+            slidesOffsetBefore: 40,
+            slidesOffsetAfter: 20,
+          },
+          1920: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 4,
+            slidesOffsetBefore: 20,
+            slidesOffsetAfter: 20,
+          },
+            1536: {
+            slidesPerView: 3,
+            spaceBetween: -75,
+            slidesPerGroup: 3,
+            slidesOffsetBefore: 80,
+            slidesOffsetAfter: 80,
+          },
+            2560: {
+            slidesPerView: 5,
+            spaceBetween: -75,
+            slidesPerGroup: 5,
+            slidesOffsetBefore: 80,
+            slidesOffsetAfter: 80,
           },
         },
         on: {
@@ -2730,19 +2449,15 @@
       function updateCounter(swiper) {
         const slidesPerView =
           typeof swiper.params.slidesPerView === "number"
-            ? swiper.params.slidesPerView
-            : swiper.currentBreakpoint === "1024"
-              ? 3
-              : swiper.currentBreakpoint === "768"
-                ? 2
-                : 1;
+          ? swiper.params.slidesPerView: swiper.currentBreakpoint === "1024"
+          ? 3: swiper.currentBreakpoint === "768"
+          ? 2: 1;
 
         const totalPages = Math.ceil(swiper.slides.length / slidesPerView);
         const currentPage = Math.floor(swiper.realIndex / slidesPerView) + 1;
 
         const text = `${currentPage.toString().padStart(2, "0")} of ${totalPages}`;
 
-        // تحديث العدادات الاثنين
         const counterMobile = document.getElementById("counter-mobile");
         const counterDesktop = document.getElementById("counter-desktop");
 
@@ -2752,44 +2467,39 @@
     </script> -->
 
     <script>
-      const swiper = new Swiper(".swiper", {
-        loop: true,
-        navigation: { nextEl: ".next", prevEl: ".prev" },
-        slidesPerGroup: 3,
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-            spaceBetween: 16,
-            slidesPerGroup: 1,
-            slidesOffsetBefore: 10,
-            slidesOffsetAfter: 10,
+      function initSwiper(
+        swiperClass,
+        counterDesktopId,
+        counterMobileId,
+        prevBtn,
+        nextBtn
+      ) {
+        return new Swiper(swiperClass, {
+          loop: true,
+          navigation: { nextEl: nextBtn, prevEl: prevBtn },
+          slidesPerGroup: 3,
+          breakpoints: {
+            0: {slidesPerView: 1,spaceBetween: 16,slidesPerGroup: 1,slidesOffsetBefore: 10,slidesOffsetAfter: 10,},
+            768: {slidesPerView: 2,spaceBetween: 200,slidesPerGroup: 1,slidesOffsetBefore: 10,slidesOffsetAfter: 10,},
+            1024: {slidesPerView: 3,spaceBetween: 300,slidesPerGroup: 2,slidesOffsetBefore: 20,slidesOffsetAfter: 20,},
+            1366: {slidesPerView: 3,spaceBetween: 5,slidesPerGroup: 3,slidesOffsetBefore: 10,slidesOffsetAfter: 20,},
+            1440: {slidesPerView: 3,spaceBetween: 5,slidesPerGroup: 3,slidesOffsetBefore: 40,slidesOffsetAfter: 20,},
+            1920: {slidesPerView: 4,spaceBetween: 10,slidesPerGroup: 4,slidesOffsetBefore: 20,slidesOffsetAfter: 20,},
+            1536: {slidesPerView: 3,spaceBetween: -75,slidesPerGroup: 3,slidesOffsetBefore: 80,slidesOffsetAfter: 80,},
+            2560: { slidesPerView: 5, spaceBetween: -75, slidesPerGroup: 5, slidesOffsetBefore: 80, slidesOffsetAfter: 80,},
           },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-            slidesPerGroup: 2,
-            slidesOffsetBefore: 20,
-            slidesOffsetAfter: 20,
+          on: {
+            init: function () {
+              updateCounter(this, counterDesktopId, counterMobileId);
+            },
+            slideChange: function () {
+              updateCounter(this, counterDesktopId, counterMobileId);
+            },
           },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: -25,
-            slidesPerGroup: 3,
-            slidesOffsetBefore: 60,
-            slidesOffsetAfter: 20,
-          },
-        },
-        on: {
-          init: function () {
-            updateCounter(this);
-          },
-          slideChange: function () {
-            updateCounter(this);
-          },
-        },
-      });
+        });
+      }
 
-      function updateCounter(swiper) {
+      function updateCounter(swiper, desktopId, mobileId) {
         const slidesPerView =
           typeof swiper.params.slidesPerView === "number"
             ? swiper.params.slidesPerView
@@ -2804,16 +2514,136 @@
 
         const text = `${currentPage.toString().padStart(2, "0")} of ${totalPages}`;
 
-        const counterMobile = document.getElementById(
-          "counter-testimonials-mobile"
-        );
-        const counterDesktop = document.getElementById(
-          "counter-testimonials-desktop"
-        );
+        const counterMobile = document.getElementById(mobileId);
+        const counterDesktop = document.getElementById(desktopId);
 
         if (counterMobile) counterMobile.textContent = text;
         if (counterDesktop) counterDesktop.textContent = text;
       }
+
+      const swiperProperties = initSwiper(
+        ".swiper-properties",
+        "counter-properties-desktop",
+        "counter-properties-mobile",
+        ".prev-properties",
+        ".next-properties"
+    // propertiesBreakpoints
+      );
+
+      const swiperTestimonials = initSwiper(
+        ".swiper-testimonials",
+        "counter-testimonials-desktop",
+        "counter-testimonials-mobile",
+        ".prev-testimonials",
+        ".next-testimonials"
+        // testimonialsBreakpoints
+      );
+
+      const swiperFaqs = initSwiper(
+        ".swiper-faqs",
+        "counter-FAQ’s-desktop",
+        "counter-FAQ’s-mobile",
+        ".prev-faqs",
+        ".next-faqs"
+    // faqBreakpoints
+
+      );
     </script>
+
+    <!-- <script>
+      function initSwiper(
+        swiperClass,
+        counterDesktopId,
+        counterMobileId,
+        prevBtn,
+        nextBtn
+      ) {
+        return new Swiper(swiperClass, {
+          loop: true,
+          navigation: {
+            nextEl: nextBtn,
+            prevEl: prevBtn,
+          },
+          slidesPerGroup: 3,
+          breakpoints: {
+
+            0:    { slidesPerView: 1, spaceBetween: 16, slidesPerGroup: 1 },
+            768:  { slidesPerView: 2, spaceBetween: 200, slidesPerGroup: 1 },
+            1024: { slidesPerView: 3, spaceBetween: 300, slidesPerGroup: 2 },
+            1366: { slidesPerView: 3, spaceBetween: 5, slidesPerGroup: 3 },
+            1440: { slidesPerView: 3, spaceBetween: 5, slidesPerGroup: 3 },
+            1536: { slidesPerView: 3, spaceBetween: -75, slidesPerGroup: 3 },
+            1920: { slidesPerView: 4, spaceBetween: 10, slidesPerGroup: 4 },
+            2560: { slidesPerView: 5, spaceBetween: -75, slidesPerGroup: 5 },
+          },
+          on: {
+            init: function () {
+              updateCounter(this, counterDesktopId, counterMobileId);
+            },
+            slideChange: function () {
+              updateCounter(this, counterDesktopId, counterMobileId);
+            },
+          },
+        });
+      }
+
+      function updateCounter(swiper, desktopId, mobileId) {
+        const slidesPerView =
+          typeof swiper.params.slidesPerView === "number"
+            ? swiper.params.slidesPerView
+            : 1;
+
+        const totalPages = Math.ceil(swiper.slides.length / slidesPerView);
+        const currentPage = Math.floor(swiper.realIndex / slidesPerView) + 1;
+
+        const text = `${currentPage.toString().padStart(2, "0")} of ${totalPages}`;
+
+        const counterMobile = document.getElementById(mobileId);
+        const counterDesktop = document.getElementById(desktopId);
+
+        if (counterMobile) counterMobile.textContent = text;
+        if (counterDesktop) counterDesktop.textContent = text;
+      }
+    </script> -->
+  
+    
+  
+  <!-- <script>
+  function initSwiper(swiperClass, breakpoints) {
+    return new Swiper(swiperClass, {
+      loop: true,
+      breakpoints: breakpoints,
+    });
+  }
+
+  const propertiesBreakpoints = {
+    0:    { slidesPerView: 1, spaceBetween: 16, slidesPerGroup: 1 },
+    768:  { slidesPerView: 2, spaceBetween: 30, slidesPerGroup: 1 },
+    1024: { slidesPerView: 3, spaceBetween: 40, slidesPerGroup: 2 },
+    1440: { slidesPerView: 3, spaceBetween: 60, slidesPerGroup: 3 },
+    1920: { slidesPerView: 4, spaceBetween: 80, slidesPerGroup: 4 },
+  };
+
+  const testimonialsBreakpoints = {
+    0:    { slidesPerView: 1, spaceBetween: 10 },
+    768:  { slidesPerView: 2, spaceBetween: 20 },
+    1024: { slidesPerView: 2, spaceBetween: 30 },
+    1440: { slidesPerView: 3, spaceBetween: 40 },
+  };
+
+  const faqBreakpoints = {
+    0:    { slidesPerView: 1, spaceBetween: 5 },
+    768:  { slidesPerView: 1, spaceBetween: 10 },
+    1024: { slidesPerView: 2, spaceBetween: 20 },
+    1440: { slidesPerView: 2, spaceBetween: 30 },
+  };
+
+  
+  </script> -->
+  
+  <!-- edit max 1920px section Hero -->
+  <!-- edit max 414px section Properties -->
+  
+  
   </body>
 </html>

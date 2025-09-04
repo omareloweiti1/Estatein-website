@@ -1,4 +1,4 @@
-/* assets/css/input.css أو output.css */
+ 
 @font-face {
   font-family: "Urbanist";
   src: url("../Urbanist/Urbanist-VariableFont_wght.ttf") format("truetype");
@@ -8,15 +8,15 @@
 
 @font-face {
   font-family: "Urbanist";
-  src: url("../Urbanist/Urbanist-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../Urbanist/Urbanist-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
 }
 
- body {
-    font-family: "Urbanist", sans-serif;
-  }
-
+body {
+  font-family: "Urbanist", sans-serif;
+}
 
 @import "tailwindcss";
 
@@ -50,15 +50,26 @@
   --color-dark: #191919;
   --color-dark-50: #0a0a0a;
 
-
   --bg-hero-container: url("assets/imges/hero-imge/Container.png");
 
+  --breakpoint-ipad-m: 768px;
+  --breakpoint-ipad-l: 1024px;
+  --breakpoint-labtop-s: 1366px;
+  --breakpoint-labtop-m: 1440px;
+  --breakpoint-labtop-l: 1536px;
+  --breakpoint-labtop-xl: 1920px;
+  --breakpoint-labtop-xxl: 2560px;
+
+
+
 }
-
-
 
 @layer base {
   .active {
     @apply bg-black/50 rounded-lg;
   }
+  .min-text {
+    @apply text-xs  md:text-sm lg:text-sm 2xl:text-lg font-medium ;
+  }
+
 }
