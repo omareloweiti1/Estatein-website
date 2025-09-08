@@ -52,6 +52,11 @@ body {
 
   --bg-hero-container: url("assets/imges/hero-imge/Container.png");
 
+  --breakpoint-mobile-xs: 375px;
+  --breakpoint-mobile-s: 390px;
+  --breakpoint-mobile-m: 400px;
+
+  
   --breakpoint-ipad-m: 768px;
   --breakpoint-ipad-l: 1024px;
   --breakpoint-labtop-s: 1366px;
@@ -59,6 +64,7 @@ body {
   --breakpoint-labtop-l: 1536px;
   --breakpoint-labtop-xl: 1920px;
   --breakpoint-labtop-xxl: 2560px;
+   --breakpoint-desktop-2xl : 160rem;
 
 
 
