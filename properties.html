@@ -1,0 +1,920 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome CSS -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/output.css" rel="stylesheet" />
+    <title>Estatein Website Properties </title>
+    <link
+      rel="icon"
+      href="assets/imges/logo/logo-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .custom-bg {
+        background-image: url("assets/imges/hero-imge/Container.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-dark text-light transition-colors duration-500">
+    <!-- ====== Header Section ====== -->
+    <header id="topHeader" class="relative transition-all duration-500">
+      <img
+        src="assets/imges/heder-icon/backe-ground.png"
+        class="w-full h-[78px] md:h-[49px] lg:h-[55px] 2xl:h-[63px] object-cover"
+        alt=""
+      />
+      <div
+        class="absolute inset-0 left-[-20px] md:left-0 flex items-center justify-center"
+      >
+        <h3 class="min-text text-center">
+          ✨ Discover Your Dream Property with Estatein
+          <a href="#" class="min-text font-medium underline ml-2">Learn More</a>
+        </h3>
+        <span
+          id="closeHeader"
+          class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 cursor-pointer flex items-center justify-center w-7 h-7 md:w-8 md:h-8 lg:w-8 lg:h-8 bg-[rgba(48,48,48)] rounded-full hover:bg-black/70 transition"
+        >
+          <i
+            class="fa-solid fa-xmark text-xs md:text-sm lg:text-md leading-none"
+          ></i>
+        </span>
+      </div>
+    </header>
+
+    <!-- ====== Navbar Section ====== -->
+    <nav
+      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
+    >
+      <div class="flex items-center space-x-2">
+        <a href="#">
+          <picture>
+            <!-- big -->
+            <source
+              srcset="assets/imges/logo/logo-Desktop.png"
+              media="(min-width: 1024px)"
+              class="object-contain"
+            />
+            <!-- meduim -->
+            <source
+              srcset="assets/imges/logo/logo-Laptop.png"
+              media="(min-width: 768px)"
+              class="object-contain"
+            />
+            <!-- small defult -->
+            <img
+              src="assets/imges/logo/logo-Mobile.png"
+              alt="logo"
+              class="object-contain"
+            />
+          </picture>
+        </a>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul id="navLinks" target="_blank" class="hidden lg:flex space-x-2.5 min-text">
+        <li><a href="#" target="_blank"  class="px-6 py-3 rounded-lg hover:bg-black/50 ">Home</a></li>
+        <li><a href="about-us.html" target="_blank" class="px-6 py-3 rounded-lg hover:bg-black/50">About Us</a></li>
+        <li><a href="properties.html" target="_blank" class="px-6 py-3 rounded-lg hover:bg-black/50 active">Properties</a></li>
+        <li><a href="services.html" target="_blank" class="px-6 py-3 rounded-lg hover:bg-black/50">Services</a></li>
+      </ul>
+
+      <!-- Contact Us (Desktop) -->
+      <a
+        href="contact.html"
+        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
+        >Contact Us</a
+      >
+
+      <!-- Hamburger Menu (Mobile) -->
+      <button id="menuBtn" class="lg:hidden text-3xl">
+        <img src="assets/imges/Icon.png" alt="" srcset="" />
+        <!-- <i class="fa-solid fa-bars "></i> -->
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)]">
+      <a href="#" target="_blank" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
+      <a href="about-us.html" target="_blank" class="block hover:bg-black/50 px-4 py-2 rounded">About Us</a>
+      <a href="properties.html" target="_blank" class="block hover:bg-black/50 px-4 py-2 rounded">Properties</a>
+      <a href="services.html" target="_blank" class="block hover:bg-black/50 px-4 py-2 rounded">Services</a>
+      <a href="contact.html" target="_blank" class="block bg-black/50 px-4 py-2 rounded">Contact Us</a>
+    </div>
+
+    <main>
+        
+        <section class="relative bg-gradient-to-l from-[#0f0f0f] to-[#1a1a1a] text-white py-20 px-6 lg:px-20">
+          <div class="max-w-6xl mx-auto text-center lg:text-left">
+             <h1 class="text-3xl md:text-5xl font-bold mb-6">
+               Find Your <span class="text-[#703BF7]">Dream Property</span>
+             </h1>
+             <p class="text-gray-400 max-w-2xl mb-10">
+               Welcome to Estatein, where your dream property awaits in every corner of our beautiful world. 
+               Explore our curated selection of properties, each offering a unique story and a chance to redefine your life. 
+               With categories to suit every dreamer, your journey begins here.
+             </p>
+         
+             <div class="bg-[#141414] border border-[#2a2a2a] rounded-2xl shadow-lg p-6 md:p-8">
+
+               <!-- <div class="flex flex-col md:flex-row gap-4 items-stretch">
+                 <input 
+                   type="text" 
+                   placeholder="Search For A Property" 
+                   class="flex-1 px-5 py-3 rounded-lg bg-[#1e1e1e] border border-[#2c2c2c] text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] transition"
+                 />
+                 <button class="bg-[#703BF7] hover:bg-[#5d2cd8] transition text-white px-8 py-3 rounded-lg font-medium flex items-center justify-center">
+                   Find Property
+                 </button>
+               </div> -->
+           
+             
+
+              <div class="flex items-center bg-[#1e1e1e] border border-[#2c2c2c] rounded-lg overflow-hidden focus-within:border-[#703BF7] focus-within:ring-1 focus-within:ring-[#703BF7]">
+                <input 
+                  type="text" 
+                  placeholder="Search For A Property" 
+                  class="flex-1 px-5 py-3 bg-transparent text-white placeholder-gray-500 focus:outline-none"
+                />
+                <button class="bg-[#703BF7] hover:bg-[#5d2cd8] px-6 py-3 text-white font-medium">
+                  Find Property
+                </button>
+              </div>
+
+             <!-- Grid for filters -->
+              <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mt-6">
+              
+                <!-- Select with icon -->
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-[#1e1e1e] border border-[#2c2c2c] text-gray-300 px-4 py-3 rounded-lg focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] w-full">
+                    <option>Location</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center px-2 pointer-events-none">
+                    <div class="bg-dark-100 rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-chevron-down text-gray-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-[#1e1e1e] border border-[#2c2c2c] text-gray-300 px-4 py-3 rounded-lg focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] w-full">
+                    <option>Property Type</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center px-2 pointer-events-none">
+                    <div class="bg-dark-100 rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-chevron-down text-gray-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-[#1e1e1e] border border-[#2c2c2c] text-gray-300 px-4 py-3 rounded-lg focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] w-full">
+                    <option>Pricing Range</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center px-2 pointer-events-none">
+                    <div class="bg-dark-100 rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-chevron-down text-gray-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-[#1e1e1e] border border-[#2c2c2c] text-gray-300 px-4 py-3 rounded-lg focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] w-full">
+                    <option>Property Size</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center px-2 pointer-events-none">
+                    <div class="bg-dark-100 rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-chevron-down text-gray-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="relative">
+                  <select
+                    class="appearance-none bg-[#1e1e1e] border border-[#2c2c2c] text-gray-300 px-4 py-3 rounded-lg focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] w-full">
+                    <option>Build Year</option>
+                  </select>
+                  <div
+                    class="absolute inset-y-0 right-2 flex items-center px-2 pointer-events-none">
+                    <div class="bg-dark-100 rounded-full w-8 h-8 flex items-center justify-center">
+                      <i class="fa-solid fa-chevron-down text-gray-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+
+            
+              
+              
+
+          </div>
+        </section>
+
+
+        <!-- Properties -->
+        <section class="bg-[#0f0f0f] text-white py-16 px-3 md:px-6 relative">
+        <img
+          src="assets/imges/featured-cards/stars.png"
+          alt="Abstract Design"
+          class="absolute top-8 left-0 w-20 ipad-m:w-25 xl:w-30 desktop-2xl:w-45  ml-6   ipad-m:ml-8  
+          ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-20 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
+        />
+        <!-- Header -->
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20 "
+        >
+          <div
+            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
+          >
+            <h2 class="text-3xl font-bold mb-2">Featured Properties</h2>
+            <p class="text-gray-400 max-w-xl">
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
+            </p>
+          </div>
+          <button
+            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
+          >
+            View All Properties
+          </button>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-8">
+
+            <!-- Card  1 -->
+              <div class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left">
+                <img
+                  src="assets/imges/featured-cards/hamburg.jpg"
+                  alt="Seaside Serenity Villa"
+                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
+                />
+
+                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
+                  Rustic Retreat Cottage
+                </h3>
+                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
+                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                  community...
+                  <a href="#" class="text-white/90 underline">Read More</a>
+                </p>
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bed"></i> 4-Bedroom
+                  </span>
+
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bath"></i> 3-Bathroom
+                  </span>
+
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-house"></i> Villa
+                  </span>
+                </div>
+
+                <!-- Price + Button -->
+                <div class="flex justify-between items-center">
+                  <div class="ms-[11px]">
+                    <p class="text-gray-400 text-sm">Price</p>
+                    <p class="text-lg">$550,000</p>
+                  </div>
+                <a href="property_details.html"
+                  class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition inline-block">
+                  View Property Details
+                </a>
+
+                </div>
+              </div>
+
+            <!-- Card 2 -->
+              <div class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left">
+                <img
+                  src="assets/imges/featured-cards/architecturere.jpg"
+                  alt="Seaside Serenity Villa"
+                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
+                />
+
+                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
+                  Seaside Serenity Villa
+                </h3>
+                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
+                  A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
+                  neighborhood...
+                  <a href="#" class="text-white/90 underline">Read More</a>
+                </p>
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bed"></i> 3-Bedroom
+                  </span>
+
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bath"></i> 3-Bathroom
+                  </span>
+
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-house"></i> Villa
+                  </span>
+                </div>
+
+                <!-- Price + Button -->
+                <div class="flex justify-between items-center">
+                  <div class="ms-[11px]">
+                    <p class="text-gray-400 text-sm">Price</p>
+                    <p class="text-lg">$550,000</p>
+                  </div>
+                     <a href="property_details.html"
+                  class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition inline-block">
+                  View Property Details
+                </a>
+                </div>
+              </div>
+
+            <!-- Card 3 -->
+              <div class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left">
+                <img
+                  src="assets/imges/featured-cards/test.jpg"
+                  alt="Seaside Serenity Villa"
+                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
+                />
+
+                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
+                  Metropolitan Haven
+                </h3>
+                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
+                  A chic and fully-furnished 2-bedroom apartment with panoramic
+                  city views...
+                  <a href="#" class="text-white/90 underline">Read More</a>
+                </p>
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bed"></i> 2-Bedroom
+                  </span>
+
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-bath"></i> 2-Bathroom
+                  </span>
+                  <span
+                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
+                  >
+                    <i class="fa-solid fa-house"></i> Villa
+                  </span>
+                </div>
+                <!-- Price + Button -->
+                <div class="flex justify-between items-center">
+                  <div class="ms-[11px]">
+                    <p class="text-gray-400 text-sm">Price</p>
+                    <p class="text-lg">$550,000</p>
+                  </div>
+                     <a href="property_details.html"
+                  class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition inline-block">
+                  View Property Details
+                </a>
+                </div>
+              </div>
+
+        
+        </div>
+
+
+        </section>
+
+        <!-- <section class="relative bg-[#0f0f0f] text-white py-20 px-6 lg:px-20">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Make it Happen</h2>
+            <p class="text-gray-400 max-w-3xl mb-10">
+              Ready to take the first step toward your dream property? Fill out the form below, 
+              and our real estate wizards will work their magic to find your perfect match. 
+              Don’t wait; let’s embark on this exciting journey together.
+            </p>
+        
+            <div class="bg-[#141414] border border-[#2a2a2a] rounded-2xl shadow-lg p-8">
+              <form action="#" method="POST" class="space-y-6">
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  <input type="text" placeholder="Enter First Name" class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                  <input type="text" placeholder="Enter Last Name" class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                  <input type="email" placeholder="Enter your Email" class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                  <input type="tel" placeholder="Enter Phone Number" class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                </div>
+            
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  <select class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                    <option>Select Location</option>
+                  </select>
+                  <select class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                    <option>Select Property Type</option>
+                  </select>
+                  <select class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                    <option>Select no. of Bathrooms</option>
+                  </select>
+                  <select class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                    <option>Select no. of Bedrooms</option>
+                  </select>
+                </div>
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <select class="bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+                    <option>Select Budget</option>
+                  </select>
+              
+                  <div class="flex gap-4">
+                    <label class="flex items-center bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg flex-1 cursor-pointer">
+                      <input type="radio" name="contact" class="hidden peer">
+                      <span class="flex items-center gap-2 text-gray-300 peer-checked:text-[#703BF7]">
+                         Enter Your Number
+                      </span>
+                    </label>
+                    <label class="flex items-center bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg flex-1 cursor-pointer">
+                      <input type="radio" name="contact" class="hidden peer">
+                      <span class="flex items-center gap-2 text-gray-300 peer-checked:text-[#703BF7]">
+                        ✉️ Enter Your Email
+                      </span>
+                    </label>
+                  </div>
+                </div>
+            
+                <textarea placeholder="Enter your Message here..." rows="4" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]"></textarea>
+            
+                <div class="flex items-center gap-2">
+                  <input type="checkbox" id="agree" class="w-4 h-4 rounded border-gray-600 text-[#703BF7] focus:ring-[#703BF7]">
+                  <label for="agree" class="text-gray-400 text-sm">
+                    I agree with <a href="#" class="text-[#703BF7]">Terms of Use</a> and <a href="#" class="text-[#703BF7]">Privacy Policy</a>
+                  </label>
+                </div>
+            
+                <div class="flex justify-end">
+                  <button type="submit" class="bg-[#703BF7] hover:bg-[#5d2cd8] transition text-white px-8 py-3 rounded-lg font-medium">
+                    Send Your Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section> -->
+
+        <section class="relative bg-[#0f0f0f] text-white py-20 px-6 lg:px-20">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Make it Happen</h2>
+    <p class="text-gray-400 max-w-3xl mb-10">
+      Ready to take the first step toward your dream property? Fill out the form below, 
+      and our real estate wizards will work their magic to find your perfect match. 
+      Don’t wait; let’s embark on this exciting journey together.
+    </p>
+
+    <div class="bg-[#141414] border border-[#2a2a2a] rounded-2xl shadow-lg p-8">
+      <form action="#" method="POST" class="space-y-6">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div>
+            <label class="block text-sm mb-1">First Name</label>
+            <input type="text" placeholder="Enter First Name" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Last Name</label>
+            <input type="text" placeholder="Enter Last Name" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Email</label>
+            <input type="email" placeholder="Enter your Email" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]">
+          </div>
+        </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+  <!-- Location -->
+  <div class="relative">
+    <label class="block text-sm mb-1">Location</label>
+    <select
+      class="w-full appearance-none bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 
+             focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10">
+      <option>Select Location</option>
+    </select>
+    <span class="absolute right-3 top-[70%] -translate-y-1/2 pointer-events-none text-white">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+  </div>
+
+  <!-- Property Type -->
+  <div class="relative">
+    <label class="block text-sm mb-1">Property Type</label>
+    <select
+      class="w-full appearance-none bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 
+             focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10">
+      <option>Select Property Type</option>
+    </select>
+    <span class="absolute right-3 top-[70%] -translate-y-1/2 pointer-events-none text-white">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+  </div>
+
+  <!-- Bathrooms -->
+  <div class="relative">
+    <label class="block text-sm mb-1">Bathrooms</label>
+    <select
+      class="w-full appearance-none bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 
+             focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10">
+      <option>Select no. of Bathrooms</option>
+    </select>
+    <span class="absolute right-3 top-[70%] -translate-y-1/2 pointer-events-none text-white">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+  </div>
+
+  <!-- Bedrooms -->
+  <div class="relative">
+    <label class="block text-sm mb-1">Bedrooms</label>
+    <select
+      class="w-full appearance-none bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 
+             focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10">
+      <option>Select no. of Bedrooms</option>
+    </select>
+    <span class="absolute right-3 top-[70%] -translate-y-1/2 pointer-events-none text-white">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+  </div>
+</div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+         <div class="relative">
+  <label class="block text-sm mb-1">Budget</label>
+  <select
+    class="w-full appearance-none bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-gray-300 
+           focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10">
+    <option>Select Budget</option>
+  </select>
+  <!-- السهم -->
+  <span class="absolute right-3 top-[70%] -translate-y-1/2 pointer-events-none text-white">
+    <i class="fa-solid fa-chevron-down"></i>
+  </span>
+</div>
+
+
+        <div>
+  <label class="block text-sm mb-1">Preferred Contact</label>
+<div class="flex gap-4">
+  
+  <!-- Phone افتراضي مفعّل -->
+  <label class="flex items-center bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg flex-1 cursor-pointer gap-2">
+    <input type="radio" name="contact" class="hidden peer" checked>
+    <i class="fa-solid fa-phone text-gray-300"></i>
+    <span class="text-gray-300">Enter Your Number</span>
+    <!-- دائرة اختيار عاليمين -->
+    <span class="ml-auto w-3 h-3 rounded-full border border-gray-500 flex items-center justify-center peer-checked:border-[#703BF7] peer-checked:bg-[#703BF7]"></span>
+  </label>
+
+  <!-- Email -->
+  <label class="flex items-center bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg flex-1 cursor-pointer gap-2">
+    <input type="radio" name="contact" class="hidden peer">
+    <i class="fa-solid fa-envelope text-gray-300"></i>
+    <span class="text-gray-300">Enter Your Email</span>
+    <!-- دائرة اختيار عاليمين -->
+    <span class="ml-auto w-3 h-3 rounded-full border border-gray-500 flex items-center justify-center peer-checked:border-[#703BF7] peer-checked:bg-[#703BF7]"></span>
+  </label>
+
+</div>
+
+</div>
+
+        </div>
+
+        <!-- الرسالة -->
+        <div>
+          <label class="block text-sm mb-1">Message</label>
+          <textarea placeholder="Enter your Message here..." rows="4" class="w-full bg-[#1e1e1e] border border-[#2c2c2c] px-4 py-3 rounded-lg text-white placeholder-gray-500 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7]"></textarea>
+        </div>
+
+        <!-- الموافقة -->
+        <div class="flex items-center gap-2">
+          <input type="checkbox" id="agree" class="w-4 h-4 rounded border-gray-600 text-[#703BF7] focus:ring-[#703BF7]">
+          <label for="agree" class="text-gray-300 text-sm">
+            I agree with <a href="#" class="underline">Terms of Use</a> and <a href="#" class="underline">Privacy Policy</a>
+          </label>
+        </div>
+
+        <!-- زر الإرسال -->
+        <div class="flex justify-end">
+          <button type="submit" class="bg-[#703BF7] hover:bg-[#5d2cd8] transition text-white px-8 py-3 rounded-lg font-medium">
+            Send Your Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+        </section>
+
+
+
+      <!-- CTA -->
+      <section
+        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white"
+        style="
+          background-image:
+            url(&quot;assets/imges/cat/back-cat-2.png&quot;),
+            url(&quot;assets/imges/cat/back-cat-1.png&quot;);
+          background-position:
+            left center,
+            right center,
+            center;
+          background-repeat: no-repeat, no-repeat, no-repeat;
+          background-size:
+            auto 100%,
+            auto 100%,
+            cover;
+        "
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+        >
+          <div class="md:w-2/3">
+            <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
+              Start Your Real Estate Journey Today
+            </h2>
+            <p class="text-[rgb(153,153,153)] max-w-5xl">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+
+          <!--  Button -->
+          <div class="w-full md:w-auto">
+            <button
+              class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+            >
+              Explore Properties
+            </button>
+          </div>
+        </div>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 -z-10"></div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[rgb(20,20,20)] py-12 px-6">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-gray-800 pb-10"
+      >
+        <!-- Logo + Email -->
+        <div class="col-span-2">
+          <div class="flex items-center space-x-2">
+            <a href="#">
+              <picture>
+                <!-- big -->
+                <source
+                  srcset="assets/imges/logo/logo-Desktop.png"
+                  media="(min-width: 1024px)"
+                  class="object-contain"
+                />
+                <!-- meduim -->
+                <source
+                  srcset="assets/imges/logo/logo-Laptop.png"
+                  media="(min-width: 768px)"
+                  class="object-contain"
+                />
+                <!-- small defult -->
+                <img
+                  src="assets/imges/logo/logo-Mobile.png"
+                  alt="logo"
+                  class="object-contain"
+                />
+              </picture>
+            </a>
+          </div>
+          <!-- <div class="flex items-center space-x-2">
+            <a href="#"
+              ><img
+                src="assets/imges/logo/Logo.png"
+                alt="logo"
+                class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[110px] lg:h-[50px] object-contain"
+            /></a>
+          </div> -->
+
+          <div
+            class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-full md:w-[250px] h-[50px]"
+          >
+            <div class="flex items-center px-2">
+              <img
+                src="assets/imges/form-icons/Icon (10).png"
+                alt="Email Icon"
+                class="w-[26px] h-[24px] md:w-[22px] md:h-[22px] opacity-70 ml-1 md:ml-2"
+              />
+            </div>
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter Your Email"
+              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+            />
+            <button type="submit" class="pr-4 py-2 transition duration-300">
+              <img
+                src="assets/imges/form-icons/Icon (5).png"
+                alt="Send Icon"
+                class="w-[20px] ml-[80px] md:ml-ml-0 md:w-[22px] h-[22px]"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <div class="border-e-2 border-e-[#303030] md:border-none">
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
+            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <li><a href="#">Hero Section</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Properties</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQ’s</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
+          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+            About Us
+          </h3>
+          <ul
+            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
+          >
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Our Clients</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="mr-5 border-t-2 border-t-[#303030] md:border-none">
+            <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
+              <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
+              <h3
+                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+              >
+                Properties
+              </h3>
+              <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Categories</a></li>
+              </ul>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
+            <h3
+              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+            >
+              Services
+            </h3>
+            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <li><a href="#">Valuation Mastery</a></li>
+              <li><a href="#">Strategic Marketing</a></li>
+              <li><a href="#">Negotiation Wizardry</a></li>
+              <li><a href="#">Closing Success</a></li>
+              <li><a href="#">Property Management</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div
+            class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
+          >
+            <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+              Contact Us
+            </h3>
+            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <li><a href="#">Contact Form</a></li>
+              <li><a href="#">Our Offices</a></li>
+            </ul>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bottom Footer -->
+    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white/90 text-sm bg-[rgb(25,25,25)]"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0"
+        >
+          <p>©2023 Estatein. All Rights Reserved.</p>
+          <a href=" " class="hover:text-gray-300">Terms & Conditions</a>
+        </div>
+
+        <div
+          class="flex gap-4 md:gap-2 mt-4 md:mt-0 order-0 mb-4 md:mb-0 md:order-1"
+        >
+          <a
+            href=" "
+            class="bg-[rgb(20,20,20)] hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500"
+            ><i class="fa-brands fa-facebook-f text-white"></i
+          ></a>
+          <a
+            href=" "
+            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
+            ><i class="fa-brands fa-linkedin-in text-white"></i
+          ></a>
+          <a
+            href=""
+            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
+            ><i class="fa-brands fa-twitter text-white"></i
+          ></a>
+          <a
+            href=" "
+            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
+            ><i class="fa-brands fa-youtube text-white"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fontawesome Js -->
+    <script src="assets/js/all.min.js"></script>
+    <script>
+      //  Active Class
+      document.querySelectorAll("#navLinks a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          // e.preventDefault();
+          document
+            .querySelector("#navLinks .active")
+            ?.classList.remove("active");
+          link.classList.add("active");
+        });
+      });
+
+      // Mobile Menu
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+      document.getElementById("closeHeader").addEventListener("click", () => {
+        document.getElementById("topHeader").classList.add("hidden");
+      });
+    </script>
+
+
+ 
+  </body>
+</html>
