@@ -80,4 +80,6 @@ body {
   .min-text {
     @apply text-xs  md:text-sm lg:text-sm 2xl:text-lg font-medium;
   }
+ 
+
 }
