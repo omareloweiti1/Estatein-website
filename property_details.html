@@ -26,15 +26,15 @@
 
       .custom-pagination {
         display: flex !important;
-        gap: 0.5rem;
+        gap: 1;
       }
 
       .custom-pagination .swiper-bullet {
         display: block !important;
-        width: 1.5rem;
-        height: 0.25rem;
+        width: 1rem;
+        height: 0.125rem;
         border-radius: 0.375rem;
-
+        background-color: #703bf7;
         cursor: pointer;
       }
     </style>
@@ -170,9 +170,11 @@
       </div>
     </nav>
 
-      <main class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]">
+    <main
+      class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]"
+    >
       <!-- Container -->
-      <section class=" mt-10 mx-auto p-6 xl:p-10 space-y-10">
+      <section class="mt-10 mx-auto p-6 xl:p-12 space-y-10">
         <!-- Header -->
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-4">
@@ -192,62 +194,72 @@
         </div>
 
         <!-- Image Gallery -->
-        <div class="space-y-6 bg-[#191919] rounded-lg p-6">
+        <div class="space-y-6 bg-[#191919] rounded-lg p-4">
           <!-- Thumbnails -->
-          <div class="swiper thumbs-swiper bg-[#141414] p-4 rounded-lg">
-            <div class="swiper-wrapper">
+          <div
+            class="swiper thumbs-swiper border border-[#262626] bg-[#141414] p-6 rounded-lg"
+          >
+            <div class="swiper-wrapper p-4">
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/hamburg.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer hover:opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecture.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/Image (2).png"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecturere.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/abuilding.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/Image.png"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/building.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecture.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
+
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/abuilding.jpg"
-                  class="w-28 h-20 rounded-lg cursor-pointer hover:opacity-75 object-cover"
+                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
             </div>
@@ -260,102 +272,202 @@
 
           <!-- Controls -->
           <div
-            class="flex items-center justify-center gap-4 bg-[#121212] p-2.5 rounded-full w-fit mx-auto"
+            class="flex items-center justify-center gap-2 bg-[#121212] p-4 rounded-full w-fit mx-auto"
           >
             <!-- Prev -->
             <button
-              class="custom-prev p-3 mr-px rounded-full bg-[#1e1e1e] hover:bg-[#703BF7] text-white"
+              class="custom-prev p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white"
             >
               <i class="fa-solid fa-chevron-left"></i>
             </button>
 
             <!-- Pagination -->
-            <div class="custom-pagination flex gap-2"></div>
+            <div class="custom-pagination flex"></div>
 
             <!-- Next -->
             <button
-              class="custom-next p-3 ml-px rounded-full bg-[#1e1e1e] hover:bg-[#703BF7] text-white"
+              class="custom-next p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white"
             >
               <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
         </div>
 
-       <!-- Bottom Section -->
-<div class="grid grid-cols-2 gap-8">
-  <!-- Description Card -->
-  <div class="bg-[#111] p-6 rounded-xl border border-[#191919] space-y-6">
-    <h2 class="text-lg font-semibold">Description</h2>
-    <p class="text-gray-400">
-      Discover your own piece of paradise with the Seaside Serenity Villa. 
-      With an open floor plan, breathtaking ocean views from every room, 
-      and direct access to a pristine sandy beach, this property is the 
-      epitome of coastal living.
-    </p>
-    <div class="flex gap-12 text-gray-300">
-      <!-- Bedrooms -->
-      <div>
-        <div class="flex items-center gap-2 text-gray-400">
-          <span>🛏</span>
-          <span>Bedrooms</span>
-        </div>
-        <p class="text-2xl font-semibold">04</p>
-      </div>
-      <!-- Bathrooms -->
-      <div>
-        <div class="flex items-center gap-2 text-gray-400">
-          <span>🛁</span>
-          <span>Bathrooms</span>
-        </div>
-        <p class="text-2xl font-semibold">03</p>
-      </div>
-      <!-- Area -->
-      <div>
-        <div class="flex items-center gap-2 text-gray-400">
-          <span>📐</span>
-          <span>Area</span>
-        </div>
-        <p class="text-2xl font-semibold">2,500 Square Feet</p>
-      </div>
-    </div>
-  </div>
+        <!-- Bottom Section -->
+        <div class="flex flex-col lg:flex-row gap-8">
+          <!-- Description Wrapper -->
+          <div class="flex-1">
+            <!-- Description Card -->
+            <div
+              class="bg-[#111] p-10 rounded-xl border-2 border-[#191919] space-y-6"
+            >
+              <h2
+                class="text-xl mb-4 lg:text-2xl desktop-2xl:text-3xl font-semibold w-full text-left"
+              >
+                Description
+              </h2>
+              <p class="text-gray-400">
+                Discover your own piece of paradise with the Seaside Serenity
+                Villa. With an open floor plan, breathtaking ocean views from
+                every room, and direct access to a pristine sandy beach, this
+                property is the epitome of coastal living.
+              </p>
 
-  <!-- Features Card -->
-  <div class="bg-[#111] p-6 rounded-xl border border-[#191919] space-y-6">
-    <h2 class="text-lg font-semibold">Key Features and Amenities</h2>
-    <ul class="space-y-4">
-      <li class="flex items-start gap-3 border-l-2 border-purple-500 pl-3 text-gray-300">
-        <span>⚡</span>
-        <span>Expansive oceanfront terrace for outdoor entertaining</span>
-      </li>
-      <li class="flex items-start gap-3 border-l-2 border-purple-500 pl-3 text-gray-300">
-        <span>⚡</span>
-        <span>Gourmet kitchen with top-of-the-line appliances</span>
-      </li>
-      <li class="flex items-start gap-3 border-l-2 border-purple-500 pl-3 text-gray-300">
-        <span>⚡</span>
-        <span>Private beach access for morning strolls and sunset views</span>
-      </li>
-      <li class="flex items-start gap-3 border-l-2 border-purple-500 pl-3 text-gray-300">
-        <span>⚡</span>
-        <span>Master suite with a spa-inspired bathroom and ocean-facing balcony</span>
-      </li>
-      <li class="flex items-start gap-3 border-l-2 border-purple-500 pl-3 text-gray-300">
-        <span>⚡</span>
-        <span>Private garage and ample storage space</span>
-      </li>
-    </ul>
-  </div>
-</div>
+              <!-- Stats Section -->
+              <div
+                class="grid grid-cols-2 gap-8 text-gray-300 border-t border-[#191919] pt-4"
+              >
+                <!-- Bedrooms -->
+                <div class="flex flex-col items-start">
+                  <div class="flex items-center gap-2 text-gray-400">
+                    <i class="fas fa-bed"></i>
+                    <span>Bedrooms</span>
+                  </div>
+                  <p class="text-2xl font-semibold mt-1 text-white">04</p>
+                </div>
 
-        
+                <!-- Bathrooms -->
+                <div class="flex flex-col items-start relative pl-4">
+                  <div
+                    class="absolute left-0 top-2 bottom-0 border-l border-[#2c2c2c]"
+                  ></div>
+                  <div class="flex items-center gap-2 text-gray-400">
+                    <i class="fas fa-bath"></i>
+                    <span>Bathrooms</span>
+                  </div>
+                  <p class="text-2xl font-semibold mt-1 text-white">03</p>
+                </div>
+
+                <!-- Area -->
+                <div
+                  class="flex flex-col items-start relative pl-4 col-span-2 border-t border-[#2c2c2c] pt-4"
+                >
+                  <div class="flex items-center gap-2 text-gray-400">
+                    <i class="fas fa-ruler-combined"></i>
+                    <span>Area</span>
+                  </div>
+                  <p class="text-2xl font-semibold mt-1 text-white">
+                    2,500 Square Feet
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features Wrapper -->
+          <div class="flex-1">
+            <!-- Features Card -->
+            <div
+              class="max-w-xl mx-auto bg-[#111] p-6 rounded-xl border border-[#191919]"
+            >
+              <h2 class="text-white text-lg font-semibold mb-4">
+                Key Features and Amenities
+              </h2>
+
+              <ul class="space-y-3">
+                <!-- item template -->
+                <li class="relative">
+                  <div class="rounded-lg overflow-hidden">
+                    <div
+                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
+                    ></div>
+                    <div
+                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-start gap-3"
+                    >
+                      <i
+                        class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
+                      ></i>
+                      <p class="text-gray-300 text-sm leading-relaxed">
+                        Expansive oceanfront terrace for outdoor entertaining
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="relative">
+                  <div class="rounded-lg overflow-hidden">
+                    <div
+                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
+                    ></div>
+                    <div
+                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-start gap-3"
+                    >
+                      <i
+                        class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
+                      ></i>
+                      <p class="text-gray-300 text-sm leading-relaxed">
+                        Gourmet kitchen with top-of-the-line appliances
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="relative">
+                  <div class="rounded-lg overflow-hidden">
+                    <div
+                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
+                    ></div>
+                    <div
+                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-start gap-3"
+                    >
+                      <i
+                        class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
+                      ></i>
+                      <p class="text-gray-300 text-sm leading-relaxed">
+                        Private beach access for morning strolls and sunset
+                        views
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="relative">
+                  <div class="rounded-lg overflow-hidden">
+                    <div
+                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
+                    ></div>
+                    <div
+                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-start gap-3"
+                    >
+                      <i
+                        class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
+                      ></i>
+                      <p class="text-gray-300 text-sm leading-relaxed">
+                        Master suite with a spa-inspired bathroom and
+                        ocean-facing balcony
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="relative">
+                  <div class="rounded-lg overflow-hidden">
+                    <div
+                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
+                    ></div>
+                    <div
+                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-start gap-3"
+                    >
+                      <i
+                        class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
+                      ></i>
+                      <p class="text-gray-300 text-sm leading-relaxed">
+                        Private garage and ample storage space
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
-
-
-
-
-      
       <!-- <section class="max-w-6xl mx-auto p-6 space-y-10">
 
   <div class="flex items-center justify-between">
@@ -378,19 +490,19 @@
     <div class="swiper myThumbs">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="assets/imges/featured-cards/abuilding.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/abuilding.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/abuilding.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/building.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/architecture.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/abuilding.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
         <div class="swiper-slide"><img src="assets/imges/featured-cards/abuilding.jpg"
-            class="w-28 h-20 rounded-lg cursor-pointer object-cover" /></div>
+            class="w-30 h-18 rounded-lg cursor-pointer object-cover" /></div>
       </div>
     </div>
 
@@ -455,114 +567,136 @@
 
 </section> -->
 
-     <section class="max-w-6xl mx-auto p-5 space-y-20">
-  <!-- ================= Inquiry Section ================= -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-    <!-- Left Text -->
-    <div class="space-y-4">
-      <h2 class="text-2xl font-semibold">
-        Inquire About Seaside Serenity Villa
-      </h2>
-      <p class="text-gray-400">
-        Interested in this property? Fill out the form below, and our real
-        estate experts will get back to you with more details, including
-        scheduling a viewing and answering any questions you may have.
-      </p>
-    </div>
-
-    <!-- Right Form -->
-    <form class="bg-[#111] p-6 rounded-lg border border-[#191919] grid grid-cols-2 gap-6">
-      <!-- First Name -->
-      <div class="flex flex-col">
-        <label class="text-sm text-gray-400 mb-2">First Name</label>
-        <input
-          type="text"
-          placeholder="Enter First Name"
-          class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
-        />
-      </div>
-      <!-- Last Name -->
-      <div class="flex flex-col">
-        <label class="text-sm text-gray-400 mb-2">Last Name</label>
-        <input
-          type="text"
-          placeholder="Enter Last Name"
-          class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
-        />
-      </div>
-      <!-- Email -->
-      <div class="flex flex-col">
-        <label class="text-sm text-gray-400 mb-2">Email</label>
-        <input
-          type="email"
-          placeholder="Enter your Email"
-          class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
-        />
-      </div>
-      <!-- Phone -->
-      <div class="flex flex-col">
-        <label class="text-sm text-gray-400 mb-2">Phone</label>
-        <input
-          type="text"
-          placeholder="Enter Phone Number"
-          class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
-        />
-      </div>
-      <!-- Property Input (with Location Icon) -->
-      <div class="flex flex-col col-span-2">
-        <label class="text-sm text-gray-400 mb-2">Selected Property</label>
-        <div class="relative">
-          <input
-            type="text"
-            value="Seaside Serenity Villa, Malibu, California"
-            readonly
-            class="w-full p-3 rounded-md bg-black/40 border border-[#191919] text-white pr-10 focus:outline-none"
-          />
-          <!-- Location Icon -->
-          <span class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
-            <i class="fa-solid fa-location-dot"></i>
-          </span>
-        </div>
-      </div>
-      <!-- Message -->
-      <div class="flex flex-col col-span-2">
-        <label class="text-sm text-gray-400 mb-2">Message</label>
-        <textarea
-          rows="4"
-          placeholder="Enter your Message here..."
-          class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
-        ></textarea>
-      </div>
-      <!-- Checkbox + Button -->
-      <div class="col-span-2 flex items-center justify-between">
-        <label class="flex items-center gap-2 text-gray-400 text-sm">
-          <input
-            type="checkbox"
-            class="rounded bg-gray-700 border-gray-600"
-          />
-          I agree with Terms of Use and Privacy Policy
-        </label>
-        <button
-          class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-md"
+      <section class="mt-10 mx-auto p-6 xl:p-12 space-y-10">
+        <!-- ================= Inquiry Section ================= -->
+        <div
+          class="flex flex-col md:flex-row md:items-start md:justify-between"
         >
-          Send Your Message
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
+          <!-- Left Text -->
+          <div class="space-y-4 w-full md:w-[30%] order-1 md:order-1">
+            <h1
+              class="text-xl mb-4 mt-5 lg:text-3xl desktop-2xl:text-5xl font-semibold w-full text-left"
+            >
+              Inquire About Seaside Serenity Villa
+            </h1>
+            <p class="text-gray-400 max-w-sm">
+              Interested in this property? Fill out the form below, and our real
+              estate experts will get back to you with more details, including
+              scheduling a viewing and answering any questions you may have.
+            </p>
+          </div>
 
+          <!-- Right Form -->
+          <form
+            class="w-full md:w-[60%] bg-[#111] p-6 rounded-lg border border-[#191919] grid grid-cols-2 gap-6 order-2 md:order-2 md:ml-auto"
+          >
+            <!-- First Name -->
+            <div class="flex flex-col col-span-2 md:col-span-1">
+              <label class="text-sm text-gray-400 mb-2">First Name</label>
+              <input
+                type="text"
+                placeholder="Enter First Name"
+                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
 
-      <section class="max-w-6xl mx-auto p-5">
-        <div class="flex flex-col md:flex-row gap-10 items-start">
+            <!-- Last Name -->
+            <div class="flex flex-col col-span-2 md:col-span-1">
+              <label class="text-sm text-gray-400 mb-2">Last Name</label>
+              <input
+                type="text"
+                placeholder="Enter Last Name"
+                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="flex flex-col col-span-2 md:col-span-1">
+              <label class="text-sm text-gray-400 mb-2">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your Email"
+                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <!-- Phone -->
+            <div class="flex flex-col col-span-2 md:col-span-1">
+              <label class="text-sm text-gray-400 mb-2">Phone</label>
+              <input
+                type="text"
+                placeholder="Enter Phone Number"
+                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <!-- Property Select -->
+            <div class="flex flex-col col-span-2">
+              <label class="text-sm text-gray-400 mb-2"
+                >Selected Property</label
+              >
+              <div class="relative">
+                <select
+                  class="appearance-none w-full p-3 rounded-md bg-black/40 border border-[#191919] text-white pr-10 focus:outline-none"
+                >
+                  <option>Seaside Serenity Villa, Malibu</option>
+                  <option>Ocean Breeze Villa, Miami</option>
+                  <option>Mountain Escape, Colorado</option>
+                  <option>Sunset Retreat, Hawaii</option>
+                  <option>City Lights Loft, New York</option>
+                </select>
+                <!-- Location Icon -->
+                <span
+                  class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+              </div>
+            </div>
+
+            <!-- Message -->
+            <div class="flex flex-col col-span-2">
+              <label class="text-sm text-gray-400 mb-2">Message</label>
+              <textarea
+                rows="4"
+                placeholder="Enter your Message here..."
+                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+              ></textarea>
+            </div>
+
+            <!-- Checkbox + Button -->
+            <div
+              class="col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+            >
+              <label class="flex items-center gap-2 text-gray-400 text-sm">
+                <input
+                  type="checkbox"
+                  class="rounded bg-gray-700 border-gray-600"
+                />
+                I agree with Terms of Use and Privacy Policy
+              </label>
+              <button
+                class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-md"
+              >
+                Send Your Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="mt-10 mx-auto p-6 xl:p-12 space-y-10">
+        <div class="flex flex-col md:flex-row items-start">
           <!-- Left Side Price -->
-          <div class="w-[200px]" >
+          <div class="w-[200px]">
             <p class="text-sm text-gray-400">Listing Price</p>
             <p class="text-3xl font-bold text-white">$1,250,000</p>
           </div>
 
           <!-- Right Side Fees Box -->
-          <div class="bg-[#111] rounded-xl p-6 space-y-6">
+          <div
+            class="flex-1 bg-[#111] rounded-xl p-6 space-y-6 max-w-4xl mt-6 md:mt-0 ml-auto"
+          >
             <!-- Header -->
             <div
               class="flex justify-between items-center border-b border-[#191919] pb-4"
@@ -646,57 +780,55 @@
           </div>
         </div>
       </section>
-
-
     </main>
-          <!-- CTA -->
-      <section
-        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white"
-        style="
-          background-image:
-            url(&quot;assets/imges/cat/back-cat-2.png&quot;),
-            url(&quot;assets/imges/cat/back-cat-1.png&quot;);
-          background-position:
-            left center,
-            right center,
-            center;
-          background-repeat: no-repeat, no-repeat, no-repeat;
-          background-size:
-            auto 100%,
-            auto 100%,
-            cover;
-        "
+    <!-- CTA -->
+    <section
+      class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white"
+      style="
+        background-image:
+          url(&quot;assets/imges/cat/back-cat-2.png&quot;),
+          url(&quot;assets/imges/cat/back-cat-1.png&quot;);
+        background-position:
+          left center,
+          right center,
+          center;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size:
+          auto 100%,
+          auto 100%,
+          cover;
+      "
+    >
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
       >
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-        >
-          <div class="md:w-2/3">
-            <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
-              Start Your Real Estate Journey Today
-            </h2>
-            <p class="text-[rgb(153,153,153)] max-w-5xl">
-              Your dream property is just a click away. Whether you're looking
-              for a new home, a strategic investment, or expert real estate
-              advice, Estatein is here to assist you every step of the way. Take
-              the first step towards your real estate goals and explore our
-              available properties or get in touch with our team for
-              personalized assistance.
-            </p>
-          </div>
-
-          <!--  Button -->
-          <div class="w-full md:w-auto">
-            <button
-              class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-            >
-              Explore Properties
-            </button>
-          </div>
+        <div class="md:w-2/3">
+          <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
+            Start Your Real Estate Journey Today
+          </h2>
+          <p class="text-[rgb(153,153,153)] max-w-5xl">
+            Your dream property is just a click away. Whether you're looking for
+            a new home, a strategic investment, or expert real estate advice,
+            Estatein is here to assist you every step of the way. Take the first
+            step towards your real estate goals and explore our available
+            properties or get in touch with our team for personalized
+            assistance.
+          </p>
         </div>
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 bg-black/50 -z-10"></div>
-      </section>
+        <!--  Button -->
+        <div class="w-full md:w-auto">
+          <button
+            class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+          >
+            Explore Properties
+          </button>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/50 -z-10"></div>
+    </section>
     <!-- Footer -->
     <footer class="bg-[rgb(20,20,20)] py-12 px-6">
       <div
@@ -912,9 +1044,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       const thumbsSwiper = new Swiper(".thumbs-swiper", {
-        slidesPerView: 9,
-        spaceBetween: 10,
+        slidesPerView: 9.05,
+        spaceBetween: 5,
         freeMode: true,
+        loop: true,
+        slidesPerGroup: 2,
         watchSlidesProgress: true,
       });
 
@@ -926,14 +1060,14 @@
       thumbs.forEach((img) => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
-        slide.innerHTML = `<img src="${img.src}" class="w-full h-[350px] rounded-lg object-cover"/>`;
+        slide.innerHTML = `<img src="${img.src}" class="w-[600px] h-[500px] rounded-lg object-cover"/>`;
         mainWrapper.appendChild(slide);
       });
 
       const mainSwiper = new Swiper(".main-swiper", {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 10,
+        spaceBetween: 20,
         loop: true,
         navigation: {
           nextEl: ".custom-next",
