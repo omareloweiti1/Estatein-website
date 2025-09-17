@@ -724,6 +724,9 @@ body {
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
+  }
   .w-\[2px\] {
     width: 2px;
   }
@@ -735,6 +738,9 @@ body {
   }
   .w-\[60px\] {
     width: 60px;
+  }
+  .w-\[90\%\] {
+    width: 90%;
   }
   .w-\[95\%\] {
     width: 95%;
@@ -1365,8 +1371,17 @@ body {
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-26 {
+    padding-inline: calc(var(--spacing) * 26);
+  }
   .px-30 {
     padding-inline: calc(var(--spacing) * 30);
+  }
+  .px-40 {
+    padding-inline: calc(var(--spacing) * 40);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -3003,6 +3018,11 @@ body {
   .lg\:pl-2 {
     @media (width >= 64rem) {
       padding-left: calc(var(--spacing) * 2);
+    }
+  }
+  .lg\:pl-4 {
+    @media (width >= 64rem) {
+      padding-left: calc(var(--spacing) * 4);
     }
   }
   .lg\:pl-\[50px\] {
