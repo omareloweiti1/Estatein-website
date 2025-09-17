@@ -328,6 +328,12 @@ body {
   .right-10 {
     right: calc(var(--spacing) * 10);
   }
+  .right-\[10\] {
+    right: 10;
+  }
+  .right-\[50\%\] {
+    right: 50%;
+  }
   .-bottom-6 {
     bottom: calc(var(--spacing) * -6);
   }
