@@ -524,6 +524,9 @@ body {
   .ml-auto {
     margin-left: auto;
   }
+  .\!hidden {
+    display: none !important;
+  }
   .block {
     display: block;
   }
@@ -2765,6 +2768,11 @@ body {
   .lg\:ml-auto {
     @media (width >= 64rem) {
       margin-left: auto;
+    }
+  }
+  .lg\:\!block {
+    @media (width >= 64rem) {
+      display: block !important;
     }
   }
   .lg\:block {
