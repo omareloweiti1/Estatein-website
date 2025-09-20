@@ -39,7 +39,7 @@
       }
     </style>
   </head>
-  <body class="bg-backgroundPrimary text-light transition-colors duration-500">
+  <body class="bg-backgroundPrimary text-textWhite transition-colors duration-500">
     <!-- ====== Header Section ====== -->
     <header id="topHeader" class="relative transition-all duration-500">
       <img
@@ -168,99 +168,119 @@
     </nav>
 
     <main class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]">
+      
       <!-- Container -->
-      <section class="mt-10 mx-auto p-3 lg:p-6 xl:p-12 space-y-10">
+      <section class="mt-10 mx-auto p-3 lg:p-5 labtop-xl::p-10 space-y-10">
         <!-- Header -->
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           
           <!-- Title + Location -->
           <div class="flex flex-col md:flex-row md:items-center md:gap-4">
-            <h1 class="text-2xl font-semibold">Seaside Serenity Villa</h1>
+            <h1 class="cardH1">Seaside Serenity Villa</h1>
 
             <div class="flex items-center justify-between mt-2 md:mt-0">
-              <a href="#" class="flex items-center gap-2 hover:text-purple-400 border border-[#2c2c2c] py-2 px-4 rounded-lg">
+              <a href="#" class="flex items-center gap-2 hover:text-purple-400  border border-border-dark py-2 px-4 rounded-lg">
                 <i class="fas fa-map-marker-alt"></i>Malibu, California</a>
 
               <div class="ml-4 md:hidden flex items-center gap-2">
-                <p class="text-sm text-gray-400">Price</p>
-                <p class="text-lg font-semibold">$1,250,000</p>
+                <p class="text-pragraph">Price</p>
+                <p class="card-title">$1,250,000</p>
               </div>
             </div>
 
           </div>
 
           <div class="hidden md:block text-left">
-            <p class="text-sm text-gray-400">Price</p>
-            <p class="text-lg font-semibold">$1,250,000</p>
+            <p class="text-pragraph">Price</p>
+            <p class="card-title">$1,250,000</p>
           </div>
 
         </div>
 
         <!-- Image Gallery -->
-        <div class="space-y-6 bg-[#191919] rounded-lg p-4">
+        <div class="space-y-6 bg-surface rounded-lg p-4">
           <!-- Thumbnails -->
-          <div class="swiper thumbs-swiper    border border-[#262626] bg-[#141414] p-6 rounded-lg">
-            <div class="swiper-wrapper p-4">
+          <div class="swiper thumbs-swiper    border border-border-light bg-backgroundPrimary p-6 rounded-lg">
+            <div class="swiper-wrapper p-px py-2 lg:p-4">
+              
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/hamburg.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer hover:opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer hover:opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecture.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/Image (2).png"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecturere.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/abuilding.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/Image.png"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/building.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/architecture.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
 
               <div class="swiper-slide">
                 <img
                   src="assets/imges/featured-cards/abuilding.jpg"
-                  class="w-30 h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                />
+              </div>
+               <div class="swiper-slide">
+                <img
+                  src="assets/imges/featured-cards/abuilding.jpg"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                />
+              </div>
+               <div class="swiper-slide">
+                <img
+                  src="assets/imges/featured-cards/abuilding.jpg"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
+                />
+              </div>
+               <div class="swiper-slide">
+                <img
+                  src="assets/imges/featured-cards/abuilding.jpg"
+                  class="w-20 h-14 lg:w-30 lg:h-18 rounded-lg cursor-pointer opacity-50 object-cover"
                 />
               </div>
             </div>
@@ -272,10 +292,10 @@
           </div>
 
           <!-- Controls -->
-          <div class="flex items-center justify-center gap-2 bg-[#121212] p-4 rounded-full w-fit mx-auto">
+          <div class="flex items-center justify-center gap-px bg-backgroundPrimary  py-2   rounded-full  w-full  mx-auto">
             
             <!-- Prev -->
-            <button class="custom-prev p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white">
+            <button class="custom-prev p-2 rounded-full border border-border-light hover:bg-primary text-textWhite">
               <i class="fa-solid fa-chevron-left"></i>
             </button>
 
@@ -283,7 +303,7 @@
             <div class="custom-pagination flex"></div>
 
             <!-- Next -->
-            <button class="custom-next p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white">
+            <button class="custom-next p-2 rounded-full border border-border-light hover:bg-primary text-textWhite">
               <i class="fa-solid fa-chevron-right"></i>
             </button>
 
@@ -292,19 +312,13 @@
         </div>
 
         <!-- Bottom Section -->
-        <div class="flex flex-col lg:flex-row gap-8">
+        <div class="flex flex-col lg:flex-row gap-4">
           <!-- Description Wrapper -->
-          <div class="flex-1">
+          <div class="w-full lg:w-1/2">
             <!-- Description Card -->
-            <div
-              class="bg-[#111] p-5 lg:p-10 rounded-xl border-2 border-[#191919] space-y-6"
-            >
-              <h2
-                class="text-xl mb-4 lg:text-2xl desktop-2xl:text-3xl font-semibold w-full text-left"
-              >
-                Description
-              </h2>
-              <p class="text-gray-400">
+            <div class="bg-backgroundPrimary p-5 lg:p-10 rounded-xl border-2 border-surface space-y-6">
+              <h2 class="text-xl mb-4 lg:text-2xl desktop-2xl:text-3xl font-semibold w-full text-left">Description</h2>
+              <p class="text-pragraph">
                 Discover your own piece of paradise with the Seaside Serenity
                 Villa. With an open floor plan, breathtaking ocean views from
                 every room, and direct access to a pristine sandy beach, this
@@ -312,66 +326,59 @@
               </p>
 
               <!-- Stats Section -->
-              <div
-                class="grid grid-cols-2 gap-8 text-gray-300 border-t border-[#191919] pt-4"
-              >
+              <div class="grid grid-cols-2 lg:flex gap-2   border-t border-surface pt-4">
                 <!-- Bedrooms -->
                 <div class="flex flex-col items-start">
-                  <div class="flex items-center gap-2 text-gray-400">
+                  <div class="flex items-center gap-2 text-pragraph lg:min-w-[150px] lg:max-w-[150px]">
                     <i class="fas fa-bed"></i>
                     <span>Bedrooms</span>
                   </div>
-                  <p class="text-2xl font-semibold mt-1 text-white">04</p>
+                  <p class="card-title mt-1 text-textWhite">04</p>
                 </div>
 
                 <!-- Bathrooms -->
-                <div class="flex flex-col items-start relative pl-4">
+                <div class="flex flex-col items-start relative pl-4 lg:min-w-[170px] lg:max-w-[170px]">
                   <div
-                    class="absolute left-0 top-2 bottom-0 border-l border-[#2c2c2c]"
+                    class="absolute left-0 top-2 bottom-0 border-l border-border-dark"
                   ></div>
-                  <div class="flex items-center gap-2 text-gray-400">
+                  <div class="flex items-center gap-2 text-pragraph">
                     <i class="fas fa-bath"></i>
                     <span>Bathrooms</span>
                   </div>
-                  <p class="text-2xl font-semibold mt-1 text-white">03</p>
+                  <p class="card-title mt-1 text-textWhite">03</p>
                 </div>
 
                 <!-- Area -->
-                <div
-                  class="flex flex-col items-start relative pl-4 col-span-2 border-t border-[#2c2c2c] pt-4"
-                >
-                  <div class="flex items-center gap-2 text-gray-400">
+                <div class="flex flex-col items-start relative lg:pl-4 col-span-2 lg:col-span-1  border-t lg:border-t-0   lg:border-l border-border-dark lg:min-w-[200px] pt-4 lg:pt-0 lg:max-w-[200px]">
+                  
+                  <div class="flex items-center gap-2 text-pragraph  ">
                     <i class="fas fa-ruler-combined"></i>
                     <span>Area</span>
                   </div>
-                  <p class="text-2xl font-semibold mt-1 text-white">
-                    2,500 Square Feet
-                  </p>
+                  <p class="card-title mt-1 text-textWhite ">2,500 Square Feet</p>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- Features Wrapper -->
-          <div class="flex-1">
+          <div class="w-full lg:w-1/2">
             <!-- Features Card -->
-            <div
-              class="mx-auto bg-[#111] p-6 rounded-xl border border-[#191919]"
-            >
-              <h2 class="text-white text-lg font-semibold mb-4">
+            <div class="mx-auto bg-backgroundPrimary p-5 lg:p-10 rounded-xl border border-surface">
+              <h2 class="text-textWhite text-lg font-semibold mb-10">
                 Key Features and Amenities
               </h2>
 
-              <ul class="space-y-3">
+              <ul class="space-y-6">
                 <!-- item template -->
                 <li class="relative">
                   <div class="rounded-lg overflow-hidden">
                     <div
-                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      class="absolute inset-y-0 left-0 w-[2px] bg-primary"
                       style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
                     ></div>
                     <div
-                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-center lg:items-start gap-3"
+                      class="bg-gradient-to-l from-[#111] to-surface p-4 pl-6 flex items-center lg:items-start gap-3"
                     >
                       <i
                         class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
@@ -386,11 +393,11 @@
                 <li class="relative">
                   <div class="rounded-lg overflow-hidden">
                     <div
-                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      class="absolute inset-y-0 left-0 w-[2px] bg-primary"
                       style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
                     ></div>
                     <div
-                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-center lg:items-start gap-3"
+                      class="bg-gradient-to-l from-[#111] to-surface p-4 pl-6 flex items-center lg:items-start gap-3"
                     >
                       <i
                         class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
@@ -405,11 +412,11 @@
                 <li class="relative">
                   <div class="rounded-lg overflow-hidden">
                     <div
-                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      class="absolute inset-y-0 left-0 w-[2px] bg-primary"
                       style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
                     ></div>
                     <div
-                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-center lg:items-start gap-3"
+                      class="bg-gradient-to-l from-[#111] to-surface p-4 pl-6 flex items-center lg:items-start gap-3"
                     >
                       <i
                         class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
@@ -425,11 +432,11 @@
                 <li class="relative">
                   <div class="rounded-lg overflow-hidden">
                     <div
-                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      class="absolute inset-y-0 left-0 w-[2px] bg-primary"
                       style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
                     ></div>
                     <div
-                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-center lg:items-start gap-3"
+                      class="bg-gradient-to-l from-[#111] to-surface p-4 pl-6 flex items-center lg:items-start gap-3"
                     >
                       <i
                         class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
@@ -445,11 +452,11 @@
                 <li class="relative">
                   <div class="rounded-lg overflow-hidden">
                     <div
-                      class="absolute inset-y-0 left-0 w-[2px] bg-[#703BF7]"
+                      class="absolute inset-y-0 left-0 w-[2px] bg-primary"
                       style="box-shadow: 0 0 10px rgba(112, 59, 247, 0.12)"
                     ></div>
                     <div
-                      class="bg-gradient-to-l from-[#111] to-[#191919] p-4 pl-6 flex items-center lg:items-start gap-3"
+                      class="bg-gradient-to-l from-[#111] to-surface p-4 pl-6 flex items-center lg:items-start gap-3"
                     >
                       <i
                         class="fa-solid fa-bolt text-[#E6E0FF] mt-1 text-sm"
@@ -493,7 +500,7 @@
 
           <!-- Right Form -->
           <form
-            class="w-full lg:w-[60%] bg-[#111] p-3 lg:p-6 rounded-lg border border-[#191919] grid grid-cols-2 gap-6 order-2 lg:order-2 lg:ml-auto"
+            class="w-full lg:w-[60%] bg-[#111] p-3 lg:p-6 rounded-lg border border-surface grid grid-cols-2 gap-6 order-2 lg:order-2 lg:ml-auto"
           >
             <!-- First Name -->
             <div class="flex flex-col col-span-2 lg:col-span-1">
@@ -501,7 +508,7 @@
               <input
                 type="text"
                 placeholder="Enter First Name"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-black/40 border border-surface text-textWhite focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -511,7 +518,7 @@
               <input
                 type="text"
                 placeholder="Enter Last Name"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-black/40 border border-surface text-textWhite focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -521,7 +528,7 @@
               <input
                 type="email"
                 placeholder="Enter your Email"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-black/40 border border-surface text-textWhite focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -531,7 +538,7 @@
               <input
                 type="text"
                 placeholder="Enter Phone Number"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-black/40 border border-surface text-textWhite focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -542,13 +549,13 @@
               >
               <div class="relative">
                 <select
-                  class="appearance-none w-full p-3 rounded-md bg-black/40 border border-[#191919] text-white pr-10 focus:outline-none"
+                  class="appearance-none w-full p-3 rounded-md bg-black/40 border border-surface text-textWhite pr-10 focus:outline-none"
                 >
                   <option>Seaside Serenity Villa, Malibu</option>
                   <option>Ocean Breeze Villa, Miami</option>
                   <option>Mountain Escape, Colorado</option>
                   <option>Sunset Retreat, Hawaii</option>
-                  <option>City Lights Loft, New York</option>
+                  <option>City textWhites Loft, New York</option>
                 </select>
                 <!-- Location Icon -->
                 <span
@@ -565,7 +572,7 @@
               <textarea
                 rows="4"
                 placeholder="Enter your Message here..."
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-black/40 border border-surface text-textWhite focus:outline-none focus:ring-2 focus:ring-purple-500"
               ></textarea>
             </div>
 
@@ -576,12 +583,12 @@
               <label class="flex items-center gap-2 text-gray-400 text-sm">
                 <input
                   type="checkbox"
-                  class="rounded bg-gray-700 border-gray-600"
+                  class="rounded bg-gray-700 scheme-dark  border-gray-600"
                 />
                 I agree with Terms of Use and Privacy Policy
               </label>
               <button
-                class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-md"
+                class="px-6 py-3 bg-primary hover:bg-purple-500 text-textWhite rounded-md"
               >
                 Send Your Message
               </button>
@@ -598,7 +605,7 @@
         >
           <div>
             <h1
-              class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left text-white"
+              class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left text-textWhite"
             >
               Comprehensive Pricing Details
             </h1>
@@ -628,10 +635,10 @@
         </div>
         <!-- Note Section -->
         <div
-          class="hidden lg:block bg-[#111] rounded-lg p-4 border border-[#191919] text-sm text-gray-400"
+          class="hidden lg:block bg-[#111] rounded-lg p-4 border border-surface text-sm text-gray-400"
         >
           <p class=" ">
-            <span class="font-semibold text-white">Note <span>:</span></span>
+            <span class="font-semibold text-textWhite">Note <span>:</span></span>
             The figures provided above are estimates and may vary depending on
             the property, location, and individual circumstances.
           </p>
@@ -642,7 +649,7 @@
           <!-- Listing Price -->
           <div class="w-[200px] mb-4 lg:mb-0">
             <p class="text-sm text-gray-400">Listing Price</p>
-            <p class="text-3xl font-bold text-white">$1,250,000</p>
+            <p class="text-3xl font-bold text-textWhite">$1,250,000</p>
           </div>
 
           <!-- Fees Box Component (Reusable) -->
@@ -651,11 +658,11 @@
           >
             <!-- Box Header -->
             <div
-              class="flex justify-between items-center border-b border-[#191919] pb-4"
+              class="flex justify-between items-center border-b border-surface pb-4"
             >
-              <h3 class="text-lg font-semibold text-white">Additional Fees</h3>
+              <h3 class="text-lg font-semibold text-textWhite">Additional Fees</h3>
               <button
-                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-[#191919] hover:bg-gray-700 text-gray-300"
+                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-surface hover:bg-gray-700 text-gray-300"
               >
                 Learn More
               </button>
@@ -664,15 +671,15 @@
             <!-- Fees Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
               <!-- Property Transfer Tax -->
-              <div class="border-b border-[#191919] pb-4">
-                <div class="lg:border-r border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
+                <div class="lg:border-r border-surface pb-4">
                   <p class="text-gray-400">Property Transfer Tax</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$25,000</span>
+                    <span class="text-lg font-bold text-textWhite">$25,000</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Based on the sale price and local regulations
                     </span>
@@ -681,15 +688,15 @@
               </div>
 
               <!-- Legal Fees -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Legal Fees</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$3,000</span>
+                    <span class="text-lg font-bold text-textWhite">$3,000</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Approximate cost for legal services, including title
                       transfer
@@ -699,15 +706,15 @@
               </div>
 
               <!-- Home Inspection -->
-              <div class="border-b border-[#191919] pb-4">
-                <div class="lg:border-r border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
+                <div class="lg:border-r border-surface pb-4">
                   <p class="text-gray-400">Home Inspection</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$500</span>
+                    <span class="text-lg font-bold text-textWhite">$500</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Recommended for due diligence
                     </span>
@@ -715,15 +722,15 @@
                 </div>
               </div>
               <!-- Property Insurance -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Property Insurance</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$1,200</span>
+                    <span class="text-lg font-bold text-textWhite">$1,200</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Annual cost for comprehensive property insurance
                     </span>
@@ -737,9 +744,9 @@
                 <div
                   class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                 >
-                  <span class="text-lg font-bold text-white">Varies</span>
+                  <span class="text-lg font-bold text-textWhite">Varies</span>
                   <span
-                    class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                    class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                   >
                     If applicable, consult with your lender for specific details
                   </span>
@@ -757,11 +764,11 @@
           >
             <!-- Box Header -->
             <div
-              class="flex justify-between items-center border-b border-[#191919] pb-4"
+              class="flex justify-between items-center border-b border-surface pb-4"
             >
-              <h3 class="text-lg font-semibold text-white">Additional Fees</h3>
+              <h3 class="text-lg font-semibold text-textWhite">Additional Fees</h3>
               <button
-                class="px-4 py-1.5 text-sm rounded-lg bg-[#191919] hover:bg-gray-700 text-gray-300"
+                class="px-4 py-1.5 text-sm rounded-lg bg-surface hover:bg-gray-700 text-gray-300"
               >
                 Learn More
               </button>
@@ -770,14 +777,14 @@
             <!-- Fees Grid -->
             <div class="grid grid-cols-1 gap-6 text-sm">
               <!-- Property Transfer Tax -->
-              <div class="md:col-span-2 border-b border-[#191919] pb-4">
+              <div class="md:col-span-2 border-b border-surface pb-4">
                 <p class="text-gray-400 italic">Property Taxes</p>
                 <div
                   class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                 >
-                  <span class="text-lg font-bold text-white">$1,250</span>
+                  <span class="text-lg font-bold text-textWhite">$1,250</span>
                   <span
-                    class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                    class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                   >
                     Approximate monthly property tax based on the sale price and
                     local rates
@@ -791,9 +798,9 @@
                 <div
                   class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                 >
-                  <span class="text-lg font-bold text-white">$300</span>
+                  <span class="text-lg font-bold text-textWhite">$300</span>
                   <span
-                    class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                    class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                   >
                     Monthly fee for common area maintenance and security
                   </span>
@@ -811,11 +818,11 @@
           >
             <!-- Box Header -->
             <div
-              class="flex justify-between items-center border-b border-[#191919] pb-4"
+              class="flex justify-between items-center border-b border-surface pb-4"
             >
-              <h3 class="text-lg font-semibold text-white">Additional Fees</h3>
+              <h3 class="text-lg font-semibold text-textWhite">Additional Fees</h3>
               <button
-                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-[#191919] hover:bg-gray-700 text-gray-300"
+                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-surface hover:bg-gray-700 text-gray-300"
               >
                 Learn More
               </button>
@@ -824,27 +831,27 @@
             <!-- Fees Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
               <!-- Property Transfer Tax -->
-              <div class="border-b border-[#191919] pb-4">
-                <div class="lg:border-r border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
+                <div class="lg:border-r border-surface pb-4">
                   <p class="text-gray-400">Listing Price</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$1,250,000</span>
+                    <span class="text-lg font-bold text-textWhite">$1,250,000</span>
                   </div>
                 </div>
               </div>
 
               <!-- Legal Fees -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Additional Fees</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$29,700</span>
+                    <span class="text-lg font-bold text-textWhite">$29,700</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Property transfer tax, legal fees, inspection, insurance
                     </span>
@@ -853,15 +860,15 @@
               </div>
 
               <!-- Home Inspection -->
-              <div class="border-b border-[#191919] pb-4">
-                <div class="border-r border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
+                <div class="border-r border-surface pb-4">
                   <p class="text-gray-400">Down Payment</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$250,000</span>
+                    <span class="text-lg font-bold text-textWhite">$250,000</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       20%
                     </span>
@@ -869,15 +876,15 @@
                 </div>
               </div>
               <!-- Property Insurance -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Mortgage Amount</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$1,000,000</span>
+                    <span class="text-lg font-bold text-textWhite">$1,000,000</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       If applicable
                     </span>
@@ -896,11 +903,11 @@
           >
             <!-- Box Header -->
             <div
-              class="flex justify-between items-center border-b border-[#191919] pb-4"
+              class="flex justify-between items-center border-b border-surface pb-4"
             >
-              <h3 class="text-lg font-semibold text-white">Additional Fees</h3>
+              <h3 class="text-lg font-semibold text-textWhite">Additional Fees</h3>
               <button
-                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-[#191919] hover:bg-gray-700 text-gray-300"
+                class="px-6 lg:px-4 py-4 lg:py-1.5 text-sm rounded-lg bg-surface hover:bg-gray-700 text-gray-300"
               >
                 Learn More
               </button>
@@ -909,41 +916,41 @@
             <!-- Fees Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
               <!-- Property Transfer Tax -->
-              <div class="border-b border-[#191919] pb-4">
-                <div class="lg:border-r border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
+                <div class="lg:border-r border-surface pb-4">
                   <p class="text-gray-400">Property Taxes</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$1,250</span>
+                    <span class="text-lg font-bold text-textWhite">$1,250</span>
                   </div>
                 </div>
               </div>
 
               <!-- Legal Fees -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Homeowners' Association Fee</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$300</span>
+                    <span class="text-lg font-bold text-textWhite">$300</span>
                   </div>
                 </div>
               </div>
 
               <!-- Home Inspection -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Mortgage Payment</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white"
+                    <span class="text-lg font-bold text-textWhite"
                       >Varies based on terms and interest rate</span
                     >
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       If applicable
                     </span>
@@ -951,15 +958,15 @@
                 </div>
               </div>
               <!-- Property Insurance -->
-              <div class="border-b border-[#191919] pb-4">
+              <div class="border-b border-surface pb-4">
                 <div>
                   <p class="text-gray-400">Property Insurance</p>
                   <div
                     class="flex items-center gap-2 lg:flex-wrap lg:justify-start"
                   >
-                    <span class="text-lg font-bold text-white">$100</span>
+                    <span class="text-lg font-bold text-textWhite">$100</span>
                     <span
-                      class="rounded-lg lg:rounded-full bg-[#191919] text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
+                      class="rounded-lg lg:rounded-full bg-surface text-gray-400 text-md mt-2 lg:mt-0 p-3 lg:p-2"
                     >
                       Approximate monthly cost
                     </span>
@@ -972,7 +979,7 @@
       </section>
 
       <!-- FAQ Section -->
-      <section class="text-white py-16 px-3 lg:px-6 relative">
+      <section class="text-textWhite py-16 px-3 lg:px-6 relative">
         <!-- <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
@@ -1016,7 +1023,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1039,7 +1046,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1062,7 +1069,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1085,7 +1092,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1108,7 +1115,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1131,7 +1138,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1154,7 +1161,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1177,7 +1184,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1200,7 +1207,7 @@
                 <!--  Button -->
                 <div>
                   <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
                   >
                     Read More
                   </button>
@@ -1262,7 +1269,7 @@
 
     <!-- CTA -->
     <section
-      class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white"
+      class="relative bg-cover bg-center py-10 md:py-20 px-8 text-textWhite"
       style="
         background-image:
           url(&quot;assets/imges/cat/back-cat-2.png&quot;),
@@ -1298,7 +1305,7 @@
         <!--  Button -->
         <div class="w-full md:w-auto">
           <button
-            class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+            class="bg-primary hover:bg-purple-700 w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
           >
             Explore Properties
           </button>
@@ -1312,7 +1319,7 @@
     <!-- Footer -->
     <footer class="bg-[rgb(20,20,20)] py-12 px-6">
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-[#191919] pb-10"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-surface pb-10"
       >
         <!-- Logo + Email -->
         <div class="col-span-2">
@@ -1379,8 +1386,8 @@
         <!-- Links -->
         <div>
           <div class="border-e-2 border-e-[#303030] md:border-none">
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-textWhite">Home</h3>
+            <ul class="space-y-2 text-textWhite/90 md:text-gray-400 text-sm">
               <li><a href="#">Hero Section</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">Properties</a></li>
@@ -1391,11 +1398,11 @@
         </div>
 
         <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
-          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+          <h3 class="font-semibold mb-4 text-gray-400 md:text-textWhite">
             About Us
           </h3>
           <ul
-            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
+            class="space-y-2 text-textWhite/90 md:text-gray-400 text-sm pb-4 md:pb-0"
           >
             <li><a href="#">Our Story</a></li>
             <li><a href="#">Our Works</a></li>
@@ -1410,11 +1417,11 @@
             <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
               <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
               <h3
-                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-textWhite"
               >
                 Properties
               </h3>
-              <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <ul class="space-y-2 text-textWhite/90 md:text-gray-400 text-sm">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Categories</a></li>
               </ul>
@@ -1426,11 +1433,11 @@
         <div>
           <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
             <h3
-              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-textWhite"
             >
               Services
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 text-textWhite/90 md:text-gray-400 text-sm">
               <li><a href="#">Valuation Mastery</a></li>
               <li><a href="#">Strategic Marketing</a></li>
               <li><a href="#">Negotiation Wizardry</a></li>
@@ -1445,10 +1452,10 @@
             class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
           >
             <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+            <h3 class="font-semibold mb-4 text-gray-400 md:text-textWhite">
               Contact Us
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 text-textWhite/90 md:text-gray-400 text-sm">
               <li><a href="#">Contact Form</a></li>
               <li><a href="#">Our Offices</a></li>
             </ul>
@@ -1461,7 +1468,7 @@
     <!-- Bottom Footer -->
     <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white/90 text-sm bg-[rgb(25,25,25)]"
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-textWhite/90 text-sm bg-[rgb(25,25,25)]"
       >
         <div
           class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0"
@@ -1476,22 +1483,22 @@
           <a
             href=" "
             class="bg-[rgb(20,20,20)] hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500"
-            ><i class="fa-brands fa-facebook-f text-white"></i
+            ><i class="fa-brands fa-facebook-f text-textWhite"></i
           ></a>
           <a
             href=" "
             class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
-            ><i class="fa-brands fa-linkedin-in text-white"></i
+            ><i class="fa-brands fa-linkedin-in text-textWhite"></i
           ></a>
           <a
             href=""
             class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
-            ><i class="fa-brands fa-twitter text-white"></i
+            ><i class="fa-brands fa-twitter text-textWhite"></i
           ></a>
           <a
             href=" "
             class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
-            ><i class="fa-brands fa-youtube text-white"></i
+            ><i class="fa-brands fa-youtube text-textWhite"></i
           ></a>
         </div>
       </div>
@@ -1525,7 +1532,7 @@
     <script>
       const thumbsSwiper = new Swiper(".thumbs-swiper", {
         slidesPerView: 9.05,
-        spaceBetween: 5,
+        spaceBetween: 2,
         freeMode: true,
         loop: false,
         slidesPerGroup: 2,
@@ -1533,17 +1540,29 @@
 
         breakpoints: {
           0: {
-            slidesPerView: 3,
+            slidesPerView: 4.05,
             slidesPerGroup: 1,
+             slidesOffsetBefore: 5.5,
+            slidesOffsetAfter: 40,
           },
           640: {
             slidesPerView: 5,
             slidesPerGroup: 2,
           },
-          1024: { slidesPerView: 7, slidesPerGroup: 2 },
-          1440: {
-            slidesPerView: 9,
+          1024: {
+            slidesPerView: 7,
+            slidesPerGroup: 2 
+          },
+          1366: {
+            slidesPerView: 9.1,
             slidesPerGroup: 2,
+
+          },
+          1440: {
+            slidesPerView: 10.1,
+            slidesPerGroup: 2,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 40,
           },
         },
       });
@@ -1556,14 +1575,14 @@
       thumbs.forEach((img) => {
         const slide = document.createElement("div");
         slide.classList.add("swiper-slide");
-        slide.innerHTML = `<img src="${img.src}" class="w-[600px] h-[500px] rounded-lg object-cover"/>`;
+        slide.innerHTML = `<img src="${img.src}" class=" labtop-s:w-[600px] labtop-m:w-[640px] max-w-[640px] w-[95%] h-[250px] lg:h-[500px] rounded-lg object-cover"/>`;
         mainWrapper.appendChild(slide);
       });
 
       const mainSwiper = new Swiper(".main-swiper", {
         slidesPerView: 1,
         slidesPerGroup: 2,
-        spaceBetween: 20,
+        // spaceBetween: 20,
         loop: true,
         navigation: {
           nextEl: ".custom-next",
@@ -1572,18 +1591,41 @@
 
         breakpoints: {
           0: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+          spaceBetween: 10,
+          slidesOffsetBefore: 10,
+          slidesOffsetAfter: 20,
           },
           640: {
             slidesPerView: 2,
             slidesPerGroup: 2,
           },
           1024: {
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          1366: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 0,
+          slidesOffsetBefore: 6,
+          slidesOffsetAfter: 10,
+
           },
           1440: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 0,
+          slidesOffsetBefore: 10,
+          slidesOffsetAfter: 10,
+
+          },
+          1920: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+          2560: {
             slidesPerView: 4,
             slidesPerGroup: 4,
           },
@@ -1593,7 +1635,7 @@
           el: ".custom-pagination",
           clickable: true,
           renderBullet: function (index, className) {
-            return `<span class="swiper-bullet block w-12 h-2 bg-[#703BF7] rounded-full cursor-pointer ${className}"></span>`;
+            return `<span class="swiper-bullet block w-12 h-2 bg-primary rounded-full cursor-pointer ${className}"></span>`;
           },
         },
 
