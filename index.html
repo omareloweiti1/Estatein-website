@@ -25,9 +25,9 @@
       }
     </style>
   </head>
-  <body class="bg-dark text-light transition-colors duration-500">
+  <body class="bg-backgroundPrimary text-textWhite transition-colors duration-500">
     <!-- ====== Header Section ====== -->
-    <header id="topHeader" class="relative transition-all duration-500">
+    <header id="topHeader" class="relative bg-surface transition-all duration-500">
       <img
         src="assets/imges/heder-icon/backe-ground.png"
         class="w-full h-[78px] md:h-[49px] lg:h-[55px] 2xl:h-[63px] object-cover"
@@ -52,9 +52,7 @@
     </header>
 
     <!-- ====== Navbar Section ====== -->
-    <nav
-      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
-    >
+    <nav class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-surface py-4 px-6 md:px-[80px] border-t border-b border-border-light">
       <div class="flex items-center space-x-2">
         <a href="#">
           <picture>
@@ -119,9 +117,8 @@
       <!-- Contact Us (Desktop) -->
       <a
         href="contact.html"
-        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
-        >Contact Us</a
-      >
+        class="hidden lg:block bg-backgroundPrimary hover:bg-black/50 px-6 py-3 rounded-lg min-text">Contact Us
+      </a>
 
       <!-- Hamburger Menu (Mobile) -->
       <button id="menuBtn" class="lg:hidden text-3xl">
@@ -132,12 +129,12 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)] absolute top-full left-0 w-full z-50"
+        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-backgroundPrimary absolute top-full left-0 w-full z-50"
       >
-        <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
+        <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded active-mobile">Home</a>
         <a
           href="about-us.html"
-          class="block hover:bg-black/50 px-4 py-2 rounded"
+          class="block hover:bg-black/50 px-4 py-2 rounded "
           >About Us</a
         >
         <a
@@ -157,7 +154,7 @@
     </nav>
 
     <!-- <nav
-      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
+      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-surface py-4 px-6 md:px-[80px] border-t border-b border-border-light"
     >
       <div class="flex items-center space-x-2">
         <a href="#">
@@ -208,7 +205,7 @@
 
       <a
         href="contact.html"
-        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
+        class="hidden lg:block bg-backgroundPrimary hover:bg-black/50 px-6 py-3 rounded-lg min-text"
         >Contact Us</a
       >
 
@@ -220,7 +217,7 @@
     <!-- Mobile Menu -->
     <!-- <div
       id="mobileMenu"
-      class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)]"
+      class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-backgroundPrimary"
     >
       <a href="#" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
       <a href="about-us.html" class="block hover:bg-black/50 px-4 py-2 rounded"
@@ -235,233 +232,128 @@
       >
     </div> -->
  
-    <main class="">
-      <!-- Hero Section  -->
-      <section
-        class="relative w-full pl-0 lg:pl-[50px] bg-[#0f0f0f] lg:h-[800px] desktop-2xl:h-[1200px]"
-      >
+       <!-- Hero Section  -->
+      <section class="relative w-full pl-0 lg:pl-[100px] bg-backgroundPrimary lg:h-[800px] desktop-2xl:h-[1200px]">
+
         <div class="flex flex-col lg:flex-row items-center lg:items-start">
           <div class="order-2 lg:order-1 flex-1 text-left space-y-4">
-            <div
-              class="p-5 pt-[20%] md:pt-[10%] h-auto lg:h-[700px] desktop-2xl:h-[1200px] flex flex-col justify-start"
-            >
+            <div class="p-5 pt-[20%] md:pt-[10%] h-auto lg:h-[700px] desktop-2xl:h-[1200px] flex flex-col justify-start">
               <!-- labtop-s:w-[550px] labtop-m:w-[650px] labtop-xxl:w-[670px] labtop-l:w-auto -->
-              <h1
-                class="text-2xl lg:text-5xl font-semibold w-full lg:w-[400px] desktop-2xl:text-7xl xl:w-[90%] 2xl:w-[90%] text-left whitespace-pre-line leading-14 desktop-2xl:leading-20"
-              >
-                Discover Your Dream Property with Estatein
-              </h1>
+              <h1 class=" heroH1 w-full lg:w-[400px]  xl:w-[90%] 2xl:w-[90%] text-left whitespace-pre-line leading-14 desktop-2xl:leading-20"> 
+                Discover Your Dream 
+                Property with Estatein</h1>
 
-              <p
-                class="text-sm lg:text-lg text-gray-400 mt-2 lg:mt-5 mb-4 lg:mb-9 w-full lg:w-[400px] desktop-2xl:text-3xl xl:w-[90%] text-left mx-auto lg:mx-0 desktop-2xl:my-14"
-              >
+              <p class="text-pragraph  mt-2 lg:mt-5 mb-4 lg:mb-9 w-full lg:w-[400px]  xl:w-[90%] text-left mx-auto lg:mx-0 desktop-2xl:my-14">
                 Your journey to finding the perfect property begins here.
                 Explore our listings to find the home that matches your dreams.
               </p>
 
-              <div
-                class="flex flex-col lg:flex-row gap-4 w-full lg:w-auto mb-8 lg:mb-12 justify-center lg:justify-start desktop-2xl:mb-14 desktop-2xl:mt-10"
-              >
-                <a href="about-us.html"
-                  class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] hover:bg-dark-200 text-white px-6 py-3 desktop-2xl:text-2xl rounded-lg w-full lg:w-auto"
-                >
-                  Learn More
-                </a>
-
-                <a href="properties.html"
-                  class="bg-[rgb(112,59,247)] hover:bg-[rgba(112,59,247,0.3)] px-6 py-3 rounded-lg w-full lg:w-auto desktop-2xl:text-2xl"
-                >
-                  Browse Properties
-                </a>
+              <div class="flex flex-col lg:flex-row gap-4 w-full lg:w-auto mb-8 lg:mb-12 justify-center lg:justify-start desktop-2xl:mb-14 desktop-2xl:mt-10">
+                <a href="about-us.html" class="bg-backgroundPrimary border border-border-light hover:bg-surface-200 text-textWhite px-6 py-3 text-pragraph text-center rounded-lg w-full lg:w-auto"> Learn More</a>
+                <a href="properties.html" class="bg-primary hover:bg-[rgba(112,59,247,0.3)] px-6 py-3 rounded-lg w-full lg:w-auto text-pragraph text-textWhite text-center "> Browse Properties</a>
               </div>
 
-              <div
-                class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-1 gap-2 lg:flex lg:flex-wrap lg:space-x-2 justify-center lg:justify-start mt-6 desktop-2xl:my-12"
-              >
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 xl:w-[180px] 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left lg:text-left desktop-2xl:text-4xl"
-                  >
-                    200+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left lg:text-left desktop-2xl:text-xl"
-                  >
-                    Happy Customers
-                  </p>
+              <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-1 gap-2 lg:flex lg:flex-wrap lg:space-x-2 justify-center lg:justify-start mt-6 desktop-2xl:my-12">
+                <div class="bg-surface border border-border-light p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 xl:w-[180px] 2xl:w-[250px]" > 
+                  <h1 class="numSize text-center labtop-s:text-left lg:text-left  "> 200+</h1>
+                  <p class="text-pragraph mt-2 text-center labtop-s:text-left lg:text-left ">  Happy Customers</p>
                 </div>
 
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 xl:w-[180px] 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left lg:text-left desktop-2xl:text-4xl"
-                  >
-                    10k+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left lg:text-left desktop-2xl:text-xl"
-                  >
-                    Properties For Clients
-                  </p>
+                <div class="bg-surface border border-border-light p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 xl:w-[180px] 2xl:w-[250px]">
+                  <h1 class="numSize text-center labtop-s:text-left lg:text-left  "> 10k+</h1>
+                  <p class="text-pragraph mt-2  text-center labtop-s:text-left lg:text-left "> Properties For Clients</p>
                 </div>
 
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 lg:col-span-1 xl:w-[180px] 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left lg:text-left desktop-2xl:text-4xl"
-                  >
-                    16+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left lg:text-left desktop-2xl:text-xl"
-                  >
-                    Years of Experience
-                  </p>
+                <div class="bg-surface border border-border-light p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] lg:w-[160px] col-span-2 lg:col-span-1 xl:w-[180px] 2xl:w-[250px]">
+                  <h1 class="numSize text-center labtop-s:text-left lg:text-left  "> 16+</h1>
+                  <p class="text-pragraph mt-2  text-center labtop-s:text-left lg:text-left ">Years of Experience</p>
                 </div>
+
               </div>
+
+
             </div>
           </div>
 
-          <div
-            class="relative order-1 lg:order-2 z-30 flex-1 bg-hero-container bg-no-repeat bg-cover bg-center"
-          >
-            <img
-              src="assets/imges/hero-imge/Container.png"
-              alt=""
+          <div class="relative order-1 lg:order-2 z-30 flex-1 bg-hero-container bg-no-repeat bg-cover bg-center">
+            <img src="assets/imges/hero-imge/Container.png" alt=""
               class="absolute rounded-xl lg:rounded-none mt-10 lg:mt-0 left-1/2 transform -translate-x-1/2 w-[95%] h-[350px] md:w-full md:h-[500px] lg:w-full lg:h-[780px] desktop-2xl:h-[1200px] object-fill xl:object-cover z-0"
             />
-            <img
-              src="assets/imges/hero-imge/Image.png"
-              alt=""
+            <img src="assets/imges/hero-imge/Image.png" alt=""
               class="relative rounded-xl lg:rounded-none mt-10 lg:mt-0 left-1/2 transform -translate-x-1/2 w-[95%] h-[350px] lg:w-full lg:h-[780px] md:w-full md:h-[500px] desktop-2xl:h-[1200px] object-fill xl:object-cover z-10"
             />
           </div>
         </div>
 
-        <img
-          src="assets/imges/hero-imge/Sub Container.png"
-          alt=""
+        <img src="assets/imges/hero-imge/Sub Container.png" alt=""
           class="absolute w-[140px] top-[30%] left-[6%] translate-y-[-25%] md:top-[40%] md:left-[13%] md:w-[180px] lg:top-[20%] lg:left-[45%] lg:w-[150px] lg:-translate-y-[20px] xl:top-[11%] xl:left-[46%] 2xl:top-[11%] 2xl:left-[47.5%] xl:w-[150px] desktop-2xl:w-[250px] desktop-2xl:left-[46%] z-[999]"
         />
       </section>
 
-      <!-- Services Section  -->
-      <section class="bg-[#0f0f0f] p-1 md:p-5">
-        <div class="bg-dark rounded-xl p-1 md:p-3 md:m-2 md:mx-3 m-1 mx-5">
-          <div
-            class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-[#0f0f0f] rounded-xl p-3 md:p-5 m-1 mx-1"
-          >
+            <!-- Services Section  -->
+      <section class="bg-backgroundPrimary p-1 md:p-0">
+        <div class="bg-surface rounded-xl p-1 md:p-3 md:m-2 md:mx-3 m-1 mx-5">
+          <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-backgroundPrimary rounded-xl p-3 md:p-5 m-1 mx-1" >
+           
             <!-- Card 1 -->
-            <div class="bg-dark rounded-xl p-6 relative h-44 desktop-2xl:h-48">
+            <div class="bg-surface rounded-xl p-6 relative h-44 desktop-2xl:h-48">
                <a href="properties.html">
               <div class="flex justify-center mb-4">
-                <img
-                  src="assets/imges/services-icons/Icon Container.png"
-                  alt="Find Home"
-                  class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
-                />
+                <img src="assets/imges/services-icons/Icon Container.png" alt="Find Home" class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"/>
               </div>
-              <h3
-                class="text-white text-center text-sm md:text-lg font-medium desktop-2xl:text-xl"
-              >
-                Find Your Dream Home
-              </h3>
-             <span
-                class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-gray-500"
-                ><img src="assets/imges/services-icons/Icon.png" alt=""
-              /></span></a>
+              <h3 class="text-textWhite text-center card-text"> Find Your Dream Home</h3>
+             <span class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-text-muted"><img src="assets/imges/services-icons/Icon.png" alt=""/></span></a>
             </div>
 
             <!-- Card 2 -->
-            <div class="bg-dark rounded-xl p-6 relative h-44 desktop-2xl:h-48">
+            <div class="bg-surface rounded-xl p-6 relative h-44 desktop-2xl:h-48">
                <a href="properties.html">
-
               <div class="flex justify-center mb-4">
-                <img
-                  src="assets/imges/services-icons/Icon Container (1).png"
-                  alt="Unlock Property Value"
-                  class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
-                />
+                <img src="assets/imges/services-icons/Icon Container (1).png" alt="Unlock Property Value" class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"/>
               </div>
-              <h3
-                class="text-white text-center text-sm md:text-lg font-medium desktop-2xl:text-xl"
-              >
-                Unlock Property Value
-              </h3>
+              <h3 class="text-textWhite text-center card-text">Unlock Property Value</h3>
               
-              <span
-                class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-gray-500"
-                ><img src="assets/imges/services-icons/Icon.png" alt=""
-              /></span>
-               </a>
+              <span class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-text-muted" ><img src="assets/imges/services-icons/Icon.png" alt=""/></span></a>
             </div>
+
             <!-- Card 3 -->
-            <div class="bg-dark rounded-xl p-6 relative h-44 desktop-2xl:h-48">
+            <div class="bg-surface rounded-xl p-6 relative h-44 desktop-2xl:h-48">
                <a href="contact.html">
-
               <div class="flex justify-center mb-4">
-                <img
-                  src="assets/imges/services-icons/Icon Container (2).png"
-                  alt="Effortless Property Management"
-                  class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
-                />
+                <img src="assets/imges/services-icons/Icon Container (2).png" alt="Effortless Property Management" class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"/>
               </div>
-              <h3
-                class="text-white text-center text-sm md:text-lg font-medium desktop-2xl:text-xl"
-              >
-                Effortless Property Management
-              </h3>
-              <span
-                class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-gray-500"
-                ><img src="assets/imges/services-icons/Icon.png" alt=""
-              /></span>
-               </a>
+              <h3 class="text-textWhite text-center card-text">Effortless Property Management</h3>
+              <span class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-text-muted" ><img src="assets/imges/services-icons/Icon.png" alt=""/></span></a>
             </div>
+
             <!-- Card 4 -->
-            <div class="bg-dark rounded-xl p-6 relative h-44 desktop-2xl:h-48">
+            <div class="bg-surface rounded-xl p-6 relative h-44 desktop-2xl:h-48">
                <a href="properties.html">
-
               <div class="flex justify-center mb-4">
-                <img
-                  src="assets/imges/services-icons/Icon Container (3).png"
-                  alt="Smart Investments"
-                  class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
-                />
+                <img src="assets/imges/services-icons/Icon Container (3).png" alt="Smart Investments" class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"/>
               </div>
-              <h3
-                class="text-white text-center text-sm md:text-lg desktop-2xl:text-xl font-medium"
-              >
-                Smart Investments, Informed Decisions
-              </h3>
-              <span
-                class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-gray-500"
-                ><img src="assets/imges/services-icons/Icon.png" alt=""
-              /></span>
+              <h3 class="text-textWhite text-center text-sm md:text-lg desktop-2xl:text-xl font-medium">Smart Investments, Informed Decisions</h3>
+              <span class="absolute h-7 w-7 desktop-2xl:w-11 desktop-2xl:h-11 top-4 right-4 text-text-muted" ><img src="assets/imges/services-icons/Icon.png" alt=""/></span>
             </div>
+            
           </div>
         </div>
       </section>
+    <main  class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]">
 
       <!-- Properties -->
-      <section class="bg-[#0f0f0f] text-white py-16 px-3 md:px-6 relative">
-        <img
+      <section class="bg-backgroundPrimary text-textWhite py-16 px-3 md:px-6 relative">
+          <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-8 left-0 w-20 ipad-m:w-25 xl:w-30 desktop-2xl:w-45 ml-6 ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-20 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
+          class="absolute top-10 left-0 w-15 ipad-m:w-15 ipad-l:w-20 desktop-2xl:w-25 ml-6 
+          ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-16 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
         />
         <!-- Header -->
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
-          <div
-            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
-          >
-            <h2 class="text-3xl font-bold mb-2">Featured Properties</h2>
-            <p class="text-gray-400 max-w-xl">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
+          <div class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20">
+            <h2 class="sectionH1 mb-2">Featured Properties</h2>
+            <p class="text-pragraph max-w-5xl">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
               available through Estatein. Click "View Details" for more
@@ -469,465 +361,280 @@
             </p>
           </div>
           <a href="properties.html"
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
-          >
-            View All Properties
+            class="hidden text-button md:block lg:mt-18 bg-transparent border border-border-light px-5 py-4 labtop-s:mr-2 labtop-l:mr-11
+             labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-border-dark transition">View All Properties
           </a>
         </div>
-
+ 
         <!-- Cards -->
         <div class="swiper swiper-properties">
           <div class="swiper-wrapper">
+           
             <!-- Card  1 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/hamburg.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
-                />
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/hamburg.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
 
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Rustic Retreat Cottage
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
                 </p>
 
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
 
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
 
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
                 </div>
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
                   </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
                 </div>
+
               </div>
             </div>
 
-            <!-- Card 2 -->
+            <!-- Card  2 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/architecturere.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
-                />
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/abuilding.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
 
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Seaside Serenity Villa
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban
-                  neighborhood...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
-                </p>
-
-                <!-- Badges -->
-                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 3-Bedroom
-                  </span>
-
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
-
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
-                </div>
-
-                <!-- Price + Button -->
-                <div class="flex justify-between items-center">
-                  <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
-                  </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/test.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"
-                />
-
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Metropolitan Haven
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  A chic and fully-furnished 2-bedroom apartment with panoramic
-                  city views...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
-                </p>
-
-                <!-- Badges -->
-                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 2-Bedroom
-                  </span>
-
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 2-Bathroom
-                  </span>
-                  <span
-                    class="flex items-center gap-1 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
-                </div>
-                <!-- Price + Button -->
-                <div class="flex justify-between items-center">
-                  <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
-                  </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/building.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] mobile-m:w-full mobile-xs:w-[280px] md:max-w-sm md:h-[300px] object-cover mx-auto"
-                />
-
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Rustic Retreat Cottage
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in gated
-                  community with modern finishes...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
-                </p>
-
-                <!-- Badges -->
-                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 3-Bedroom
-                  </span>
-
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 2.5-Bathroom
-                  </span>
-
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
-                </div>
-
-                <!-- Price + Button -->
-                <div class="flex justify-between items-center">
-                  <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
-                  </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/praha.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] mobile-m:w-full mobile-xs:w-[280px] md:max-w-sm md:h-[300px] object-cover mx-auto"
-                />
-
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Urban Chic Apartment
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
                 </p>
 
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
                 </div>
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
                   </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
                 </div>
+
               </div>
             </div>
 
-            <!-- Card 6 -->
+            <!-- Card  3 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/xian.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] mobile-m:w-full mobile-xs:w-[280px] md:max-w-sm md:h-[300px] object-cover mx-auto"
-                />
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/architecture.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
 
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Mountain Escape Lodge
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
                 </p>
 
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
                 </div>
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
                   </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
                 </div>
+
               </div>
             </div>
 
-            <!-- Card 7 -->
+            <!-- Card  4 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/architecture.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] mobile-m:w-full mobile-xs:w-[280px] md:max-w-sm md:h-[300px] object-cover mx-auto"
-                />
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/architecturere.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
 
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Modern Family Home
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
                 </p>
 
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
                 </div>
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
                   </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
                 </div>
+
               </div>
             </div>
 
-            <!-- Card 8 -->
+            <!-- Card  5 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#141414] border border-gray-800 w-sm md:w-[413px] mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left"
-              >
-                <img
-                  src="assets/imges/featured-cards/abuilding.jpg"
-                  alt="Seaside Serenity Villa"
-                  class="rounded-xl mb-4 w-full max-w-xs h-[200px] mobile-m:w-full mobile-xs:w-[280px] md:max-w-sm md:h-[300px] object-cover mx-auto"
-                />
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/building.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
 
-                <h3 class="text-lg font-semibold mb-2 ms-[11px]">
-                  Luxury Penthouse Suite
-                </h3>
-                <p class="text-gray-400 text-sm mb-4 max-w-xs ms-[11px]">
-                  An elegant 3-bedroom, 2.5-bathroom townhouse in a gated
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
                   community...
-                  <a href="property_details.html" class="text-white/90 underline">Read More</a>
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
                 </p>
 
                 <!-- Badges -->
                 <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bed"></i> 4-Bedroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-bath"></i> 3-Bathroom
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
 
-                  <span
-                    class="flex items-center gap-2 bg-[#1c1c1c] text-sm px-3 py-1 rounded-full"
-                  >
-                    <i class="fa-solid fa-house"></i> Villa
-                  </span>
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
                 </div>
 
                 <!-- Price + Button -->
                 <div class="flex justify-between items-center">
                   <div class="ms-[11px]">
-                    <p class="text-gray-400 text-sm">Price</p>
-                    <p class="text-lg">$550,000</p>
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
                   </div>
-                  <a href="property_details.html"
-                    class="bg-purple-600 hover:bg-purple-700 px-10 md:px-5 py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition"
-                  >
-                    View Property Details
-                  </a>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
                 </div>
+
               </div>
             </div>
+
+            <!-- Card  6 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/praha.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
+
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
+                  community...
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
+                </p>
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
+
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
+
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
+                </div>
+
+                <!-- Price + Button -->
+                <div class="flex justify-between items-center">
+                  <div class="ms-[11px]">
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
+                  </div>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Card  7 -->
+            <div class="swiper-slide">
+              <div
+                class="bg-backgroundPrimary border border-border-light w-sm md:w-[413px]
+                mobile-m:w-sm mobile-xs:w-[330px] mobile-xs:mb-4 h-auto rounded-2xl overflow-hidden p-5 flex flex-col text-left" >
+                <img src="assets/imges/featured-cards/samarkand.jpg" alt="Seaside Serenity Villa" class="rounded-xl mb-4 w-full
+                 max-w-xs h-[200px] md:max-w-sm md:h-[300px] mobile-m:w-full mobile-xs:w-[280px] object-cover mx-auto"/>
+
+                <h3 class="card-title mb-2 ms-[11px]">Rustic Retreat Cottage</h3>
+                <p class="text-pragraph mb-4 max-w-xs ms-[11px] max-h-[51px] overflow-hidden">
+                  An  3-bedroom, 2.5-bathroom townhouse in a gated
+                  community...
+                  <a href="property_details.html" class="text-textWhite/90 underline">Read More</a>
+                </p>
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-3.5 md:gap-2 mb-4">
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bed"></i> 4-Bedroom</span>
+
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-bath"></i> 3-Bathroom</span>
+
+                  <span class="flex items-center gap-1 bg-surface text-nav px-3 py-1 rounded-full"><i class="fa-solid fa-house"></i> Villa</span>
+                </div>
+
+                <!-- Price + Button -->
+                <div class="flex justify-between items-center">
+                  <div class="ms-[11px]">
+                    <p class="text-pragraph">Price</p>
+                    <p class="card-title">$550,000</p>
+                  </div>
+                  <a href="property_details.html" class="bg-primary hover:bg-purple-700 px-10 md:px-5
+                   py-4 md:py-2 mobile-xs:px-3 mobile-s:px-3 rounded-lg text-sm font-medium transition">View Property Details</a>
+                </div>
+
+              </div>
+            </div>
+
+            
           </div>
 
           <!-- Pagination taplet,desktop -->
           <div
-            class="hidden md:flex justify-between items-center mt-10 text-gray-400"
+            class="hidden md:flex justify-between items-center mt-10 text-gray-400 border-t border-[#1d1d1d] pt-4"
           >
             <p
               id="counter-properties-desktop"
@@ -937,12 +644,12 @@
               class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
             >
               <button
-                class="prev-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-properties w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next-properties w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-properties w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -951,10 +658,10 @@
 
           <!-- Pagination mobile -->
           <div
-            class="flex justify-between items-center border-t border-t-[rgb(38,38,38)] text-gray-400 md:hidden"
+            class="flex justify-between items-center border-t border-t-border-light text-gray-400 md:hidden"
           >
             <button
-              class="bg-transparent border border-gray-600 px-5 py-2 mt-4 rounded-lg hover:bg-gray-800 transition"
+              class="bg-transparent border border-border-light px-5 py-2 mt-4 rounded-lg hover:bg-border-dark transition"
             >
               View All Properties
             </button>
@@ -976,110 +683,74 @@
       </section>
 
       <!--  Testimonials -->
-      <section class="bg-[#0f0f0f] text-white py-16 px-3 lg:px-6 relative">
-        <img
+      <section class="bg-backgroundPrimary text-textWhite py-16 px-3 lg:px-6 relative">
+          <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-8 left-0 w-20 ipad-m:w-25 xl:w-30 desktop-2xl:w-45 ml-6 ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-20 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
+          class="absolute top-10 left-0 w-15 ipad-m:w-15 ipad-l:w-20 desktop-2xl:w-25 ml-6 
+          ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-16 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
         />
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
-          <div
-            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
-          >
-            <h2 class="text-3xl font-bold mb-2">What Our Clients Say</h2>
-            <p class="text-gray-400 max-w-xl">
-              Read the success stories and heartfelt testimonials from our
-              valued clients. Discover why they chose Estatein for their real
-              estate needs.
+        <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
+          <div class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20">
+            <h2 class="sectionH1 mb-2">Featured Properties</h2>
+            <p class="text-pragraph max-w-5xl">
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
             </p>
           </div>
-          <a href="about-us.html#clients"
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
-          >
-            View All Testimonials
+          <a href="properties.html"
+            class="hidden text-button md:block lg:mt-18 bg-transparent border border-border-light px-5 py-4 labtop-s:mr-2 labtop-l:mr-11
+             labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-border-dark transition">View All Properties
           </a>
         </div>
 
         <!-- Cards -->
         <div class="swiper swiper-testimonials">
           <div class="swiper-wrapper">
+
             <!-- Card 1 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Exceptional Service!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Our experience with property Estatein was outstanding. Their
-                    team's dedication and professionalism made finding our dream
-                    home a breeze. Highly recommended!
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (12).png"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
@@ -1088,160 +759,90 @@
 
             <!-- Card 2 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Exceptional Service!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Estatein made buying our house incredibly simple. From start
-                    to finish, their guidance and support turned what could be
-                    stressful into a pleasant journey.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (2).png"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Jenny Wilson</p>
-                      <p class="text-gray-400 text-sm ml-2">Canada, Toronto</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
+            
             <!-- Card 3 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Truly Professional
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    The Estatein property staff were patient, responsive, and
-                    very professional. They explained every detail clearly and
-                    always kept our best interests in mind.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (3).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
@@ -1250,79 +851,44 @@
 
             <!-- Card 4 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Great Experience!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Working with Estatein was property a wonderful experience.
-                    They provided helpful advice, honest feedback, and made us
-                    confident in every decision we took.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (4).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Robert Fox</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, New York</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
@@ -1331,79 +897,44 @@
 
             <!-- Card 5 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Highly Recommended!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Estatein truly exceeded our expectations. They offered
-                    excellent service, quick responses, and helped us secure the
-                    perfect property without hassle.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (5).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Leslie Alexander</p>
-                      <p class="text-gray-400 text-sm ml-2">Germany, Berlin</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
@@ -1412,79 +943,44 @@
 
             <!-- Card 6 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Outstanding Support!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    From the very first call to the closing day, Estatein gave
-                    us unmatched support. Their friendly approach and market
-                    knowledge were beyond impressive.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (6).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Darrell Steward</p>
-                      <p class="text-gray-400 text-sm ml-2">France, Paris</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
@@ -1493,412 +989,56 @@
 
             <!-- Card 7 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[393px] h-auto rounded-2xl 
+              overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]" >
+                <div class="text-left ml-8 ">
+                  <div class="flex flex-row items-start h-8 ">
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                    justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center
+                       justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
+                    <div class="bg-backgroundPrimary w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center 
+                      justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition">
+                      <img src="assets/imges/clients-reviews/Shape.png" alt="Seaside Serenity Villa" class="w-4 h-4 object-contain"/>
                     </div>
                   </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Stress-Free Move!
-                  </h3>
+                  <h3 class="card-title mb-2 ml-4 md:ml-0 text-left mt-4 ">Exceptional Service!</h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    I couldn’t believe how smooth Estatein made everything. No
-                    pressure, no confusion—just clear Estatein steps and
-                    professional advice all along the process.
+                  <p class="text-pragraph mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs">
+                  Our experience with Estatein was outstanding. Their team's dedication 
+                  and professionalism made finding our dream home a breeze. Highly recommended!
                   </p>
 
                   <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (7).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
+                    <img src="assets/imges/clients-reviews/client- (12).png" alt="" class="w-[60px] h-[60px] rounded-full object-cover"/>
                     <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
+                      <p class="text-nav ml-2">Wade Warren</p>
+                      <p class="text-pragraph ml-2">USA, California</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Card 8 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                  </div>
 
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Exceptional Service!
-                  </h3>
 
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Our experience with Estatein was outstanding recommended.
-                    Their team's dedication and professionalism made finding our
-                    dream home a breeze. Highly recommended!
-                  </p>
-
-                  <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (8).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="font-bold text-sm ml-2">Kristin Watson</p>
-                      <p class="text-gray-400 text-sm ml-2">Spain, Madrid</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                  </div>
-
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Fantastic Results!
-                  </h3>
-
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    We had an amazing experience. Estatein was always ahead,
-                    scheduling viewings, Estatein negotiating deals, and making
-                    sure everything was done properly.
-                  </p>
-
-                  <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (9).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 10 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                  </div>
-
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Exceptional Service!
-                  </h3>
-
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Our experience recommended with Estatein was outstanding.
-                    Their team's dedication and professionalism made finding our
-                    dream home a breeze. Highly recommended!
-                  </p>
-
-                  <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (10).png"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 11 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[393px] h-auto rounded-2xl overflow-hidden p-5 flex flex-col items-center text-left min-h-[306px]"
-              >
-                <div class="text-left ml-8">
-                  <div class="flex flex-row items-start">
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                    <div
-                      class="bg-[rgb(25,25,25)] w-8 h-8 my-5 mx-0.5 top-1/2 -translate-y-1/2 flex items-center justify-center lg:w-8 lg:h-8 rounded-full hover:bg-cyan-400/70 transition"
-                    >
-                      <img
-                        src="assets/imges/clients-reviews/Shape.png"
-                        alt="Seaside Serenity Villa"
-                        class="w-4 h-4 object-contain"
-                      />
-                    </div>
-                  </div>
-
-                  <h3 class="text-lg font-semibold mb-2 ml-4 md:ml-0 text-left">
-                    Exceptional Service!
-                  </h3>
-
-                  <p
-                    class="text-gray-400 text-sm mb-4 w-2xs md:w-sm ml-4 md:ml-0 max-w-xs"
-                  >
-                    Our experience with Estatein was dedication outstanding.
-                    Their team's dedication and professionalism made finding our
-                    dream home a breeze. Highly recommended!
-                  </p>
-
-                  <div class="flex items-center w-2xs md:w-sm ml-4 md:ml-0">
-                    <img
-                      src="assets/imges/clients-reviews/client- (11).jpg"
-                      alt=""
-                      class="w-[60px] h-[60px] rounded-full object-cover"
-                    />
-                    <div>
-                      <p class="font-bold text-sm ml-2">Wade Warren</p>
-                      <p class="text-gray-400 text-sm ml-2">USA, California</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
           <!-- Pagination taplet,desktop -->
           <div
-            class="hidden md:flex justify-between items-center mt-10 text-gray-400"
+            class="hidden md:flex justify-between items-center mt-10 text-gray-400 border-t border-[#1d1d1d] pt-4"
           >
             <p
               id="counter-testimonials-desktop"
@@ -1908,12 +1048,12 @@
               class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
             >
               <button
-                class="prev-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-testimonials w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next-testimonials w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-testimonials w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -1922,10 +1062,10 @@
 
           <!-- Pagination mobile -->
           <div
-            class="flex justify-between items-center mt-10 border-t border-t-[rgb(38,38,38)] text-gray-400 md:hidden"
+            class="flex justify-between items-center mt-10 border-t border-t-border-light text-gray-400 md:hidden "
           >
             <button
-              class="bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 hover:bg-gray-800 transition"
+              class="bg-transparent border border-border-light px-5 py-2 rounded-lg mt-4 hover:bg-border-dark transition"
             >
               View All Testimonials
             </button>
@@ -1947,30 +1087,28 @@
       </section>
 
       <!--  FAQ’s -->
-      <section class="bg-[#0f0f0f] text-white py-16 px-3 lg:px-6 relative">
-        <img
+      <section class="bg-backgroundPrimary text-textWhite py-16 px-3 lg:px-6 relative">
+         <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-8 left-0 w-20 ipad-m:w-25 xl:w-30 desktop-2xl:w-45 ml-6 ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-20 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
+          class="absolute top-10 left-0 w-15 ipad-m:w-15 ipad-l:w-20 desktop-2xl:w-25 ml-6 
+          ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-16 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
         />
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
-          <div
-            class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20"
-          >
-            <h2 class="text-3xl font-bold mb-2">Frequently Asked Questions</h2>
-            <p class="text-gray-400 max-w-xl">
-              Find answers to common questions about Estatein's services,
-              property listings, and the real estate process. We're here to
-              provide clarity and assist you every step of the way.
+       <!-- Header -->
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
+          <div class="pl-4.5 ipad-m:pl-4 ipad-l:pl-6 labtop-s:pl-3 labtop-m:pl-16 labtop-l:pl-20 labtop-xl:pl-5 labtop-xxl:pl-20">
+            <h2 class="sectionH1 mb-2">Featured Properties</h2>
+            <p class="text-pragraph max-w-5xl">
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
             </p>
           </div>
-          <button
-            class="hidden md:block bg-transparent border border-gray-600 px-5 py-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-gray-800 transition"
-          >
-            View All Testimonials
-          </button>
+          <a href="properties.html"
+            class="hidden text-button md:block lg:mt-18 bg-transparent border border-border-light px-5 py-4 labtop-s:mr-2 labtop-l:mr-11
+             labtop-xl:mr-8 labtop-xxl:mr-18 rounded-lg mt-4 md:mt-0 hover:bg-border-dark transition">View All Properties
+          </a>
         </div>
 
         <!-- Cards -->
@@ -1978,215 +1116,127 @@
           <div class="swiper-wrapper">
             <!-- Card 1 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 2 -->
+                    <!-- Card 2 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 3 -->
+
+                    <!-- Card 3 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 4 -->
+
+                    <!-- Card 4 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 5 -->
+
+                    <!-- Card 5 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 6 -->
+                    <!-- Card 6 -->
             <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
+              <div class="bg-backgroundPrimary border border-border-light w-[95%] md:w-[400px] h-auto 
+              rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]">
+                <h3 class="card-text mb-4 text-left"> How do I search for properties on Estatein?</h3>
+                <p class="text-pragraph2 mb-6 max-w-xs">
                   Learn how to use our user-friendly search tools to find
                   properties that match your criteria.
                 </p>
                 <!--  Button -->
                 <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
+                  <button class="bg-backgroundPrimary border border-border-light w-full md:w-auto
+                   text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block">
                     Read More
                   </button>
                 </div>
               </div>
             </div>
 
-            <!-- Card 7 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find
-                  properties that match your criteria.
-                </p>
-                <!--  Button -->
-                <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
 
-            <!-- Card 8 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find
-                  properties that match your criteria.
-                </p>
-                <!--  Button -->
-                <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="swiper-slide">
-              <div
-                class="bg-[#0f0f0f] border border-gray-800 w-[95%] md:w-[400px] h-auto rounded-2xl overflow-hidden p-8 flex flex-col text-left min-h-[265px]"
-              >
-                <h3 class="text-lg font-semibold mb-4 text-left">
-                  How do I search for properties on Estatein?
-                </h3>
-                <p class="text-gray-400 text-sm mb-6 max-w-xs">
-                  Learn how to use our user-friendly search tools to find
-                  properties that match your criteria.
-                </p>
-                <!--  Button -->
-                <div>
-                  <button
-                    class="bg-[rgb(20,20,20)] border border-[rgb(38,38,38)] w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-                  >
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
 
           <!-- Pagination taplet,desktop -->
           <div
-            class="hidden md:flex justify-between items-center mt-10 text-gray-400"
+            class="hidden md:flex justify-between items-center mt-10 text-gray-400 border-t border-[#1d1d1d] pt-4"
           >
             <p
               id="counter-FAQ’s-desktop"
@@ -2196,12 +1246,12 @@
               class="flex gap-2 labtop-s:mr-2 labtop-l:mr-11 labtop-xl:mr-8 labtop-xxl:mr-18"
             >
               <button
-                class="prev-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="prev-faqs w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button
-                class="next-faqs w-10 h-10 rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
+                class="next-faqs w-[52px] h-[52px] rounded-full bg-[#1c1c1c] flex items-center justify-center hover:bg-gray-700"
               >
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
@@ -2210,10 +1260,10 @@
 
           <!-- Pagination mobile -->
           <div
-            class="flex justify-between items-center mt-10 border-t border-t-[rgb(38,38,38)] text-gray-400 md:hidden"
+            class="flex justify-between items-center mt-10 border-t border-t-border-light text-gray-400 md:hidden"
           >
             <button
-              class="bg-transparent border border-gray-600 px-5 py-2 rounded-lg mt-4 hover:bg-gray-800 transition"
+              class="bg-transparent border border-border-light px-5 py-2 rounded-lg mt-4 hover:bg-border-dark transition"
             >
               View All FAQ’s
             </button>
@@ -2233,33 +1283,16 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <!-- CTA -->
-      <section
-        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white"
-        style="
-          background-image:
-            url(&quot;assets/imges/cat/back-cat-2.png&quot;),
-            url(&quot;assets/imges/cat/back-cat-1.png&quot;);
-          background-position:
-            left center,
-            right center,
-            center;
-          background-repeat: no-repeat, no-repeat, no-repeat;
-          background-size:
-            auto 100%,
-            auto 100%,
-            cover;
-        "
-      >
-        <div
-          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-        >
+    <!-- CTA -->
+    <section
+        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-textWhite"
+        style=" background-image:   url(&quot;assets/imges/cat/back-cat-2.png&quot;),   url(&quot;assets/imges/cat/back-cat-1.png&quot;); background-position:   left center,   right center,   center; background-repeat: no-repeat, no-repeat, no-repeat; background-size: auto 100%, auto 100%, cover;">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div class="md:w-2/3">
-            <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
-              Start Your Real Estate Journey Today
-            </h2>
-            <p class="text-[rgb(153,153,153)] max-w-5xl">
+            <h2 class="sectionH1 mb-4"> Start Your Real Estate Journey Today</h2>
+            <p class="text-pragraph max-w-5xl">
               Your dream property is just a click away. Whether you're looking
               for a new home, a strategic investment, or expert real estate
               advice, Estatein is here to assist you every step of the way. Take
@@ -2272,7 +1305,7 @@
           <!--  Button -->
           <div class="w-full md:w-auto">
             <button
-              class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+              class="bg-primary hover:bg-purple-700 w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
             >
               Explore Properties
             </button>
@@ -2281,13 +1314,11 @@
 
         <!-- Overlay -->
         <div class="absolute inset-0 bg-black/50 -z-10"></div>
-      </section>
-    </main>
-
+    </section>
     <!-- Footer -->
-    <footer class="bg-[rgb(20,20,20)] py-12 px-6">
+    <footer class="bg-backgroundPrimary py-12 px-6">
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-gray-800 pb-10"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-border-light pb-10"
       >
         <!-- Logo + Email -->
         <div class="col-span-2">
@@ -2325,7 +1356,7 @@
           </div> -->
 
           <div
-            class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-full md:w-[250px] h-[50px]"
+            class="flex items-center lg:mt-5 rounded-lg border border-border-light overflow-hidden w-full md:w-[250px] h-[50px]"
           >
             <div class="flex items-center px-2">
               <img
@@ -2339,7 +1370,7 @@
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-text-muted focus:outline-none"
             />
             <button type="submit" class="pr-4 py-2 transition duration-300">
               <img
@@ -2354,8 +1385,8 @@
         <!-- Links -->
         <div>
           <div class="border-e-2 border-e-[#303030] md:border-none">
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <h3 class="footer-titel mb-4 ">Home</h3>
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Hero Section</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">Properties</a></li>
@@ -2366,11 +1397,11 @@
         </div>
 
         <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
-          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+          <h3 class="footer-titel mb-4">
             About Us
           </h3>
           <ul
-            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
+            class="space-y-2 footer-link pb-4 md:pb-0"
           >
             <li><a href="#">Our Story</a></li>
             <li><a href="#">Our Works</a></li>
@@ -2385,11 +1416,11 @@
             <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
               <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
               <h3
-                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+                class="footer-titel mb-4 pt-4 md:pt-0 "
               >
                 Properties
               </h3>
-              <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <ul class="space-y-2 footer-link">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Categories</a></li>
               </ul>
@@ -2401,11 +1432,11 @@
         <div>
           <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
             <h3
-              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+              class="footer-titel mb-4 pt-4 md:pt-0 "
             >
               Services
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Valuation Mastery</a></li>
               <li><a href="#">Strategic Marketing</a></li>
               <li><a href="#">Negotiation Wizardry</a></li>
@@ -2420,10 +1451,10 @@
             class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
           >
             <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+            <h3 class="footer-titel mb-4">
               Contact Us
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Contact Form</a></li>
               <li><a href="#">Our Offices</a></li>
             </ul>
@@ -2434,12 +1465,12 @@
     </footer>
 
     <!-- Bottom Footer -->
-    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
+    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-backgroundPrimary">
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white/90 text-sm bg-[rgb(25,25,25)]"
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-textWhite/90 text-sm bg-backgroundPrimary"
       >
         <div
-          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0"
+          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0 footer-link"
         >
           <p>©2023 Estatein. All Rights Reserved.</p>
           <a href=" " class="hover:text-gray-300">Terms & Conditions</a>
@@ -2450,23 +1481,26 @@
         >
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500"
-            ><i class="fa-brands fa-facebook-f text-white"></i
+            class="bg-backgroundPrimary hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500"
+            ><i class="fa-brands fa-facebook-f text-textWhite"></i
           ></a>
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
-            ><i class="fa-brands fa-linkedin-in text-white"></i
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
+            ><i class="fa-brands fa-linkedin-in text-textWhite"></i
           ></a>
           <a
             href=""
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
-            ><i class="fa-brands fa-twitter text-white"></i
-          ></a>
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
+            ><i class="fa-brands fa-twitter text-textWhite"></i></a>
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
-            ><i class="fa-brands fa-youtube text-white"></i
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center
+             justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
+            ><i class="fa-brands fa-youtube text-textWhite"></i
           ></a>
         </div>
       </div>
@@ -2886,7 +1920,7 @@
           slidesPerView: 4,
           spaceBetween: 10,
           slidesPerGroup: 4,
-          slidesOffsetBefore: 20,
+          slidesOffsetBefore: 15,
           slidesOffsetAfter: 20,
         },
         1536: {
@@ -3057,3 +2091,4 @@
     <!-- فكرة التفليب مع العداد في الايبادات  -->
   </body>
 </html>
+<!-- edit card stars -->

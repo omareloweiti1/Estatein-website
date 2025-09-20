@@ -17,7 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="bg-[#0f0f0f] text-light transition-colors duration-500">
+  <body class="bg-backgroundPrimary text-textWhite transition-colors duration-500">
     <!-- ====== Header Section ====== -->
     <header id="topHeader" class="relative transition-all duration-500">
       <img
@@ -44,9 +44,7 @@
     </header>
 
     <!-- ====== Navbar Section ====== -->
-    <nav
-      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
-    >
+    <nav class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-surface py-4 px-6 md:px-[80px] border-t border-b border-border-light">
       <div class="flex items-center space-x-2">
         <a href="index.html">
           <picture>
@@ -75,26 +73,34 @@
       <!-- Navigation Links (Desktop) -->
       <ul id="navLinks" class="hidden lg:flex space-x-2.5 min-text">
         <li>
-          <a href="index.html " class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="index.html "
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50 "
             >Home</a
           >
         </li>
         <li>
           <a
             href="about-us.html"
-            class="px-6 py-3 rounded-lg hover:bg-black/50 active"
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50 active "
             >About Us</a
           >
         </li>
         <li>
           <a
             href="properties.html"
+             
             class="px-6 py-3 rounded-lg hover:bg-black/50"
             >Properties</a
           >
         </li>
         <li>
-          <a href="services.html" class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="services.html"
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50"
             >Services</a
           >
         </li>
@@ -103,9 +109,8 @@
       <!-- Contact Us (Desktop) -->
       <a
         href="contact.html"
-        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
-        >Contact Us</a
-      >
+        class="hidden lg:block bg-backgroundPrimary hover:bg-black/50 px-6 py-3 rounded-lg min-text">Contact Us
+      </a>
 
       <!-- Hamburger Menu (Mobile) -->
       <button id="menuBtn" class="lg:hidden text-3xl">
@@ -116,14 +121,12 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)] absolute top-full left-0 w-full z-50"
+        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-backgroundPrimary absolute top-full left-0 w-full z-50"
       >
-        <a href="index.html" class="block hover:bg-black/50 px-4 py-2 rounded"
-          >Home</a
-        >
+        <a href="index.html" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
         <a
           href="about-us.html"
-          class="block hover:bg-black/50 px-4 py-2 rounded"
+          class="block hover:bg-black/50 px-4 py-2 rounded active-mobile"
           >About Us</a
         >
         <a
@@ -146,30 +149,18 @@
       class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]"
     >
       <!-- Our Journey -->
-      <section
-        class="w-full pl-0 bg-[#0f0f0f] labtop-s:h-[700px] labtop-m:h-[650px] desktop-2xl:h-[1000px] relative"
-      >
-        <!-- <img
+      <section class="w-full pl-0 bg-backgroundPrimary labtop-s:h-[700px] labtop-m:h-[650px] desktop-2xl:h-[1000px] relative">
+        <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
           class="absolute top-40 mobile-xs:top-[450px] ipad-m:top-[600px] ipad-l:top-5 labtop-s:top-25 labtop-m:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-4 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
-        /> -->
+        />
         <div class="flex flex-col lg:flex-row items-center lg:items-start">
-          <div
-            class="order-2 lg:order-1 flex-1 text-left space-y-4 mt-25 mobile-xs:mt-0 ipad-m:mt-0 ipad-l:mt-5 labtop-s:mt-20 labtop-m:mt-10"
-          >
-            <div
-              class="p-5 pt-[20%] md:pt-[10%] h-auto ipad-l:h-[650px] xl:h-[480px] desktop-2xl:h-[900px] flex flex-col justify-start"
-            >
-              <h1
-                class="text-2xl lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left"
-              >
-                Our Journey
-              </h1>
+          <div class="order-2 lg:order-1 flex-1 text-left space-y-4 mt-25 mobile-xs:mt-0 ipad-m:mt-0 ipad-l:mt-5 labtop-s:mt-20 labtop-m:mt-10">
+            <div class="p-5 pt-[20%] md:pt-[10%] h-auto ipad-l:h-[650px] xl:h-[480px] desktop-2xl:h-[900px] flex flex-col justify-start">
+              <h1 class="sectionH1 w-full text-left">Our Journey</h1>
 
-              <p
-                class="text-sm lg:text-lg text-gray-400 mt-2 lg:mt-5 mb-4 lg:mb-9 w-full lg:w-[400px] labtop-xl:w-[800px] desktop-2xl:text-3xl xl:w-[90%] text-left mx-auto lg:mx-0 desktop-2xl:my-14"
-              >
+              <p class="text-pragraph mt-2 lg:mt-5 mb-4 lg:mb-9 w-full lg:w-[400px] labtop-xl:w-[800px] xl:w-[90%] text-left mx-auto lg:mx-0 desktop-2xl:my-14">
                 Our story is one of continuous growth and evolution. We started
                 as a small team with big dreams, determined to create a real
                 estate platform that transcended the ordinary. Over the years,
@@ -177,167 +168,109 @@
                 gained the trust of countless clients.
               </p>
 
-              <div
-                class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-2 lg:flex lg:flex-wrap lg:space-x-2 justify-center lg:justify-start mt-6 desktop-2xl:my-16"
-              >
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[180px] col-span-1 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl"
-                  >
-                    200+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl"
-                  >
+              <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-2 lg:flex lg:flex-wrap lg:space-x-2 justify-center lg:justify-start mt-6 desktop-2xl:my-16">
+               
+                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[180px] col-span-1 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]">
+                  <h1 class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl">200+</h1>
+                  <p class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl">
                     Happy Customers
                   </p>
                 </div>
 
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[180px] col-span-1 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl"
-                  >
-                    10k+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl"
-                  >
+                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[350px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[180px] col-span-1 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]">
+                  <h1 class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl">10k+</h1>
+                  <p class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl"> 
                     Properties For Clients
                   </p>
                 </div>
 
-                <div
-                  class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[720px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[380px] col-span-2 ipad-m:col-span-2 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]"
-                >
-                  <h1
-                    class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl"
-                  >
-                    16+
-                  </h1>
-                  <p
-                    class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl"
-                  >
+                <div class="bg-[rgb(25,25,25)] border border-[rgb(38,38,38)] p-5 rounded-xl w-full sm:w-[200px] md:w-[720px] desktop-2xl:w-[350px] labtop-xl:w-[250px] lg:w-[380px] col-span-2 ipad-m:col-span-2 xl:w-[180px] desktop-2xl:py-8 2xl:w-[200px]">
+                  <h1 class="text-2xl lg:text-3xl font-semibold text-center labtop-s:text-left xl:text-left desktop-2xl:text-4xl">16+</h1>
+                  <p class="text-sm mt-2 text-[rgb(153,153,153)] text-center labtop-s:text-left xl:text-left desktop-2xl:text-xl">
                     Years of Experience
                   </p>
                 </div>
+
               </div>
+
             </div>
           </div>
 
-          <div
-            class="relative order-1 lg:order-2 z-30 flex-1 bg-hero-container bg-no-repeat bg-cover bg-center"
-          >
-            <img
-              src="assets/imges/about-us/BACKGROUND 2.png"
-              alt=""
-              class="absolute left-1/2 transform -translate-x-1/2 mt-30 ipad-l:mt-10 labtop-s:mt-15 labtop-m:mt-15 mobile-xs:mt-14 w-[95%] h-[350px] ipad-m:w-[90%] ipad-m:h-[500px] ipad-l:h-[600px] labtop-m:h-[500px] labtop-xl:h-[500px] desktop-2xl:h-[800px] labtop-xl:mr-28 object-cover z-0 border-4 border-[#262626] rounded-xl"
+          <div class="relative order-1 lg:order-2 z-30 flex-1 bg-hero-container bg-no-repeat bg-cover bg-center">
+            <img src="assets/imges/about-us/BACKGROUND 2.png" alt=""
+              class="absolute left-1/2 transform -translate-x-1/2 mt-30 ipad-l:mt-10 labtop-s:mt-15 labtop-m:mt-15 mobile-xs:mt-14 w-[95%] h-[350px] ipad-m:w-[90%] ipad-m:h-[500px] ipad-l:h-[600px] labtop-m:h-[500px] labtop-xl:h-[500px] desktop-2xl:h-[800px] labtop-xl:mr-28 object-cover z-0 border-4 border-border-light rounded-xl"
             />
-            <img
-              src="assets/imges/about-us/Image.png"
-              alt=""
+            <img src="assets/imges/about-us/Image.png" alt=""
               class="relative rounded-xl left-1/2 transform -translate-x-1/2 mt-30 ipad-l:mt-10 labtop-s:mt-15 labtop-m:mt-15 mobile-xs:mt-14 w-[95%] h-[350px] ipad-m:w-[90%] ipad-m:h-[500px] ipad-l:h-[600px] labtop-m:h-[500px] labtop-xl:h-[500px] desktop-2xl:h-[800px] labtop-xl:mr-28 object-cover z-10"
             />
           </div>
+
         </div>
       </section>
 
       <!-- Our Values -->
-      <section
-        class="relative py-12 px-2 ipad-m:px-5 flex flex-col lg:flex-row items-start gap-12"
-      >
-        <!-- <img
+      <section class="relative py-12 px-2 ipad-m:px-5 labtop-xl:px-10 flex flex-col lg:flex-row items-start gap-12">
+        <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
           class="absolute top-10 ipad-l:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-2 ipad-m:ml-4 
-          ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
-        /> -->
+          ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 lg:mb-5 labtop-xl:ml-4 desktop-2xl:ml-2"
+        />
 
-        <div
-          class="lg:w-[400px] xl:w-[450px] labtop-xl:w-[700px] px-2 ipad-l:mt-10 desktop-2xl:mt-15"
-        >
-          <h1
-            class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left"
-          >
+        <div class="lg:w-[400px] xl:w-[450px] labtop-xl:w-[700px] px-2  ipad-l:mt-10 desktop-2xl:mt-15">
+          <h1 class=" sectionH1 mb-4 mt-5 lg:mt-10 w-full text-left">
             Our Values
           </h1>
           <!-- <h2 class="text-3xl font-bold mb-4 mt-5">Our Values</h2> -->
-          <p class="text-sm lg:text-lg text-gray-400">
+          <p class="text-pragraph">
             Our story is one of continuous growth and evolution. We started as a
             small team with big dreams determined to create a real estate
             platform that transcended the ordinary.
           </p>
         </div>
-
-        <div
-          class="lg:w-[70%] labtop-xl:ml-28 bg-[#0f0f0f] border-6 border-[#262626] rounded-xl"
-        >
-          <div class="border-2 border-[#383838] rounded-xl p-4 xl:p-8">
+        <!-- border-2 border-border-dark -->
+        <div class="lg:w-[70%] labtop-xl:ml-28 bg-backgroundPrimary border-6 border-border-light rounded-xl">
+          <div class="rounded-xl p-4 xl:p-8">
             <div class="grid grid-cols-1 md:grid-cols-2">
               <!-- Trust -->
-              <div
-                class="flex flex-col gap-3 border-b border-[#262626] md:border-r pb-4 pt-2 pr-2 pl-2"
-              >
+              <div class="flex flex-col gap-3 border-b border-border-light md:border-r pb-4 pt-2 pr-2 pl-2">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="assets/imges/about-us/icon-values (1).png"
-                    alt="Trust"
+                  <img src="assets/imges/about-us/icon-values (1).png" alt="Trust"
                     class="w-12 h-12 labtop-s:w-16 labtop-s:h-16 desktop-2xl:w-18 desktop-2xl:h-18"
                   />
-                  <h3
-                    class="ipad-l:font-semibold text-white text-lg desktop-2xl:text-2xl"
-                  >
+                  <h3 class="ipad-l:font-semibold textWhite card-title">
                     Trust
                   </h3>
                 </div>
-                <p class="text-sm lg:text-lg text-gray-400">
+                <p class="text-pragraph2">
                   Trust is the cornerstone of every successful real estate
                   transaction successful real estate.
                 </p>
               </div>
 
               <!-- Excellence -->
-              <div
-                class="flex flex-col gap-3 border-b border-[#262626] md:border-b md:border-r-0 pb-4 pt-4 pr-2 pl-2 ipad-l:pl-6"
-              >
+              <div class="flex flex-col gap-3 border-b border-border-light md:border-b md:border-r-0 pb-4 pt-4 pr-2 pl-2 ipad-l:pl-6">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="assets/imges/about-us/icon-values (2).png"
-                    alt="Excellence"
+                  <img src="assets/imges/about-us/icon-values (2).png" alt="Excellence"
                     class="w-12 h-12 labtop-s:w-16 labtop-s:h-16 desktop-2xl:w-18 desktop-2xl:h-18"
                   />
-                  <h3
-                    class="ipad-l:font-semibold text-white text-lg desktop-2xl:text-2xl"
-                  >
-                    Excellence
-                  </h3>
+                  <h3 class="ipad-l:font-semibold textWhite card-title">Excellence</h3>
                 </div>
-                <p class="text-sm lg:text-lg text-gray-400">
+                <p class="text-pragraph2">
                   We set the bar high for ourselves. From the properties we list
                   to the services we provide.
                 </p>
               </div>
 
               <!-- Client-Centric -->
-              <div
-                class="flex flex-col gap-3 border-b border-[#262626] md:border-b-0 md:border-r pb-4 pt-4 pr-2 pl-2"
-              >
+              <div class="flex flex-col gap-3 border-b border-border-light md:border-b-0 md:border-r pb-4 pt-4 pr-2 pl-2">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="assets/imges/about-us/icon-values (3).png"
-                    alt="Client-Centric"
+                  <img src="assets/imges/about-us/icon-values (3).png" alt="Client-Centric"
                     class="w-12 h-12 labtop-s:w-16 labtop-s:h-16 desktop-2xl:w-18 desktop-2xl:h-18"
                   />
-                  <h3
-                    class="ipad-l:font-semibold text-white text-lg desktop-2xl:text-2xl"
-                  >
-                    Client-Centric
-                  </h3>
+                  <h3 class="ipad-l:font-semibold textWhite card-title">Client-Centric</h3>
                 </div>
-                <p class="text-sm lg:text-lg text-gray-400">
+                <p class="text-pragraph2">
                   Your dreams and needs are at the center of our universe. We
                   listen, understand.
                 </p>
@@ -346,47 +279,37 @@
               <!-- Our Commitment -->
               <div class="flex flex-col gap-3 pb-4 pt-4 pr-2 pl-2 ipad-l:pl-6">
                 <div class="flex items-center gap-3">
-                  <img
-                    src="assets/imges/about-us/icon-values (1).png"
-                    alt="Our Commitment"
+                  <img src="assets/imges/about-us/icon-values (1).png" alt="Our Commitment"
                     class="w-12 h-12 labtop-s:w-16 labtop-s:h-16 desktop-2xl:w-18 desktop-2xl:h-18"
                   />
-                  <h3
-                    class="ipad-l:font-semibold text-white text-lg desktop-2xl:text-2xl"
-                  >
-                    Our Commitment
-                  </h3>
+                  <h3 class="ipad-l:font-semibold textWhite card-title">Our Commitment</h3>
                 </div>
-                <p class="text-sm lg:text-lg text-gray-400">
+                <p class="text-pragraph2">
                   We are dedicated to providing you with the highest level of
                   service, professionalism, and support.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
       <!-- Our Achievements -->
-      <section class="py-12 px-5 text-white relative">
-        <!-- <img
+      <section class="py-12 px-5 labtop-xl:px-10 textWhite relative">
+          <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-10 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-2 ipad-m:ml-4 
-          ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
-        /> -->
+          class="absolute top-40 mobile-xs:top-[450px] ipad-m:top-[600px] ipad-l:top-5 labtop-s:top-25 
+          labtop-m:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-4 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 
+          labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
+        />
 
-        <div
-          class="flex flex-col md:flex-row justify-between items-start px-2 md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
+        <div class="flex flex-col md:flex-row justify-between items-start px-2 md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
           <div>
-            <h1
-              class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left"
-            >
-              Our Achievements
-            </h1>
+            <h1 class="heroH1 w-full text-left lg:mt-10 ">Our Achievements</h1>
             <!-- <h2 class="text-3xl font-bold mb-2">Our Achievements</h2> -->
-            <p class="text-gray-400 max-w-5xl">
+            <p class="text-pragraph max-w-5xl">
               Our story is one of continuous growth and evolution. We started as
               a small team with big dreams, determined to create a real estate
               platform that transcended the ordinary.
@@ -398,17 +321,9 @@
         <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
           <!-- Card 1 -->
           <div class="">
-            <div
-              class="bg-[#0f0f0f] border-6 border-[#262626] w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%] h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left"
-            >
-              <h3
-                class="text-lg desktop-2xl:text-xl font-semibold mb-4 text-left"
-              >
-                3+ Years of Excellence
-              </h3>
-              <p
-                class="text-sm lg:text-lg text-gray-400 mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]"
-              >
+            <div class="bg-backgroundPrimary border-6 border-border-light w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%] h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left">
+              <h3 class="card-title mb-4 text-left"> 3+ Years of Excellence</h3>
+              <p class="text-pragraph mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]">
                 With over 3 years in the industry, we've amassed a wealth of
                 knowledge and experience.
               </p>
@@ -417,17 +332,9 @@
 
           <!-- Card 2 -->
           <div class="">
-            <div
-              class="bg-[#0f0f0f] border-6 border-[#262626] w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%] h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left"
-            >
-              <h3
-                class="text-lg desktop-2xl:text-xl font-semibold mb-4 text-left"
-              >
-                Happy Clients
-              </h3>
-              <p
-                class="text-sm lg:text-lg text-gray-400 mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]"
-              >
+            <div class="bg-backgroundPrimary border-6 border-border-light w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%] h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left">
+              <h3 class="card-title mb-4 text-left">Happy Clients</h3>
+              <p class="text-pragraph mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]">
                 Our greatest achievement is the satisfaction of our clients.
                 Their success stories fuel our passion for what we do.
               </p>
@@ -436,44 +343,33 @@
 
           <!-- Card 3 -->
           <div class="">
-            <div
-              class="bg-[#0f0f0f] border-6 border-[#262626] w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%] h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left"
-            >
-              <h3
-                class="text-lg desktop-2xl:text-xl font-semibold mb-4 text-left"
-              >
-                Industry Recognition
-              </h3>
-              <p
-                class="text-sm lg:text-lg text-gray-400 mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]"
-              >
-                We've earned the respect of our peers and industry leaders, with
-                accolades and awards that reflect our commitment to excellence.
+            <div class="bg-backgroundPrimary border-6 border-border-light w-[100%] mx-auto md:w-[600px] ipad-l:w-[100%]
+             h-auto ipad-l:min-h-[224px] labtop-xl:min-h-[230px] labtop-s:min-h-[210px] rounded-2xl overflow-hidden p-6 lg:p-8 flex flex-col text-left">
+              <h3 class="card-title mb-4 text-left">Industry Recognition</h3>
+              <p class="text-pragraph mb-6 max-w-[320px] md:max-w-[450px] ipad-l:max-w-[320px] labtop-xl:max-w-[520px] desktop-2xl:max-w-[750px]">
+                We've earned the respect of our peers and industry leaders,with
+                accolades and awards that reflect our  to excellence.
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
       <!--  Experience -->
-      <section class="py-12 px-5 lg:px-20 text-white relative">
-        <!-- <img
+      <section class="py-12 px-5 lg:px-5 labtop-xl:px-10 textWhite relative">
+          <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-10 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-2 ipad-m:ml-4 
-          ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
-        /> -->
+          class="absolute top-40 mobile-xs:top-[450px] ipad-m:top-[600px] ipad-l:top-5 labtop-s:top-15 
+          labtop-m:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-4 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 
+          labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
+        />
 
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
+        <div class="flex flex-col md:flex-row justify-between  items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
           <div>
-            <h1
-              class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left"
-            >
-              Navigating the Estatein Experience
-            </h1>
-            <p class="text-gray-400 max-w-5xl">
+            <h1 class="sectionH1 w-full text-left">Navigating the Estatein Experience</h1>
+            <p class="text-pragraph max-w-5xl">
               At Estatein, we've designed a straightforward process to help you
               find and purchase your dream property with ease. Here's a
               step-by-step guide to how it all works.
@@ -482,37 +378,20 @@
         </div>
 
         <!-- Cards -->
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch"
-        >
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 items-stretch">
           <!-- Card 1 -->
           <div class="relative">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 01</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10" >Step 01</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">
-                  Discover a World of Possibilities
-                </h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
+                <h3 class="card-title mb-2"> Discover a World of Possibilities</h3>
+                <p class=" max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
                   Your journey begins with exploring our carefully curated
                   property listings. Use our intuitive search tools to filter
                   properties based on your preferences, including location,
@@ -524,32 +403,17 @@
 
           <!-- Card 2 -->
           <div class="relative">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 02</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10" >Step 02</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">
-                  Narrowing Down Your Choices
-                </h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
+                <h3 class="card-title mb-2"> Narrowing Down Your Choices</h3>
+                <p class="  max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
                   Once you've found properties that catch your eye, save them to
                   your account or make a shortlist. This allows you to compare
                   and revisit your favorites as you make your decision.
@@ -557,34 +421,20 @@
               </div>
             </div>
           </div>
+
           <!-- Card 3 -->
           <div class="relative">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 03</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10" >Step 03</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">
-                  Personalized Guidance
-                </h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
+                <h3 class="card-title mb-2"> Personalized Guidance</h3>
+                <p class=" max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
                   Have questions about a property or need more information? Our
                   dedicated team of real estate experts is just a call or
                   message away.
@@ -595,30 +445,17 @@
 
           <!-- Card 4 -->
           <div class="relative hidden md:block">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 04</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10">Step 04</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">See It for Yourself</h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
+                <h3 class="card-title mb-2">See It for Yourself</h3>
+                <p class=" max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
                   Arrange viewings of the properties you're interested in. We'll
                   coordinate with the property owners and accompany you to
                   ensure you get a firsthand look at your potential new home.
@@ -628,99 +465,67 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="relative hidden lg:block">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 05</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+        <div class="relative hidden md:block">
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10">Step 05</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">
-                  Making Informed Decisions
-                </h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
-                  Before making an offer, our team will assist you with due
-                  diligence, including property inspections, legal checks, and
-                  market analysis. We want you to be fully informed.
+                <h3 class="card-title mb-2">See It for Yourself</h3>
+                <p class=" max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
+                  Arrange viewings of the properties you're interested in. We'll
+                  coordinate with the property owners and accompany you to
+                  ensure you get a firsthand look at your potential new home.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Card 6 -->
-          <div class="relative hidden lg:block">
-            <span
-              class="block text-sm text-gray-300 mb-2 mt-3 ml-2 relative z-10"
-              >Step 06</span
-            >
-            <span
-              class="absolute top-0 left-0 h-15 w-px bg-[#703BF7] shadow-[0_0_10px_#703BF7]"
-            ></span>
+          <div class="relative hidden md:block">
+            <span class="block card-text mb-2 mt-3 ml-2 relative z-10">Step 06</span>
+            <span class="absolute top-0 left-0 h-15 w-px bg-primary shadow-[0_0_10px_#703BF7]"></span>
 
-            <div
-              class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%"
-            >
-              <div
-                class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%"
-              >
-                <div
-                  class="w-full h-full rounded-lg rounded-tl-none bg-[#0f0f0f] bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"
-                ></div>
+            <div class="relative px-6 py-8 rounded-lg rounded-tl-none min-h-[200px] bg-gradient-to-br from-[#261B40] from-0% via-[#703bf715] via-10% to-transparent to-15%">
+              <div class="absolute md:min-h-[218px] labtop-xl:min-h-[200px] desktop-2xl:min-h-[160px] inset-0 rounded-lg rounded-tl-none p-[1px] bg-gradient-to-br from-[#703bf7ad] from-10% to-[#2a2a2a] to-10%">
+                <div class="w-full h-full rounded-lg rounded-tl-none bg-backgroundPrimary bg-gradient-to-br from-[#703BF777] from-0% via-[#703bf715] via-10% to-transparent to-15% shadow-[inset_0_0_0px_#703BF7,inset_0_0_1px_#2a2a2a]"></div>
               </div>
 
               <div class="relative z-10">
-                <h3 class="text-xl font-semibold mb-2">
-                  Getting the Best Deal
-                </h3>
-                <p
-                  class="text-gray-400 text-sm leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]"
-                >
-                  We'll help you negotiate the best terms and prepare your
-                  offer. Our goal is to secure the property at the right price
-                  and on favorable terms.
+                <h3 class="card-title mb-2">See It for Yourself</h3>
+                <p class=" max-h-[100px] overflow-hidden text-pragraph2 leading-6 max-w-[280px] ipad-m:max-w-[300px] ipad-l:max-w-[370px] labtop-xl:max-w-[470px] desktop-2xl:max-w-[680px]">
+                  Arrange viewings of the properties you're interested in. We'll
+                  coordinate with the property owners and accompany you to
+                  ensure you get a firsthand look at your potential new home.
                 </p>
               </div>
             </div>
           </div>
+
+
         </div>
       </section>
 
       <!-- Our Team -->
-      <section class="py-12 px-5 lg:px-20 text-white relative">
-        <!-- <img
+      <section class="py-12 px-5 lg:px-5 labtop-xl:px-10 textWhite relative">
+          <img
           src="assets/imges/featured-cards/stars.png"
           alt="Abstract Design"
-          class="absolute top-10 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-6 ipad-m:ml-8 ipad-l:ml-12 labtop-s:ml-8 labtop-m:ml-16 labtop-l:ml-24 labtop-xl:ml-10 desktop-2xl:ml-25"
-        /> -->
+          class="absolute top-40 mobile-xs:top-[450px] ipad-m:top-[600px] ipad-l:top-5 labtop-s:top-15 
+          labtop-m:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-4 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 
+          labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
+        />
 
-        <div
-          class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20"
-        >
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
           <div>
-            <h1
-              class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl font-semibold w-full text-left"
-            >
-              Meet the Estatein Team
-            </h1>
+            <h1 class=" sectionH1 mb-4 mt-5 w-full text-left">Meet the Estatein Team</h1>
 
             <!-- <h2 class="text-3xl font-bold mb-2"></h2> -->
-            <p class="text-gray-400 max-w-5xl">
+            <p class="text-pragraph max-w-5xl">
               At Estatein, our success is driven by the dedication and expertise
               of our team. Get to know the people behind our mission to make
               your real estate dreams a reality.
@@ -728,93 +533,55 @@
           </div>
         </div>
 
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 ipad-l:gap-16 xl:gap-6 desktop-2xl:grid-cols-5 desktop-2xl:ml-[450px]"
-        >
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 ipad-l:gap-16 xl:gap-6 desktop-2xl:grid-cols-5 desktop-2xl:ml-[450px]">
+         
           <!-- Card 1 -->
-          <div
-            class="bg-[#0f0f0f] border border-[#262626] rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
-          >
+          <div class="bg-backgroundPrimary border border-border-light rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden">
             <div class="relative">
-              <img
-                src="assets/imges/about-us/Imagef.png"
-                alt="Profile"
-                class="rounded-xl object-cover w-full h-64"
-              />
-              <div
-                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-[#703BF7] rounded-full shadow-lg"
-              >
-                <img
-                  src="assets/imges/about-us/Vector.png"
-                  alt="Twitter"
-                  class="w-6 h-6"
-                />
+              <img src="assets/imges/about-us/Imagef.png" alt="Profile" class="rounded-xl object-cover w-full h-64"/>
+              <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-primary rounded-full shadow-lg">
+                <img src="assets/imges/about-us/Vector.png" alt="Twitter" class="w-6 h-6"/>
               </div>
             </div>
 
             <div class="mt-10">
-              <h3 class="font-bold text-xl">Max Mitchell</h3>
-              <p class="text-gray-400 text-sm">Founder</p>
+              <h3 class="card-text">Max Mitchell</h3>
+              <p class="text-pragraph2">Founder</p>
             </div>
 
-            <div
-              class="flex items-center justify-between rounded-full border border-[#262626] mt-6 pl-4 pr-2 h-[50px]"
-            >
-              <input
-                type="text"
-                placeholder="Say Hello 👋"
-                class="bg-transparent flex-1 text-white placeholder-white focus:outline-none text-sm"
-              />
-              <button
-                type="submit"
-                class="flex items-center justify-center w-9 h-9 bg-[#703BF7] rounded-full ml-2"
-              >
-                <img
-                  src="assets/imges/form-icons/Icon (5).png"
-                  alt="Send"
-                  class="w-5 h-5"
-                />
+            <div class="flex items-center justify-between rounded-full border border-border-light mt-6 pl-4 pr-2 h-[50px]">
+              <input type="text" placeholder="Say Hello 👋" class="bg-transparent flex-1 textWhite placeholder-white focus:outline-none text-sm"/>
+              <button type="submit" class="flex items-center justify-center w-9 h-9 bg-primary rounded-full ml-2">
+                <img src="assets/imges/form-icons/Icon (5).png" alt="Send" class="w-5 h-5"/>
               </button>
             </div>
           </div>
 
           <!-- Card 2 -->
-          <div
-            class="bg-[#0f0f0f] border border-[#262626] rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
-          >
+          <div class="bg-backgroundPrimary border border-border-light rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden">
             <div class="relative">
-              <img
-                src="assets/imges/about-us/Image-1.png"
-                alt="Profile"
-                class="rounded-xl object-cover w-full h-64"
-              />
-              <div
-                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-[#703BF7] rounded-full shadow-lg"
-              >
-                <img
-                  src="assets/imges/about-us/Vector.png"
-                  alt="Twitter"
-                  class="w-6 h-6"
-                />
+              <img src="assets/imges/about-us/Image-1.png" alt="Profile" class="rounded-xl object-cover w-full h-64"/>
+              <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-primary rounded-full shadow-lg">
+                <img src="assets/imges/about-us/Vector.png" alt="Twitter" class="w-6 h-6"/>
               </div>
             </div>
 
             <div class="mt-10">
-              <h3 class="font-bold text-xl">Sarah Johnson</h3>
-              <p class="text-gray-400 text-sm">Chief Real Estate Officer</p>
+              <h3 class="card-text">Sarah Johnson</h3>
+              <p class="text-pragraph2">Chief Real Estate Officer</p>
             </div>
 
             <div
-              class="flex items-center justify-between rounded-full border border-[#262626] mt-6 pl-4 pr-2 h-[50px]"
+              class="flex items-center justify-between rounded-full border border-border-light mt-6 pl-4 pr-2 h-[50px]"
             >
               <input
                 type="text"
                 placeholder="Say Hello 👋"
-                class="bg-transparent flex-1 text-white placeholder-white focus:outline-none text-sm"
+                class="bg-transparent flex-1 textWhite placeholder-white focus:outline-none text-sm"
               />
               <button
                 type="submit"
-                class="flex items-center justify-center w-9 h-9 bg-[#703BF7] rounded-full ml-2"
+                class="flex items-center justify-center w-9 h-9 bg-primary rounded-full ml-2"
               >
                 <img
                   src="assets/imges/form-icons/Icon (5).png"
@@ -827,7 +594,7 @@
 
           <!-- Card 3 -->
           <div
-            class="bg-[#0f0f0f] border border-[#262626] rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
+            class="bg-backgroundPrimary border border-border-light rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
           >
             <div class="relative">
               <img
@@ -836,7 +603,7 @@
                 class="rounded-xl object-cover w-full h-64"
               />
               <div
-                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-[#703BF7] rounded-full shadow-lg"
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-primary rounded-full shadow-lg"
               >
                 <img
                   src="assets/imges/about-us/Vector.png"
@@ -847,21 +614,21 @@
             </div>
 
             <div class="mt-10">
-              <h3 class="font-bold text-xl">David Brown</h3>
-              <p class="text-gray-400 text-sm">Head of Property Management</p>
+              <h3 class="card-text">David Brown</h3>
+              <p class="text-pragraph2">Head of Property Management</p>
             </div>
 
             <div
-              class="flex items-center justify-between rounded-full border border-[#262626] mt-6 pl-4 pr-2 h-[50px]"
+              class="flex items-center justify-between rounded-full border border-border-light mt-6 pl-4 pr-2 h-[50px]"
             >
               <input
                 type="text"
                 placeholder="Say Hello 👋"
-                class="bg-transparent flex-1 text-white placeholder-white focus:outline-none text-sm"
+                class="bg-transparent flex-1 textWhite placeholder-white focus:outline-none text-sm"
               />
               <button
                 type="submit"
-                class="flex items-center justify-center w-9 h-9 bg-[#703BF7] rounded-full ml-2"
+                class="flex items-center justify-center w-9 h-9 bg-primary rounded-full ml-2"
               >
                 <img
                   src="assets/imges/form-icons/Icon (5).png"
@@ -874,7 +641,7 @@
 
           <!-- Card 4 -->
           <div
-            class="bg-[#0f0f0f] border border-[#262626] rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
+            class="bg-backgroundPrimary border border-border-light rounded-2xl p-4 labtop-m:p-6 w-full max-w-sm text-center relative overflow-hidden"
           >
             <div class="relative">
               <img
@@ -883,7 +650,7 @@
                 class="rounded-xl object-cover w-full h-64"
               />
               <div
-                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-[#703BF7] rounded-full shadow-lg"
+                class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-18 h-12 flex items-center justify-center bg-primary rounded-full shadow-lg"
               >
                 <img
                   src="assets/imges/about-us/Vector.png"
@@ -894,21 +661,21 @@
             </div>
 
             <div class="mt-10">
-              <h3 class="font-bold text-xl">Michael Turner</h3>
-              <p class="text-gray-400 text-sm">Legal Counsel</p>
+              <h3 class="card-text">Michael Turner</h3>
+              <p class="text-pragraph2">Legal Counsel</p>
             </div>
 
             <div
-              class="flex items-center justify-between rounded-full border border-[#262626] mt-6 pl-4 pr-2 h-[50px]"
+              class="flex items-center justify-between rounded-full border border-border-light mt-6 pl-4 pr-2 h-[50px]"
             >
               <input
                 type="text"
                 placeholder="Say Hello 👋"
-                class="bg-transparent flex-1 text-white placeholder-white focus:outline-none text-sm"
+                class="bg-transparent flex-1 textWhite placeholder-white focus:outline-none text-sm"
               />
               <button
                 type="submit"
-                class="flex items-center justify-center w-9 h-9 bg-[#703BF7] rounded-full ml-2"
+                class="flex items-center justify-center w-9 h-9 bg-primary rounded-full ml-2"
               >
                 <img
                   src="assets/imges/form-icons/Icon (5).png"
@@ -918,16 +685,31 @@
               </button>
             </div>
           </div>
+
         </div>
       </section>
 
       <!-- Our Clients -->
-      <section id="clients" class="py-12 lg:px-10 text-white">
-        <h1
-          class="text-2xl mb-4 mt-5 lg:text-5xl desktop-2xl:text-6xl p-6 pl-6 xl:pl-6 desktop-2xl:pl-10 font-semibold w-full text-left"
-        >
-          Our Valued Clients
-        </h1>
+      <section id="clients" class="py-12 lg:px-5 labtop-xl:px-10 textWhite relative">
+        <img
+          src="assets/imges/featured-cards/stars.png"
+          alt="Abstract Design"
+          class="absolute top-40 mobile-xs:top-[450px] ipad-m:top-[600px] ipad-l:top-5 labtop-s:top-15 
+          labtop-m:top-20 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-4 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 
+          labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
+        />
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 mt-5 ipad-m:mt-10 desktop-2xl:mt-20">
+          <div>
+            <h1 class=" sectionH1 mb-4 mt-5 w-full text-left">Meet the Estatein Team</h1>
+
+            <!-- <h2 class="text-3xl font-bold mb-2"></h2> -->
+            <p class="text-pragraph max-w-5xl">
+              At Estatein, our success is driven by the dedication and expertise
+              of our team. Get to know the people behind our mission to make
+              your real estate dreams a reality.
+            </p>
+          </div>
+        </div>
 
         <!-- <h2 class="text-3xl font-bold mb-8"></h2> -->
 
@@ -935,85 +717,68 @@
         <div class="swiper swiper-clients">
           <div class="swiper-wrapper">
             <!-- cart 1 -->
-            <div class="swiper-slide">
-              <div class=" bg-[#0f0f0f] border-8 border-[#262626] rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]">
+            <!-- <div class="swiper-slide">
+              <div class=" bg-backgroundPrimary border-8 border-border-light rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]">
                 <p class="text-gray-400 text-sm mb-2">Since 2019</p>
                 <h3 class="font-bold text-2xl mb-4">ABC Corporation</h3>
-                <a
-                  href="#"
-                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition"
-                  >Visit Website</a
+                <a href="#"
+                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transition">Visit Website</a
                 >
-               <a
-                href="#"
-                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition
-                left-1/2 -translate-x-1/2"
-              >
-                Visit Website
+               <a href="#"
+                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transitionleft-1/2 -translate-x-1/2">Visit Website
               </a>
 
 
                 <div class="flex mb-6 overflow-hidden mt-16 lg:mt-0 pt-2 ">
-                  <div class="w-1/2 border-r border-[#262626] py-4 pr-px">
-                    <p
-                      class="text-gray-400 text-sm flex items-center gap-1 mb-1"
-                    >
-                      <span class="text-lg"
-                        ><i class="fa fa-th-large"></i
-                      ></span>
-                      Domain
+                  <div class="w-1/2 border-r border-border-light py-4 pr-px">
+                    <p class="text-gray-400 text-sm flex items-center gap-1 mb-1">
+                      <span class="text-lg" ><i class="fa fa-th-large"></i></span>Domain
                     </p>
                     <p class="text-base">Commercial Real Estate</p>
                   </div>
 
                   <div class="w-1/2 py-4 px-2 pl-4 lg:pl-4"> 
-                    <p
-                      class="text-gray-400 text-sm flex items-center gap-1 mb-1"
-                    >
-                      <span class="text-lg"><i class="fa fa-bolt"></i></span>
-                      Category
+                    <p class="text-gray-400 text-sm flex items-center gap-1 mb-1">
+                      <span class="text-lg"><i class="fa fa-bolt"></i></span>Category
                     </p>
                     <p class="text-base">Luxury Home Development</p>
                   </div>
                 </div>
 
-                <div
-                  class="bg-[#0f0f0f] border border-[#262626] rounded-lg p-4"
-                >
-                  <p class="text-gray-400 text-sm mb-2 flex items-center gap-2">
-                    What They Said 🤗
-                  </p>
-                  <p class="text-white text-sm leading-relaxed">
+                <div class="bg-backgroundPrimary border border-border-light rounded-lg p-4">
+                  <p class="text-gray-400 text-sm mb-2 flex items-center gap-2">What They Said 🤗</p>
+                  <p class="textWhite text-sm leading-relaxed">
                     Estatein's expertise in finding the perfect office space for
                     our expanding operations was invaluable. They truly
                     understand our business needs.
                   </p>
                 </div>
+
               </div>
-            </div>
+            </div> -->
 
             <!-- cart 2 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border-8 border-[#262626] rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]"
+                class="bg-backgroundPrimary border-8 border-border-light rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]"
               >
                 <p class="text-gray-400 text-sm mb-2">Since 2018</p>
                 <h3 class="font-bold text-2xl mb-4">GreenTech Enterprises</h3>
                 <a
                   href="#"
-                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition"
+                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transition"
                   >Visit Website</a
                 >
                 <a
                 href="#"
-                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition
+                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transition
                 left-1/2 -translate-x-1/2"
               >
                 Visit Website
               </a>
 
                 <div class="flex mb-6 overflow-hidden mt-16 lg:mt-0 pt-2">
-                  <div class="w-1/2 border-r border-[#262626] py-4 pr-px">
+                  <div class="w-1/2 border-r border-border-light py-4 pr-px">
                     <p
                       class="text-gray-400 text-sm flex items-center gap-1 mb-1"
                     >
@@ -1037,12 +802,12 @@
                 </div>
 
                 <div
-                  class="bg-[#0f0f0f] border border-[#262626] rounded-lg p-4"
+                  class="bg-backgroundPrimary border border-border-light rounded-lg p-4"
                 >
                   <p class="text-gray-400 text-sm mb-2 flex items-center gap-2">
                     What They Said 🤗
                   </p>
-                  <p class="text-white text-sm leading-relaxed">
+                  <p class="textWhite text-sm leading-relaxed">
                     Estatein's ability to identify prime retail locations helped
                     us expand our brand presence. They are a trusted partner in
                     our growth.
@@ -1054,25 +819,25 @@
             <!-- cart 3 -->
             <div class="swiper-slide">
               <div
-                class="bg-[#0f0f0f] border-8 border-[#262626] rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]"
+                class="bg-backgroundPrimary border-8 border-border-light rounded-xl p-6 relative min-h-[485px] lg:min-h-[380px]"
               >
                 <p class="text-gray-400 text-sm mb-2">Since 2019</p>
                 <h3 class="font-bold text-2xl mb-4">ABC Corporation</h3>
                 <a
                   href="#"
-                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition"
+                  class="absolute hidden lg:block top-6 right-6 px-4 py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transition"
                   >Visit Website</a
                 >
                  <a
                 href="#"
-                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-[#0f0f0f] border border-[#262626] rounded-lg text-sm transition
+                class="absolute block lg:hidden px-10 w-[90%] text-center py-2 bg-backgroundPrimary border border-border-light rounded-lg text-sm transition
                 left-1/2 -translate-x-1/2"
               >
                 Visit Website
               </a>
 
                 <div class="flex mb-6 overflow-hidden mt-16 lg:mt-0 pt-2">
-                  <div class="w-1/2 border-r border-[#262626] py-4 pr-px">
+                  <div class="w-1/2 border-r border-border-light py-4 pr-px">
                     <p
                       class="text-gray-400 text-sm flex items-center gap-1 mb-1"
                     >
@@ -1096,12 +861,12 @@
                 </div>
 
                 <div
-                  class="bg-[#0f0f0f] border border-[#262626] rounded-lg p-4"
+                  class="bg-backgroundPrimary border border-border-light rounded-lg p-4"
                 >
                   <p class="text-gray-400 text-sm mb-2 flex items-center gap-2">
                     What They Said 🤗
                   </p>
-                  <p class="text-white text-sm leading-relaxed">
+                  <p class="textWhite text-sm leading-relaxed">
                     Estatein's expertise in finding the perfect office space for
                     our expanding operations was invaluable. They truly
                     understand our business needs.
@@ -1136,7 +901,7 @@
 
           <!-- Pagination mobile -->
           <div
-            class="flex justify-between items-center mt-10 border-t border-[#262626] text-gray-400 md:hidden"
+            class="flex justify-between items-center mt-10 border-t border-border-light text-gray-400 md:hidden"
           >
             <div class="flex items-center gap-32 mx-auto mt-4">
               <button
@@ -1156,66 +921,48 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <!-- CTA -->
     <section
-      class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white labtop-xl:max-w-full"
-      style="
-        background-image:
-          url(&quot;assets/imges/cat/back-cat-2.png&quot;),
-          url(&quot;assets/imges/cat/back-cat-1.png&quot;);
-        background-position:
-          left center,
-          right center,
-          center;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-size:
-          auto 100%,
-          auto 100%,
-          cover;
-      "
-    >
-      <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-      >
-        <div class="md:w-2/3">
-          <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
-            Start Your Real Estate Journey Today
-          </h2>
-          <p class="text-[rgb(153,153,153)] max-w-5xl">
-            Your dream property is just a click away. Whether you're looking for
-            a new home, a strategic investment, or expert real estate advice,
-            Estatein is here to assist you every step of the way. Take the first
-            step towards your real estate goals and explore our available
-            properties or get in touch with our team for personalized
-            assistance.
-          </p>
+        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-textWhite"
+        style=" background-image:   url(&quot;assets/imges/cat/back-cat-2.png&quot;),   url(&quot;assets/imges/cat/back-cat-1.png&quot;); background-position:   left center,   right center,   center; background-repeat: no-repeat, no-repeat, no-repeat; background-size: auto 100%, auto 100%, cover;">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="md:w-2/3">
+            <h2 class="sectionH1 mb-4"> Start Your Real Estate Journey Today</h2>
+            <p class="text-pragraph max-w-5xl">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+
+          <!--  Button -->
+          <div class="w-full md:w-auto">
+            <button
+              class="bg-primary hover:bg-purple-700 w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+            >
+              Explore Properties
+            </button>
+          </div>
         </div>
 
-        <!--  Button -->
-        <div class="w-full md:w-auto">
-          <button
-            class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-          >
-            Explore Properties
-          </button>
-        </div>
-      </div>
-
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/50 -z-10"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 -z-10"></div>
     </section>
-
     <!-- Footer -->
-    <footer class="bg-[rgb(20,20,20)] py-12 px-6">
+    <footer class="bg-backgroundPrimary py-12 px-6">
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-[#262626] pb-10"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-border-light pb-10"
       >
         <!-- Logo + Email -->
         <div class="col-span-2">
           <div class="flex items-center space-x-2">
-            <a href="index.html">
+            <a href="#">
               <picture>
                 <!-- big -->
                 <source
@@ -1238,9 +985,17 @@
               </picture>
             </a>
           </div>
+          <!-- <div class="flex items-center space-x-2">
+            <a href="#"
+              ><img
+                src="assets/imges/logo/Logo.png"
+                alt="logo"
+                class="w-[95px] h-[32px] md:w-[106px] md:h-[34px] lg:w-[110px] lg:h-[50px] object-contain"
+            /></a>
+          </div> -->
 
           <div
-            class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-full md:w-[250px] h-[50px]"
+            class="flex items-center lg:mt-5 rounded-lg border border-border-light overflow-hidden w-full md:w-[250px] h-[50px]"
           >
             <div class="flex items-center px-2">
               <img
@@ -1254,7 +1009,7 @@
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-text-muted focus:outline-none"
             />
             <button type="submit" class="pr-4 py-2 transition duration-300">
               <img
@@ -1269,8 +1024,8 @@
         <!-- Links -->
         <div>
           <div class="border-e-2 border-e-[#303030] md:border-none">
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <h3 class="footer-titel mb-4 ">Home</h3>
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Hero Section</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">Properties</a></li>
@@ -1281,11 +1036,11 @@
         </div>
 
         <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
-          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+          <h3 class="footer-titel mb-4">
             About Us
           </h3>
           <ul
-            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
+            class="space-y-2 footer-link pb-4 md:pb-0"
           >
             <li><a href="#">Our Story</a></li>
             <li><a href="#">Our Works</a></li>
@@ -1300,11 +1055,11 @@
             <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
               <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
               <h3
-                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+                class="footer-titel mb-4 pt-4 md:pt-0 "
               >
                 Properties
               </h3>
-              <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+              <ul class="space-y-2 footer-link">
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Categories</a></li>
               </ul>
@@ -1316,11 +1071,11 @@
         <div>
           <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
             <h3
-              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
+              class="footer-titel mb-4 pt-4 md:pt-0 "
             >
               Services
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Valuation Mastery</a></li>
               <li><a href="#">Strategic Marketing</a></li>
               <li><a href="#">Negotiation Wizardry</a></li>
@@ -1335,10 +1090,10 @@
             class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
           >
             <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
+            <h3 class="footer-titel mb-4">
               Contact Us
             </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
+            <ul class="space-y-2 footer-link">
               <li><a href="#">Contact Form</a></li>
               <li><a href="#">Our Offices</a></li>
             </ul>
@@ -1349,12 +1104,12 @@
     </footer>
 
     <!-- Bottom Footer -->
-    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
+    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-backgroundPrimary">
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white/90 text-sm bg-[rgb(25,25,25)]"
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-textWhite/90 text-sm bg-backgroundPrimary"
       >
         <div
-          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0"
+          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0 footer-link"
         >
           <p>©2023 Estatein. All Rights Reserved.</p>
           <a href=" " class="hover:text-gray-300">Terms & Conditions</a>
@@ -1365,23 +1120,26 @@
         >
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500"
-            ><i class="fa-brands fa-facebook-f text-white"></i
+            class="bg-backgroundPrimary hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500"
+            ><i class="fa-brands fa-facebook-f text-textWhite"></i
           ></a>
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
-            ><i class="fa-brands fa-linkedin-in text-white"></i
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
+            ><i class="fa-brands fa-linkedin-in text-textWhite"></i
           ></a>
           <a
             href=""
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
-            ><i class="fa-brands fa-twitter text-white"></i
-          ></a>
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
+            ><i class="fa-brands fa-twitter text-textWhite"></i></a>
           <a
             href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
-            ><i class="fa-brands fa-youtube text-white"></i
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center
+             justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
+            ><i class="fa-brands fa-youtube text-textWhite"></i
           ></a>
         </div>
       </div>
@@ -1481,6 +1239,13 @@
           slidesPerGroup: 2,
           slidesOffsetBefore: 20,
           slidesOffsetAfter: 30,
+        },
+        1366: {
+          slidesPerView: 2.05,
+          spaceBetween: 20,
+          slidesPerGroup: 2,
+          slidesOffsetBefore: 15,
+          slidesOffsetAfter: 20,
         },
         1440: {
           slidesPerView: 2.05,

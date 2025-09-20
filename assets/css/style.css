@@ -20,7 +20,6 @@ body {
 @import "tailwindcss";
 
 @theme {
-  /* Primary */
   --color-primary-100: #703bf7;
   --color-primary-200: #8254f8;
   --color-primary-300: #946cf9;
@@ -49,9 +48,19 @@ body {
   --color-dark: #191919;
   --color-dark-50: #0a0a0a;
 
-  --bg-hero-container: url("assets/imges/hero-imge/Container.png");
-    --background-image-gallery: url("../imges/concat/Gallery.png");
+  /* ========================
+      Colors System
+     ======================== */
+  --color-textWhite: #ffffff;
+  --color-backgroundPrimary: #141414;
+  --color-text-muted: #999999;
+  --color-primary: #703bf7;
+  --color-border-dark: #1f1f1f;
+  --color-border-light: #262626;
+  --color-surface: #191919;
 
+  --bg-hero-container: url("assets/imges/hero-imge/Container.png");
+  --background-image-gallery: url("../imges/concat/Gallery.png");
 
   /* mobile */
   --breakpoint-mobile-xs: 23.4375rem; /* 375px */
@@ -72,16 +81,66 @@ body {
 
   /* desktop */
   --breakpoint-labtop-xxl: 160rem; /* 2560px */
-  --breakpoint-desktop-2xl: 160rem; /* 2560px */ 
+  --breakpoint-desktop-2xl: 160rem; /* 2560px */
 }
 
 @layer base {
+
   .active {
     @apply bg-black/50 rounded-lg;
   }
+   .active-mobile {
+    @apply bg-primary rounded-lg;
+  }
+
   .min-text {
     @apply text-xs  md:text-sm lg:text-sm 2xl:text-lg font-medium;
   }
- 
+
+  .heroH1 {
+    @apply text-[28px] lg:text-[45px] xl:text-[60px] desktop-2xl:text-[72px] font-semibold;
+  }
+
+  .sectionH1 {
+    @apply text-[28px] lg:text-[38px] xl:text-[48px] desktop-2xl:text-[58px] font-semibold;
+  }
+
+  .text-nav {
+    @apply text-[14px] lg:text-[16px] xl:text-[17px] desktop-2xl:text-[20px] font-medium;
+  }
+  .text-pragraph {
+    @apply text-[14px] lg:text-[16px] xl:text-[17px] desktop-2xl:text-[20px] font-medium text-text-muted;
+  }
+
+    .text-pragraph2 {
+    @apply text-[14px] lg:text-[14px] xl:text-[16px] desktop-2xl:text-[18px] font-medium text-text-muted;
+  }
+
+  .card-text {
+    @apply text-[14px] lg:text-[18px] xl:text-[20px] desktop-2xl:text-[22px] font-semibold;
+  }
+
+  .footer-titel {
+    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-medium text-text-muted ;
+  }
+
+  .footer-link {
+    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-light;
+  }
+  .text-button {
+    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-semibold;
+  }
+
+  .card-title {
+    @apply text-[18px] lg:text-[20px] xl:text-[24px] desktop-2xl:text-[26px] font-semibold;
+  }
+
+  .cardH1 {
+    @apply text-[20px] lg:text-[25px] xl:text-[30px] desktop-2xl:text-[35px] font-semibold;
+  }
+
+  .numSize {
+    @apply text-[24px] lg:text-[32px] xl:text-[40px] desktop-2xl:text-[56px] font-semibold;
+  }
 
 }

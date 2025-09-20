@@ -24,7 +24,16 @@
       "./assets/**/*.{html,js}"
     ],
     "theme": {
-      "extend": {}
+      "extend": {
+        "fontSize": {
+          "heroH1": ["var(--font-size-heroH1)", { "lineHeight": "1.2" }],
+          "h1-section": ["var(--font-size-h1-section-xl)", { "lineHeight": "1.25" }],
+          "p-xl": ["var(--font-size-p-xl)", { "lineHeight": "1.6" }],
+          "card-text": ["var(--font-size-card-xl)", { "lineHeight": "1.5" }],
+          "h1-card": ["var(--font-size-h1-card-xl)", { "lineHeight": "1.3" }],
+          "card-title": ["var(--font-size-card-title-xl)", { "lineHeight": "1.3" }]
+        }
+      }
     },
     "plugins": [
       "@tailwindcss/forms",

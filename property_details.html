@@ -39,7 +39,7 @@
       }
     </style>
   </head>
-  <body class="bg-[#141414] text-light transition-colors duration-500">
+  <body class="bg-backgroundPrimary text-light transition-colors duration-500">
     <!-- ====== Header Section ====== -->
     <header id="topHeader" class="relative transition-all duration-500">
       <img
@@ -65,12 +65,10 @@
       </div>
     </header>
 
-    <!-- ====== Navbar Section ====== -->
-    <nav
-      class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-dark py-4 px-6 md:px-[80px] border-t border-b border-[rgb(38,38,38)]"
-    >
+   <!-- ====== Navbar Section ====== -->
+    <nav class="w-full sticky top-0 z-[153513] flex items-center justify-between bg-surface py-4 px-6 md:px-[80px] border-t border-b border-border-light">
       <div class="flex items-center space-x-2">
-        <a href="index.html">
+        <a href="#">
           <picture>
             <!-- big -->
             <source
@@ -97,24 +95,34 @@
       <!-- Navigation Links (Desktop) -->
       <ul id="navLinks" class="hidden lg:flex space-x-2.5 min-text">
         <li>
-          <a href="index.html " class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="index.html "
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50 "
             >Home</a
           >
         </li>
         <li>
-          <a href="about-us.html" class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="about-us.html"
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50 "
             >About Us</a
           >
         </li>
         <li>
           <a
             href="properties.html"
+             
             class="px-6 py-3 rounded-lg hover:bg-black/50 active"
             >Properties</a
           >
         </li>
         <li>
-          <a href="services.html" class="px-6 py-3 rounded-lg hover:bg-black/50"
+          <a
+            href="services.html"
+             
+            class="px-6 py-3 rounded-lg hover:bg-black/50"
             >Services</a
           >
         </li>
@@ -123,9 +131,8 @@
       <!-- Contact Us (Desktop) -->
       <a
         href="contact.html"
-        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
-        >Contact Us</a
-      >
+        class="hidden lg:block bg-backgroundPrimary hover:bg-black/50 px-6 py-3 rounded-lg min-text">Contact Us
+      </a>
 
       <!-- Hamburger Menu (Mobile) -->
       <button id="menuBtn" class="lg:hidden text-3xl">
@@ -136,11 +143,9 @@
       <!-- Mobile Menu -->
       <div
         id="mobileMenu"
-        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-[rgb(20,20,20)] absolute top-full left-0 w-full z-50"
+        class="hidden lg:hidden flex-col space-y-4 px-6 py-4 bg-backgroundPrimary absolute top-full left-0 w-full z-50"
       >
-        <a href="index.html" class="block hover:bg-black/50 px-4 py-2 rounded"
-          >Home</a
-        >
+        <a href="index.html" class="block hover:bg-black/50 px-4 py-2 rounded">Home</a>
         <a
           href="about-us.html"
           class="block hover:bg-black/50 px-4 py-2 rounded"
@@ -148,7 +153,7 @@
         >
         <a
           href="properties.html"
-          class="block hover:bg-black/50 px-4 py-2 rounded"
+          class="block hover:bg-black/50 px-4 py-2 rounded active-mobile"
           >Properties</a
         >
         <a
@@ -162,22 +167,20 @@
       </div>
     </nav>
 
-    <main
-      class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]"
-    >
+    <main class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]">
       <!-- Container -->
       <section class="mt-10 mx-auto p-3 lg:p-6 xl:p-12 space-y-10">
         <!-- Header -->
-        <!-- <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"> -->
-        <!-- Title + Location -->
-        <!-- <div class="flex flex-col md:flex-row md:items-center md:gap-4">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          
+          <!-- Title + Location -->
+          <div class="flex flex-col md:flex-row md:items-center md:gap-4">
             <h1 class="text-2xl font-semibold">Seaside Serenity Villa</h1>
 
             <div class="flex items-center justify-between mt-2 md:mt-0">
               <a href="#" class="flex items-center gap-2 hover:text-purple-400 border border-[#2c2c2c] py-2 px-4 rounded-lg">
                 <i class="fas fa-map-marker-alt"></i>Malibu, California</a>
 
-              
               <div class="ml-4 md:hidden flex items-center gap-2">
                 <p class="text-sm text-gray-400">Price</p>
                 <p class="text-lg font-semibold">$1,250,000</p>
@@ -191,14 +194,12 @@
             <p class="text-lg font-semibold">$1,250,000</p>
           </div>
 
-        </div> -->
+        </div>
 
         <!-- Image Gallery -->
-        <!-- <div class="space-y-6 bg-[#191919] rounded-lg p-4"> -->
-        <!-- Thumbnails -->
-        <!-- <div
-            class="swiper thumbs-swiper border border-[#262626] bg-[#141414] p-6 rounded-lg"
-          >
+        <div class="space-y-6 bg-[#191919] rounded-lg p-4">
+          <!-- Thumbnails -->
+          <div class="swiper thumbs-swiper    border border-[#262626] bg-[#141414] p-6 rounded-lg">
             <div class="swiper-wrapper p-4">
               <div class="swiper-slide">
                 <img
@@ -263,35 +264,32 @@
                 />
               </div>
             </div>
-          </div> -->
+          </div>
 
-        <!-- Main Images -->
-        <!-- <div class="swiper main-swiper">
+          <!-- Main Images -->
+          <div class="swiper main-swiper">
             <div class="swiper-wrapper"></div>
-          </div> -->
+          </div>
 
-        <!-- Controls -->
-        <!-- <div
-            class="flex items-center justify-center gap-2 bg-[#121212] p-4 rounded-full w-fit mx-auto"
-          > -->
-        <!-- Prev -->
-        <!-- <button
-              class="custom-prev p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white"
-            > -->
-        <!-- <i class="fa-solid fa-chevron-left"></i>
-            </button> -->
+          <!-- Controls -->
+          <div class="flex items-center justify-center gap-2 bg-[#121212] p-4 rounded-full w-fit mx-auto">
+            
+            <!-- Prev -->
+            <button class="custom-prev p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
 
-        <!-- Pagination -->
-        <!-- <div class="custom-pagination flex"></div> -->
+            <!-- Pagination -->
+            <div class="custom-pagination flex"></div>
 
-        <!-- Next -->
-        <!-- <button
-              class="custom-next p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white"
-            >
+            <!-- Next -->
+            <button class="custom-next p-2 rounded-full border border-[#484848] hover:bg-[#703BF7] text-white">
               <i class="fa-solid fa-chevron-right"></i>
             </button>
+
           </div>
-        </div> -->
+          
+        </div>
 
         <!-- Bottom Section -->
         <div class="flex flex-col lg:flex-row gap-8">
@@ -466,6 +464,9 @@
             </div>
           </div>
         </div>
+
+
+
       </section>
 
       <!--  Inquiry Section  -->
@@ -1526,9 +1527,25 @@
         slidesPerView: 9.05,
         spaceBetween: 5,
         freeMode: true,
-        loop: true,
+        loop: false,
         slidesPerGroup: 2,
         watchSlidesProgress: true,
+
+        breakpoints: {
+          0: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+          },
+          640: {
+            slidesPerView: 5,
+            slidesPerGroup: 2,
+          },
+          1024: { slidesPerView: 7, slidesPerGroup: 2 },
+          1440: {
+            slidesPerView: 9,
+            slidesPerGroup: 2,
+          },
+        },
       });
 
       const thumbs = document.querySelectorAll(".thumbs-swiper img");
@@ -1544,7 +1561,7 @@
       });
 
       const mainSwiper = new Swiper(".main-swiper", {
-        slidesPerView: 2,
+        slidesPerView: 1,
         slidesPerGroup: 2,
         spaceBetween: 20,
         loop: true,
@@ -1552,6 +1569,26 @@
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         },
+
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+          },
+          640: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          },
+          1440: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+          },
+        },
+
         pagination: {
           el: ".custom-pagination",
           clickable: true,
@@ -1683,5 +1720,6 @@
         breakpointsFaqs
       );
     </script>
+
   </body>
 </html>
