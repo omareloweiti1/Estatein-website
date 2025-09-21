@@ -17,7 +17,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body class="bg-[#0f0f0f] text-light transition-colors duration-500">
+  <body
+    class="bg-backgroundPrimary text-textWhite transition-colors duration-500"
+  >
     <!-- ====== Header Section ====== -->
     <header id="topHeader" class="relative transition-all duration-500">
       <img
@@ -80,9 +82,7 @@
           >
         </li>
         <li>
-          <a
-            href="about-us.html"
-            class="px-6 py-3 rounded-lg hover:bg-black/50 active"
+          <a href="about-us.html" class="px-6 py-3 rounded-lg hover:bg-black/50"
             >About Us</a
           >
         </li>
@@ -103,7 +103,7 @@
       <!-- Contact Us (Desktop) -->
       <a
         href="contact.html"
-        class="hidden lg:block bg-[rgb(20,20,20)] hover:bg-black/50 px-6 py-3 rounded-lg min-text"
+        class="hidden lg:block active-mobile hover:bg-black/50 px-6 py-3 rounded-lg min-text"
         >Contact Us</a
       >
 
@@ -136,7 +136,7 @@
           class="block hover:bg-black/50 px-4 py-2 rounded"
           >Services</a
         >
-        <a href="contact.html" class="block bg-black/50 px-4 py-2 rounded"
+        <a href="contact.html" class="block active-mobile px-4 py-2 rounded"
           >Contact Us</a
         >
       </div>
@@ -144,39 +144,44 @@
 
     <!-- Dream Property -->
     <section
-      class="relative bg-gradient-to-r from-[#1D1D1D] from-10% to-[#0f0f0f] to-70% text-white pt-10 md:pt-15 lg:pt-20 px-6 lg:px-20 h-[300px] md:h-[250px] lg:h-[350px] mb-0.5 lg:mb-1"
+      class="relative border-b-8 border-[#1c1c1c] bg-gradient-to-r from-[#1D1D1D] from-10% to-backgroundPrimary to-70% text-textWhite pt-10 md:pt-15 lg:pt-20 px-6 lg:px-20 h-[300px] md:h-[250px] lg:h-[350px] mb-0.5 lg:mb-1"
     >
-      <div class="text-left">
+      <div
+        class="text-left ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]"
+      >
         <h1
-          class="text-2xl mb-3 lg:mb-6 mt-5 lg:text-5xl desktop-2xl:ml-16 desktop-2xl:text-6xl font-semibold w-full text-left"
+          class="sectionH1 mb-3 lg:mb-6 mt-5 desktop-2xl:ml-16 w-full text-left"
         >
-          Elevate Your Real Estate Experience
+          Navigating the Estatein Experience
         </h1>
         <p
-          class="text-gray-400 max-w-4xl xl:max-w-6xl 2xl:max-w-[1800px] desktop-2xl:ml-16"
+          class="text-pragraph max-w-4xl xl:max-w-6xl 2xl:max-w-[1800px] desktop-2xl:ml-16"
         >
-          Welcome to Estatein, where your real estate aspirations meet expert
-          guidance. Explore our comprehensive range of services, each designed
-          to cater to your unique needs and dreams.
+          Welcome to Estatein, where your dream property awaits in every corner
+          of our beautiful world. Explore our curated selection of properties,
+          each offering a unique story and a chance to redefine your life. With
+          categories to suit every dreamer, your journey
         </p>
       </div>
     </section>
 
     <!-- Services Section  -->
     <section
-      class="bg-[#0f0f0f] p-1 md:p-5 pb-4 border-b-4 border-[rgb(38,38,38)]"
+      class="bg-backgroundPrimary p-1 md:p-5 pb-4 border-b-8 border-[rgb(38,38,38)]"
     >
       <div class="rounded-xl m-1">
         <div
-          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-[#0f0f0f] rounded-xl m-1 mx-1"
+          class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gab-6 bg-backgroundPrimary rounded-xl m-1 mx-1"
         >
           <!-- Card 1 -->
-          <div class="bg-dark rounded-xl p-2 relative h-36 desktop-2xl:h-48">
+          <div
+            class="bg-dark rounded-xl p-2 relative h-36 labtop-xl:h-42 desktop-2xl:h-48"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/imges/concat/Icon Container.png"
                 alt="Find Home"
-                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
+                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24 labtop-xl:mt-4"
               />
             </div>
             <h3
@@ -191,12 +196,14 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-dark rounded-xl p-2 relative h-36 desktop-2xl:h-48">
+          <div
+            class="bg-dark rounded-xl p-2 relative h-36 labtop-xl:h-42 desktop-2xl:h-48"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/imges/concat/Icon Container-1.png"
                 alt="Unlock Property Value"
-                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
+                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24 labtop-xl:mt-4"
               />
             </div>
             <h3
@@ -210,12 +217,14 @@
             /></span>
           </div>
           <!-- Card 3 -->
-          <div class="bg-dark rounded-xl p-2 relative h-36 desktop-2xl:h-48">
+          <div
+            class="bg-dark rounded-xl p-2 relative h-36 labtop-xl:h-42 desktop-2xl:h-48"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/imges/concat/Icon Container-2.png"
                 alt="Effortless Property Management"
-                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
+                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24 labtop-xl:mt-4"
               />
             </div>
             <h3
@@ -229,12 +238,14 @@
             /></span>
           </div>
           <!-- Card 4 -->
-          <div class="bg-dark rounded-xl p-2 relative h-36 desktop-2xl:h-48">
+          <div
+            class="bg-dark rounded-xl p-2 relative h-36 labtop-xl:h-42 desktop-2xl:h-48"
+          >
             <div class="flex justify-center mb-4">
               <img
                 src="assets/imges/concat/Icon Container-3.png"
                 alt="Smart Investments"
-                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24"
+                class="w-16 h-16 desktop-2xl:w-24 desktop-2xl:h-24 labtop-xl:mt-4"
               />
             </div>
             <h3
@@ -257,10 +268,15 @@
     </section>
 
     <main
-      class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1800px] desktop-2xl:max-w-[2400px]"
+      class="ipad-m:mx-auto ipad-l:max-w-[1000px] labtop-s:max-w-[1300px] labtop-m:max-w-[1400px] labtop-l:max-w-[1450px] labtop-xl:max-w-[1600px] desktop-2xl:max-w-[2400px]"
     >
       <!-- Inquiry Section -->
-      <section class="mt-10 mx-auto py-10 px-3 lg:px-10 space-y-10">
+      <section id="form" class="mt-10 mx-auto py-10 px-3 lg:px-10 space-y-10 relative">
+        <img
+          src="assets/imges/featured-cards/stars.png"
+          alt="Abstract Design"
+          class="absolute top-10 mobile-xs:top-10 ipad-m:top-7 ipad-l:top-7 labtop-m:top-7 labtop-xl:top-7 left-0 w-10 ipad-m:w-15 desktop-2xl:w-20 ml-2 ipad-m:ml-2 ipad-l:ml-6 labtop-s:ml-6 labtop-m:ml-8 labtop-l:ml-6 lg:mb-5 labtop-xl:ml-8 desktop-2xl:ml-6"
+        />
         <!-- ================= Inquiry Section ================= -->
         <div class="flex flex-col space-y-8">
           <!-- Title + Description -->
@@ -279,45 +295,45 @@
 
           <!-- Form -->
           <form
-            class="w-full bg-[#111] p-4 rounded-lg border border-[#191919] grid grid-cols-2 lg:grid-cols-3 gap-6"
+            class="w-full bg-backgroundPrimary p-4 labtop-s:p-24 rounded-lg border border-border-light grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-6"
           >
             <!-- First Name -->
             <div class="flex flex-col col-span-2 md:col-span-1">
-              <label class="text-sm text-gray-400 mb-2">First Name</label>
+              <label class="text-nav2 mb-2">First Name</label>
               <input
                 type="text"
                 placeholder="Enter First Name"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-surface border border-border-light text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             <!-- Last Name -->
             <div class="flex flex-col col-span-2 md:col-span-1">
-              <label class="text-sm text-gray-400 mb-2">Last Name</label>
+              <label class="text-nav2 mb-2">Last Name</label>
               <input
                 type="text"
                 placeholder="Enter Last Name"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-surface border border-border-light text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             <!-- Email -->
             <div class="flex flex-col col-span-2 md:col-span-1">
-              <label class="text-sm text-gray-400 mb-2">Email</label>
+              <label class="text-nav2 mb-2">Email</label>
               <input
                 type="email"
                 placeholder="Enter your Email"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-surface border border-border-light text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
             <!-- Phone -->
             <div class="flex flex-col col-span-2 md:col-span-1">
-              <label class="text-sm text-gray-400 mb-2">Phone</label>
+              <label class="text-nav2 mb-2">Phone</label>
               <input
                 type="text"
                 placeholder="Enter Phone Number"
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-surface border border-border-light text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
             </div>
 
@@ -325,11 +341,9 @@
             <div class="flex flex-col col-span-2 md:col-span-1">
               <!-- Location -->
               <div class="relative">
-                <label class="block text-sm mb-1 text-gray-400"
-                  >Inquiry Type</label
-                >
+                <label class="block text-nav2 mb-1">Inquiry Type</label>
                 <select
-                  class="w-full appearance-none bg-black/40 border border-[#191919] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10"
+                  class="w-full appearance-none bg-surface border border-border-light px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10"
                 >
                   <option disabled selected>Select Inquiry Type</option>
                   <option value="cairo">Cairo</option>
@@ -352,11 +366,11 @@
             <div class="flex flex-col col-span-2 md:col-span-1">
               <!-- Location -->
               <div class="relative">
-                <label class="block text-sm mb-1 text-gray-400"
+                <label class="block text-nav2 mb-1"
                   >How Did You Hear About Us?</label
                 >
                 <select
-                  class="w-full appearance-none bg-black/40 border border-[#191919] px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10"
+                  class="w-full appearance-none bg-surface border border-border-light px-4 py-3 rounded-lg text-gray-300 focus:border-[#703BF7] focus:ring-1 focus:ring-[#703BF7] pr-10"
                 >
                   <option disabled selected>Select</option>
                   <option value="cairo">Cairo</option>
@@ -382,23 +396,24 @@
               <textarea
                 rows="4"
                 placeholder="Enter your Message here..."
-                class="p-3 rounded-md bg-black/40 border border-[#191919] text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+                class="p-3 rounded-md bg-surface border border-border-light text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
               ></textarea>
             </div>
 
             <!-- Checkbox + Button -->
+
             <div
-              class="col-span-2 md:col-span-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+              class="col-span-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
             >
               <label class="flex items-center gap-2 text-gray-400 text-sm">
                 <input
                   type="checkbox"
-                  class="rounded bg-[#262626] border-gray-600"
+                  class="rounded scheme-dark border-border-light text-primary focus:ring-primary"
                 />
                 I agree with Terms of Use and Privacy Policy
               </label>
               <button
-                class="px-6 py-3 bg-purple-600 hover:bg-purple-500 text-white rounded-md"
+                class="px-6 py-3 bg-primary hover:bg-purple-500 text-textWhite rounded-md"
               >
                 Send Your Message
               </button>
@@ -408,14 +423,19 @@
       </section>
 
       <!-- Office Locations Section -->
-      <section class="py-10 px-3 lg:px-10 text-white bg-[#0f0f0f]">
+      <section id="offices"
+        class="relative py-10 px-3 lg:px-10 text-white bg-backgroundPrimary"
+      >
+        <img
+          src="assets/imges/featured-cards/stars.png"
+          alt="Abstract Design"
+          class="absolute top-10 mobile-xs:top-5 ipad-m:top-5 ipad-l:top-5 labtop-m:top-5 labtop-xl:top-5 left-0 w-10 ipad-m:w-15 desktop-2xl:w-20 ml-2 ipad-m:ml-2 ipad-l:ml-6 labtop-s:ml-6 labtop-m:ml-8 labtop-l:ml-6 lg:mb-5 labtop-xl:ml-8 desktop-2xl:ml-6"
+        />
         <div class="mx-auto">
           <div class="flex flex-col mb-10 gap-6">
-            <div class="lg:w-2/3">
-              <h2 class="text-3xl font-bold mb-3">
-                Discover Our Office Locations
-              </h2>
-              <p class="text-gray-400 max-w-2xl">
+            <div class="max-w-2xl labtop-s:max-w-7xl">
+              <h2 class="sectionH1 mb-3">Discover Our Office Locations</h2>
+              <p class="text-pragraph max-w-2xl labtop-s:max-w-7xl">
                 Estatein is here to serve you across multiple locations. Whether
                 you’re looking to meet our team, discuss real estate
                 opportunities, or simply drop by for a chat, we have offices
@@ -425,24 +445,24 @@
             </div>
 
             <div
-              class="flex gap-px md:gap-3 bg-[#262626] w-full md:w-fit p-2 rounded-lg"
+              class="flex justify-around gap-px md:gap-3 bg-surface w-full md:w-fit p-2 rounded-lg"
             >
               <button
-                class="filter-btn px-10 lg:px-5 py-2 rounded-lg border border-[#262626] bg-[#1a1a1a] text-gray-300 active"
+                class="filter-btn px-10 lg:px-5 py-2 rounded-lg border border-border-light active"
                 data-filter="all"
               >
                 All
               </button>
 
               <button
-                class="filter-btn px-5 py-2 rounded-lg border border-[#262626] bg-[#1a1a1a] text-gray-300"
+                class="filter-btn px-5 py-2 rounded-lg border border-border-light"
                 data-filter="regional"
               >
                 Regional
               </button>
 
               <button
-                class="filter-btn px-5 py-2 rounded-lg border border-[#262626] bg-[#1a1a1a] text-gray-300"
+                class="filter-btn px-5 py-2 rounded-lg border border-border-light"
                 data-filter="international"
               >
                 International
@@ -451,133 +471,172 @@
           </div>
 
           <!-- cards -->
-          <div id="offices" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div
+            id="offices"
+            class="grid grid-cols-1 md:grid-cols-2 desktop-2xl:grid-cols-3 gap-6"
+          >
             <!-- international -->
             <div
-              class="office-card all international bg-[#141414] border border-[#262626] p-4 rounded-xl"
+              class="office-card all international bg-backgroundPrimary labtop-xl:max-w-[738px] border border-border-light p-4 labtop-xl:p-12 rounded-xl"
             >
-              <h4 class="text-sm text-gray-400 mb-2">Main Headquarters</h4>
-              <h3 class="text-lg font-semibold mb-2">
+              <h4 class="text-pragraph mb-2">Main Headquarters</h4>
+              <h3 class="card-text mb-2">
                 123 Estatein Plaza, City Center, Metropolis
               </h3>
-              <p class="text-gray-400 text-sm mb-6">
+              <p class="text-pragraph mb-6">
                 Our main headquarters serve as the heart of Estatein. Located in
                 the bustling city center, this is where our core team of experts
                 operates, driving the excellence and innovation that define us.
               </p>
 
-              <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mb-6 text-xs">
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+              <div
+                class="grid grid-cols-2 lg:grid-cols-3 labtop-s:flex gap-2 mb-6 cardde"
+              >
+                <!-- Email -->
+                <a
+                  href="mailto:info@estatein.com"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-envelope text-white"></i>
                   <span>info@estatein.com</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+                </a>
+
+                <!-- Phone -->
+                <a
+                  href="tel:+11234567890"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-phone text-white"></i>
                   <span>+1 (123) 456-7890</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+                </a>
+
+                <!-- Location -->
+                <a
+                  href="https://www.google.com/maps/place/Metropolis"
+                  target="_blank"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-location-dot text-white"></i>
                   <span>Metropolis</span>
-                </div>
+                </a>
               </div>
 
-              <button
-                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white"
+              <a
+                href="https://www.google.com/maps/place/Metropolis"
+                target="_blank"
+                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white text-center block"
               >
                 Get Direction
-              </button>
+              </a>
             </div>
 
             <!-- regional -->
             <div
-              class="office-card all regional bg-[#141414] border border-[#262626] p-4 rounded-xl"
+              class="office-card all regional bg-backgroundPrimary labtop-xl:max-w-[738px] border border-border-light p-4 labtop-xl:p-12 rounded-xl"
             >
-              <h4 class="text-sm text-gray-400 mb-2">Main Headquarters</h4>
-              <h3 class="text-lg font-semibold mb-2">
-                456 Urban Avenue, Downtown District, Metropolis
-              </h3>
-              <p class="text-gray-400 text-sm mb-6">
-                Estatein's presence extends to multiple regions, each with its
-                own dynamic real estate landscape. Discover our regional
-                offices, staffed by local experts who understand the nuances of
-                their respective markets.
-              </p>
-
-              <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mb-6 text-xs">
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
-                >
-                  <i class="fa-solid fa-envelope text-white"></i>
-                  <span>info@estatein.com</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
-                >
-                  <i class="fa-solid fa-phone text-white"></i>
-                  <span>+1 (123) 456-7890</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
-                >
-                  <i class="fa-solid fa-location-dot text-white"></i>
-                  <span>Metropolis</span>
-                </div>
-              </div>
-
-              <button
-                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white"
-              >
-                Get Direction
-              </button>
-            </div>
-
-            <!-- regional -->
-            <div
-              class="office-card all regional bg-[#141414] border border-[#262626] p-4 rounded-xl"
-            >
-              <h4 class="text-sm text-gray-400 mb-2">Main Headquarters</h4>
-              <h3 class="text-lg font-semibold mb-2">
+              <h4 class="text-pragraph mb-2">Main Headquarters</h4>
+              <h3 class="card-text mb-2">
                 123 Estatein Plaza, City Center, Metropolis
               </h3>
-              <p class="text-gray-400 text-sm mb-6">
-                Estatein's presence extends to multiple regions, each with its
-                own dynamic real estate landscape. Discover our regional
-                offices, staffed by local experts who understand the nuances of
-                their respective markets.
+              <p class="text-pragraph mb-6">
+                Our main headquarters serve as the heart of Estatein. Located in
+                the bustling city center, this is where our core team of experts
+                operates, driving the excellence and innovation that define us.
               </p>
 
-              <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 mb-6 text-xs">
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+              <div
+                class="grid grid-cols-2 lg:grid-cols-3 labtop-s:flex gap-2 mb-6 cardde"
+              >
+                <!-- Email -->
+                <a
+                  href="mailto:info@estatein.com"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-envelope text-white"></i>
                   <span>info@estatein.com</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+                </a>
+
+                <!-- Phone -->
+                <a
+                  href="tel:+11234567890"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-phone text-white"></i>
                   <span>+1 (123) 456-7890</span>
-                </div>
-                <div
-                  class="flex items-center gap-2 px-2 py-2 border border-[#191919] bg-[#1a1a1a] rounded-full"
+                </a>
+
+                <!-- Location -->
+                <a
+                  href="https://www.google.com/maps/place/Metropolis"
+                  target="_blank"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
                 >
                   <i class="fa-solid fa-location-dot text-white"></i>
                   <span>Metropolis</span>
-                </div>
+                </a>
               </div>
 
-              <button
-                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white"
+              <a
+                href="https://www.google.com/maps/place/Metropolis"
+                target="_blank"
+                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white text-center block"
               >
                 Get Direction
-              </button>
+              </a>
+            </div>
+
+            <!-- regional -->
+            <div
+              class="office-card all regional bg-backgroundPrimary labtop-xl:max-w-[738px] border border-border-light p-4 labtop-xl:p-12 rounded-xl"
+            >
+              <h4 class="text-pragraph mb-2">Main Headquarters</h4>
+              <h3 class="card-text mb-2">
+                123 Estatein Plaza, City Center, Metropolis
+              </h3>
+              <p class="text-pragraph mb-6">
+                Our main headquarters serve as the heart of Estatein. Located in
+                the bustling city center, this is where our core team of experts
+                operates, driving the excellence and innovation that define us.
+              </p>
+              <div
+                class="grid grid-cols-2 lg:grid-cols-3 labtop-s:flex gap-2 mb-6 cardde"
+              >
+                <!-- Email -->
+                <a
+                  href="mailto:info@estatein.com"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
+                >
+                  <i class="fa-solid fa-envelope text-white"></i>
+                  <span>info@estatein.com</span>
+                </a>
+
+                <!-- Phone -->
+                <a
+                  href="tel:+11234567890"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
+                >
+                  <i class="fa-solid fa-phone text-white"></i>
+                  <span>+1 (123) 456-7890</span>
+                </a>
+
+                <!-- Location -->
+                <a
+                  href="https://www.google.com/maps/place/Metropolis"
+                  target="_blank"
+                  class="flex items-center gap-2 px-2 py-2 labtop-s:px-4 border border-border-light bg-[#1a1a1a] rounded-full"
+                >
+                  <i class="fa-solid fa-location-dot text-white"></i>
+                  <span>Metropolis</span>
+                </a>
+              </div>
+
+              <a
+                href="https://www.google.com/maps/place/Metropolis"
+                target="_blank"
+                class="w-full px-5 py-2 bg-purple-600 hover:bg-purple-500 rounded-lg text-white text-center block"
+              >
+                Get Direction
+              </a>
             </div>
           </div>
         </div>
@@ -646,12 +705,10 @@
                 <img
                   src="assets/imges/featured-cards/stars.png"
                   alt="Abstract Design"
-                  class="absolute top-0 left-0 w-15 ipad-m:w-15 desktop-2xl:w-25 ml-2 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
+                  class="absolute top-5 md:top-2 labtop-s:top-4 left-0 w-10 ipad-m:w-15 desktop-2xl:w-20 ml-2 ipad-m:ml-4 ipad-l:ml-4 labtop-s:ml-4 labtop-m:ml-4 labtop-l:ml-4 labtop-xl:ml-4 desktop-2xl:ml-2"
                 />
-                <h2 class="text-2xl font-bold mb-2 mt-4">
-                  Explore Estatein's World
-                </h2>
-                <p class="text-gray-200 leading-relaxed">
+                <h2 class="card-title mb-2 mt-4">Explore Estatein's World</h2>
+                <p class="text-pragraph leading-relaxed">
                   Step inside the world of Estatein, where professionalism meets
                   warmth, and expertise meets passion. Our gallery offers a
                   glimpse into our team and workspaces, inviting you to get to
@@ -675,57 +732,39 @@
 
     <!-- CTA -->
     <section
-      class="relative bg-cover bg-center py-10 md:py-20 px-8 text-white labtop-xl:max-w-full"
-      style="
-        background-image:
-          url(&quot;assets/imges/cat/back-cat-2.png&quot;),
-          url(&quot;assets/imges/cat/back-cat-1.png&quot;);
-        background-position:
-          left center,
-          right center,
-          center;
-        background-repeat: no-repeat, no-repeat, no-repeat;
-        background-size:
-          auto 100%,
-          auto 100%,
-          cover;
-      "
-    >
-      <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
-      >
-        <div class="md:w-2/3">
-          <h2 class="text-3xl md:text-4xl font-semibold md:font-bold mb-4">
-            Start Your Real Estate Journey Today
-          </h2>
-          <p class="text-[rgb(153,153,153)] max-w-5xl">
-            Your dream property is just a click away. Whether you're looking for
-            a new home, a strategic investment, or expert real estate advice,
-            Estatein is here to assist you every step of the way. Take the first
-            step towards your real estate goals and explore our available
-            properties or get in touch with our team for personalized
-            assistance.
-          </p>
+        class="relative bg-cover bg-center py-10 md:py-20 px-8 text-textWhite"
+        style=" background-image:   url(&quot;assets/imges/cat/back-cat-2.png&quot;),   url(&quot;assets/imges/cat/back-cat-1.png&quot;); background-position:   left center,   right center,   center; background-repeat: no-repeat, no-repeat, no-repeat; background-size: auto 100%, auto 100%, cover;">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="md:w-2/3">
+            <h2 class="sectionH1 mb-4"> Start Your Real Estate Journey Today</h2>
+            <p class="text-pragraph max-w-5xl">
+              Your dream property is just a click away. Whether you're looking
+              for a new home, a strategic investment, or expert real estate
+              advice, Estatein is here to assist you every step of the way. Take
+              the first step towards your real estate goals and explore our
+              available properties or get in touch with our team for
+              personalized assistance.
+            </p>
+          </div>
+
+          <!--  Button -->
+          <div class="w-full md:w-auto">
+            <button  onclick="window.location.href='properties.html'" 
+              class="bg-primary hover:bg-purple-700 w-full md:w-auto text-textWhite px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
+            >
+              Explore Properties
+            </button>
+          </div>
         </div>
 
-        <!--  Button -->
-        <div class="w-full md:w-auto">
-          <button
-            class="bg-purple-600 hover:bg-purple-700 w-full md:w-auto text-white px-6 py-3 rounded-lg mt-5 mx-auto md:mx-0 block"
-          >
-            Explore Properties
-          </button>
-        </div>
-      </div>
-
-      <!-- Overlay -->
-      <div class="absolute inset-0 bg-black/50 -z-10"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 -z-10"></div>
     </section>
-
+ 
     <!-- Footer -->
-    <footer class="bg-[rgb(20,20,20)] py-12 px-6">
+    <footer class="bg-backgroundPrimary py-12 px-6">
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-[#262626] pb-10"
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-7 gap-8 border-b border-border-light pb-10"
       >
         <!-- Logo + Email -->
         <div class="col-span-2">
@@ -755,27 +794,29 @@
           </div>
 
           <div
-            class="flex items-center rounded-lg border border-[rgb(38,38,38)] overflow-hidden w-full md:w-[250px] h-[50px]"
+            class="flex items-center mt-2.5 lg:mt-5 rounded-lg border border-border-light py-4 px-0 overflow-hidden w-full md:w-[180px] lg:w-[250px] h-[50px]"
           >
             <div class="flex items-center px-2">
               <img
                 src="assets/imges/form-icons/Icon (10).png"
                 alt="Email Icon"
-                class="w-[26px] h-[24px] md:w-[22px] md:h-[22px] opacity-70 ml-1 md:ml-2"
+                class="w-[26px] h-[24px] lg:w-[22px] lg:h-[22px] opacity-70 ml-1 md:ml-2"
               />
             </div>
+
             <label for="email" class="sr-only">Email</label>
             <input
               id="email"
               type="email"
               placeholder="Enter Your Email"
-              class="py-2 text-base md:text-sm md:pl-1 text-gray-300 placeholder-gray-500 focus:outline-none"
+              class="flex-1 py-2 text-base md:text-sm md:pl-1   focus:bg-surface text-gray-300 placeholder-text-muted focus:outline-none"
             />
-            <button type="submit" class="pr-4 py-2 transition duration-300">
+
+            <button type="submit" class="pr-0 py-2 transition duration-300">
               <img
                 src="assets/imges/form-icons/Icon (5).png"
                 alt="Send Icon"
-                class="w-[20px] ml-[55px] md:ml-0 md:w-[22px] h-[22px]"
+                class="w-[20px]  mr-2 md:ml-0 md:w-[22px] h-[22px]"
               />
             </button>
           </div>
@@ -784,29 +825,25 @@
         <!-- Links -->
         <div>
           <div class="border-e-2 border-e-[#303030] md:border-none">
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">Home</h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
-              <li><a href="#">Hero Section</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Properties</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">FAQ’s</a></li>
+            <h3 class="footer-titel mb-4">Home</h3>
+            <ul class="space-y-2 footer-link">
+              <li><a href="index.html#heroSection">Hero Section</a></li>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#properties">Properties</a></li>
+              <li><a href="index.html#testimonials">Testimonials</a></li>
+              <li><a href="index.html#faq">FAQ’s</a></li>
             </ul>
           </div>
         </div>
 
         <div class="w-32 border-b-2 right-4 border-b-[#303030] md:border-none">
-          <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
-            About Us
-          </h3>
-          <ul
-            class="space-y-2 text-white/90 md:text-gray-400 text-sm pb-4 md:pb-0"
-          >
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Our Works</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Our Team</a></li>
-            <li><a href="#">Our Clients</a></li>
+          <h3 class="footer-titel mb-4">About Us</h3>
+          <ul class="space-y-2 footer-link pb-4 md:pb-0">
+            <li><a href="about-us.html#story">Our Story</a></li>
+            <li><a href="about-us.html#works">Our Works</a></li>
+            <li><a href="about-us.html#howIt">How It Works</a></li>
+            <li><a href="about-us.html#team">Our Team</a></li>
+            <li><a href="about-us.html#clients">Our Clients</a></li>
           </ul>
         </div>
 
@@ -814,14 +851,10 @@
           <div class="mr-5 border-t-2 border-t-[#303030] md:border-none">
             <div class="border-b-2 border-b-[#303030] h-[120px] md:border-none">
               <!-- <div class=" border-e-2 border-e-[#303030] md:border-none"> -->
-              <h3
-                class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
-              >
-                Properties
-              </h3>
-              <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Categories</a></li>
+              <h3 class="footer-titel mb-4 pt-4 md:pt-0">Properties</h3>
+              <ul class="space-y-2 footer-link">
+                <li><a href="properties.html#portfolio">Portfolio</a></li>
+                <li><a href="properties.html#categories">Categories</a></li>
               </ul>
               <!-- </div> -->
             </div>
@@ -830,17 +863,13 @@
 
         <div>
           <div class="border-b-2 border-b-[#303030] md:border-none pb-5">
-            <h3
-              class="font-semibold mb-4 pt-4 md:pt-0 text-gray-400 md:text-white"
-            >
-              Services
-            </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
-              <li><a href="#">Valuation Mastery</a></li>
-              <li><a href="#">Strategic Marketing</a></li>
-              <li><a href="#">Negotiation Wizardry</a></li>
-              <li><a href="#">Closing Success</a></li>
-              <li><a href="#">Property Management</a></li>
+            <h3 class="footer-titel mb-4 pt-4 md:pt-0">Services</h3>
+            <ul class="space-y-2 footer-link">
+              <li><a href="services.html#mastery">Valuation Mastery</a></li>
+              <li><a href="services.html#marketing">Strategic Marketing</a></li>
+              <li><a href="services.html#wizardry">Negotiation Wizardry</a></li>
+              <li><a href="services.html#success">Closing Success</a></li>
+              <li><a href="services.html#management">Property Management</a></li>
             </ul>
           </div>
         </div>
@@ -850,12 +879,10 @@
             class="mt-[-90px] md:mt-0 border-e-2 border-e-[#303030] md:border-none"
           >
             <!-- <div class=" pt-5 border-b-2 border-b-[#303030] md:border-none"> -->
-            <h3 class="font-semibold mb-4 text-gray-400 md:text-white">
-              Contact Us
-            </h3>
-            <ul class="space-y-2 text-white/90 md:text-gray-400 text-sm">
-              <li><a href="#">Contact Form</a></li>
-              <li><a href="#">Our Offices</a></li>
+            <h3 class="footer-titel mb-4">Contact Us</h3>
+            <ul class="space-y-2 footer-link">
+              <li><a href="contact.html#form">Contact Form</a></li>
+              <li><a href="contact.html#offices">Our Offices</a></li>
             </ul>
             <!-- </div> -->
           </div>
@@ -864,12 +891,12 @@
     </footer>
 
     <!-- Bottom Footer -->
-    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-[rgb(25,25,25)]">
+    <div class="w-full pb-10 md:pb-5 md:pt-5 bg-backgroundPrimary">
       <div
-        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-white/90 text-sm bg-[rgb(25,25,25)]"
+        class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-textWhite/90 text-sm bg-backgroundPrimary"
       >
         <div
-          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0"
+          class="flex flex-col md:flex-row items-center gap-6 order-1 md:order-0 footer-link"
         >
           <p>©2023 Estatein. All Rights Reserved.</p>
           <a href=" " class="hover:text-gray-300">Terms & Conditions</a>
@@ -879,24 +906,27 @@
           class="flex gap-4 md:gap-2 mt-4 md:mt-0 order-0 mb-4 md:mb-0 md:order-1"
         >
           <a
-            href=" "
-            class="bg-[rgb(20,20,20)] hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500"
-            ><i class="fa-brands fa-facebook-f text-white"></i
+            href="https://www.facebook.com/"
+            class="bg-backgroundPrimary hover:bg-[#1877f2] focus:bg-[#1877f2] w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500"
+            ><i class="fa-brands fa-facebook-f text-textWhite"></i
           ></a>
           <a
-            href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
-            ><i class="fa-brands fa-linkedin-in text-white"></i
+            href="https://www.linkedin.com/"
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#0a66c2] focus:bg-[#0a66c2]"
+            ><i class="fa-brands fa-linkedin-in text-textWhite"></i
           ></a>
           <a
-            href=""
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
-            ><i class="fa-brands fa-twitter text-white"></i
-          ></a>
+            href="https://x.com/"
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center 
+            justify-center rounded-full transition-all duration-500 hover:bg-[#1da1f2] focus:bg-[#1da1f2]"
+            ><i class="fa-brands fa-twitter text-textWhite"></i></a>
           <a
-            href=" "
-            class="bg-[rgb(20,20,20)] w-14 h-14 md:w-8 md:h-8 flex items-center justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
-            ><i class="fa-brands fa-youtube text-white"></i
+            href="https://www.youtube.com/"
+            class="bg-backgroundPrimary w-14 h-14 md:w-10 md:h-10 flex items-center
+             justify-center rounded-full transition-all duration-500 hover:bg-[#ff0000] focus:bg-[#ff0000]"
+            ><i class="fa-brands fa-youtube text-textWhite"></i
           ></a>
         </div>
       </div>
@@ -934,9 +964,9 @@
       filterBtns.forEach((btn) => {
         btn.addEventListener("click", () => {
           filterBtns.forEach((b) =>
-            b.classList.remove("active", "bg-purple-600", "text-white")
+            b.classList.remove("active", "bg-backgroundPrimary", "text-white")
           );
-          btn.classList.add("active", "bg-purple-600", "text-white");
+          btn.classList.add("active", "bg-backgroundPrimary", "text-white");
 
           const filter = btn.getAttribute("data-filter");
 

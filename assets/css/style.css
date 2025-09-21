@@ -98,49 +98,64 @@ body {
   }
 
   .heroH1 {
-    @apply text-[28px] lg:text-[45px] xl:text-[60px] desktop-2xl:text-[72px] font-semibold;
+    @apply text-[28px] lg:text-[45px] labtop-xl:text-[60px] desktop-2xl:text-[72px] font-semibold;
   }
 
   .sectionH1 {
-    @apply text-[28px] lg:text-[38px] xl:text-[48px] desktop-2xl:text-[58px] font-semibold;
+    @apply text-[28px] lg:text-[38px] labtop-xl:text-[48px] desktop-2xl:text-[58px] font-semibold;
+  }
+  .sectionH12 {
+    @apply text-[28px] lg:text-[38px] labtop-xl:text-[48px] desktop-2xl:text-[58px] font-semibold;
+  }
+  .sectionH13 {
+    @apply text-[28px] lg:text-[28px] labtop-xl:text-[38px] desktop-2xl:text-[58px] font-semibold;
   }
 
   .text-nav {
-    @apply text-[14px] lg:text-[16px] xl:text-[17px] desktop-2xl:text-[20px] font-medium;
+    @apply text-[14px] lg:text-[16px] labtop-xl:text-[17px] desktop-2xl:text-[20px] font-medium;
+  }
+    .cardde {
+    @apply text-[12px] lg:text-[10px] labtop-s:text-[16px] desktop-2xl:text-[18px] font-medium;
+  }
+  .text-nav2 {
+    @apply text-[14px] lg:text-[14px] labtop-xl:text-[14px] desktop-2xl:text-[20px] font-normal;
   }
   .text-pragraph {
-    @apply text-[14px] lg:text-[16px] xl:text-[17px] desktop-2xl:text-[20px] font-medium text-text-muted;
+    @apply text-[14px] lg:text-[16px] labtop-xl:text-[17px] desktop-2xl:text-[20px] font-medium text-text-muted;
   }
 
     .text-pragraph2 {
-    @apply text-[14px] lg:text-[14px] xl:text-[16px] desktop-2xl:text-[18px] font-medium text-text-muted;
+    @apply text-[14px] lg:text-[14px] labtop-xl:text-[16px] desktop-2xl:text-[18px] font-medium text-text-muted;
   }
 
   .card-text {
-    @apply text-[14px] lg:text-[18px] xl:text-[20px] desktop-2xl:text-[22px] font-semibold;
+    @apply text-[14px] lg:text-[18px] labtop-xl:text-[20px] desktop-2xl:text-[22px] font-semibold;
+  }
+ .card-text2 {
+    @apply text-[18px] lg:text-[18px] labtop-xl:text-[20px] desktop-2xl:text-[22px] font-semibold;
   }
 
   .footer-titel {
-    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-medium text-text-muted ;
+    @apply text-[14px] lg:text-[16px] labtop-xl:text-[18px] desktop-2xl:text-[20px] font-medium text-text-muted ;
   }
 
   .footer-link {
-    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-light;
+    @apply text-[14px] lg:text-[16px] labtop-xl:text-[18px] desktop-2xl:text-[20px] font-light;
   }
   .text-button {
-    @apply text-[14px] lg:text-[16px] xl:text-[18px] desktop-2xl:text-[20px] font-semibold;
+    @apply text-[14px] lg:text-[16px] labtop-xl:text-[18px] desktop-2xl:text-[20px] font-semibold;
   }
 
   .card-title {
-    @apply text-[18px] lg:text-[20px] xl:text-[24px] desktop-2xl:text-[26px] font-semibold;
+    @apply text-[18px] lg:text-[20px] labtop-xl:text-[24px] desktop-2xl:text-[26px] font-semibold;
   }
 
   .cardH1 {
-    @apply text-[20px] lg:text-[25px] xl:text-[30px] desktop-2xl:text-[35px] font-semibold;
+    @apply text-[20px] lg:text-[25px] labtop-xl:text-[30px] desktop-2xl:text-[35px] font-semibold;
   }
 
   .numSize {
-    @apply text-[24px] lg:text-[32px] xl:text-[40px] desktop-2xl:text-[56px] font-semibold;
+    @apply text-[24px] lg:text-[32px] labtop-xl:text-[40px] desktop-2xl:text-[56px] font-semibold;
   }
 
 }
