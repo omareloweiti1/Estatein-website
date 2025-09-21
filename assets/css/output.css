@@ -1995,6 +1995,11 @@ body {
       width: var(--container-sm);
     }
   }
+  .mobile-xl\:w-\[90\%\] {
+    @media (width >= 26.875rem) {
+      width: 90%;
+    }
+  }
   .sm\:w-\[200px\] {
     @media (width >= 40rem) {
       width: 200px;
