@@ -1965,6 +1965,16 @@ body {
       height: calc(var(--spacing) * 18);
     }
   }
+  .mobile-l\:w-\[90\%\] {
+    @media (width >= 25.875rem) {
+      width: 90%;
+    }
+  }
+  .mobile-l\:w-\[95\%\] {
+    @media (width >= 25.875rem) {
+      width: 95%;
+    }
+  }
   .mobile-l\:w-\[95\] {
     @media (width >= 25.875rem) {
       width: 95;
