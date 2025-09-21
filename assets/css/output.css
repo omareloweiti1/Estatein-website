@@ -725,6 +725,9 @@ body {
   .w-\[95\%\] {
     width: 95%;
   }
+  .w-\[98\%\] {
+    width: 98%;
+  }
   .w-\[100\%\] {
     width: 100%;
   }
@@ -1960,6 +1963,11 @@ body {
   .mobile-m\:h-18 {
     @media (width >= 25rem) {
       height: calc(var(--spacing) * 18);
+    }
+  }
+  .mobile-l\:w-\[95\] {
+    @media (width >= 25.875rem) {
+      width: 95;
     }
   }
   .mobile-m\:w-20 {
